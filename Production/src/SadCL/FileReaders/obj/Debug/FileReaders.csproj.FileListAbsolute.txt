@@ -1,0 +1,5 @@
+\\vmware-host\shared folders\documents\visual studio 2013\Projects\TargetReader\FileReaders\bin\Debug\FileReaders.dll
+\\vmware-host\shared folders\documents\visual studio 2013\Projects\TargetReader\FileReaders\bin\Debug\FileReaders.pdb
+\\vmware-host\shared folders\documents\visual studio 2013\Projects\TargetReader\FileReaders\obj\Debug\FileReaders.dll
+\\vmware-host\shared folders\documents\visual studio 2013\Projects\TargetReader\FileReaders\obj\Debug\FileReaders.pdb
+\\vmware-host\shared folders\documents\visual studio 2013\Projects\TargetReader\FileReaders\obj\Debug\FileReaders.csprojResolveAssemblyReference.cache
