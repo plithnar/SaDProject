@@ -122,42 +122,39 @@ namespace SadCL
                 if (segments.Length >= 1) command = segments[0];
                 if (segments.Length >= 2) argument1 = segments[1];
                 if (segments.Length >= 3) argument2 = segments[2];
-                else
+                switch (command)
                 {
-                    switch (command)
-                    {
-                        case "print":
-                            if (argument1 != "")
-                                PrintTarget(argument1);
-                            else
-                                PrintCommand();
-                            break;
-                        case "load":
-                            AddTargets(argument1);
-                            break;
-                        case "reload":
-                            launcher.reload();
-                            break;
-                        case "status":
-                            var mock = (Mock)launcher;
-                            mock.printStatus();
-                            break;
-                        case "fire":
-                            launcher.fire();
-                            break;
-                        case "isfriend":
-                            IsFriend(argument1);
-                            break;
-                        case "move":
-                            launcher.moveTo(Convert.ToDouble(argument1), Convert.ToDouble(argument2));
-                            break;
-                        case "moveby":
-                            launcher.moveBy(Convert.ToDouble(argument1), Convert.ToDouble(argument2));
-                            break;
-                        default:
-                            Console.WriteLine("Invalid Command.");
-                            break;
-                    }
+                    case "print":
+                        if (argument1 != "")
+                            PrintTarget(argument1);
+                        else
+                            PrintCommand();
+                        break;
+                    case "load":
+                        AddTargets(argument1);
+                        break;
+                    case "reload":
+                        launcher.reload();
+                        break;
+                    case "status":
+                        var mock = (Mock)launcher;
+                        mock.printStatus();
+                        break;
+                    case "fire":
+                        launcher.fire();
+                        break;
+                    case "isfriend":
+                        IsFriend(argument1);
+                        break;
+                    case "move":
+                        launcher.moveTo(Convert.ToDouble(argument1), Convert.ToDouble(argument2));
+                        break;
+                    case "moveby":
+                        launcher.moveBy(Convert.ToDouble(argument1), Convert.ToDouble(argument2));
+                        break;
+                    default:
+                        Console.WriteLine("Invalid Command.");
+                        break;
                 }
             } while (input != "exit");
         }
