@@ -20,15 +20,16 @@ namespace SadCL
                 reader = TargetFileReaderFactory.Create(TargetFile);
                 var targets = reader.read();
                 TargetManager.AddTargets(targets);
+                Console.WriteLine("argghh argghh new targets in sight");
             }
             catch (NullReferenceException)
             {
-                Console.WriteLine("File was not found.");
+                Console.WriteLine("Ya, that's just a bad file.");
                 return;
             }
             catch (FileNotFoundException)
             {
-                Console.WriteLine("File was not found.");
+                Console.WriteLine("No file exists.");
                 return;
             }
             catch (FormatException)
@@ -57,25 +58,33 @@ namespace SadCL
                 return;
             }
         }
+        static void PrintTarget(Target target)
+        {
+            Console.WriteLine("Name: " + target.Name);
+            Console.WriteLine("Position: X={0}, Y={1}, Z={2}", target.X, target.Y, target.Z);
+            Console.WriteLine("Friend: " + target.Friend);
+            Console.WriteLine("Points: " + target.Points);
+//            Console.WriteLine("Flash Rate: " + target.FlashRate);
+            Console.Write("Status: ");
+            if (target.Alive)
+                Console.WriteLine("At large");
+            else
+                Console.WriteLine("Dead");
+        }
         // Print target given the name of the target
         static void PrintTarget(string targetName)
         {
             try
             {
                 var target = TargetManager.Instance.GetTarget(targetName);
-                Console.WriteLine("Name: " + target.Name);
-                Console.WriteLine("X: " + target.X);
-                Console.WriteLine("Y: " + target.Y);
-                Console.WriteLine("Z: " + target.Z);
-                Console.WriteLine("Friend: " + target.Friend);
-                Console.WriteLine("Points: " + target.Points);
-                Console.WriteLine("Flash Rate: " + target.FlashRate);
+                PrintTarget(target);
             }
             catch (InvalidOperationException)
             {
                 // Target does not exist
                 Console.WriteLine("That target does not exist.");
             }
+            
         }
         // Print all target names
         static void PrintCommand()
@@ -108,11 +117,7 @@ namespace SadCL
             var targets = TargetManager.Instance.Friends;
             foreach (var target in targets)
             {
-                Console.WriteLine("Name: " + target.Name);
-                Console.WriteLine("Position: X: {0}, Y: {1}, Z: {2}", target.X, target.Y, target.Z);
-                Console.WriteLine("Friend: " + target.Friend);
-                Console.WriteLine("Points: " + target.Points);
-                Console.WriteLine("Flash Rate: " + target.FlashRate);
+                PrintTarget(target);
             }
         }
         static void PrintEnemies()
@@ -120,11 +125,7 @@ namespace SadCL
             var targets = TargetManager.Instance.Enemies;
             foreach (var target in targets)
             {
-                Console.WriteLine("Name: " + target.Name);
-                Console.WriteLine("Position: X: {0}, Y: {1}, Z: {2}", target.X, target.Y, target.Z);
-                Console.WriteLine("Friend: " + target.Friend);
-                Console.WriteLine("Points: " + target.Points);
-                Console.WriteLine("Flash Rate: " + target.FlashRate);
+                PrintTarget(target);
             }
         }
         private static void Kill(IMissileLauncher launcher, string targetName)
@@ -147,15 +148,16 @@ namespace SadCL
                 try
                 {
                     launcher.fire();
+                    target.Kill();
                 }
                 catch (InvalidOperationException)
                 {
-                    Console.WriteLine("We can't do that Captain! We don't have the powa!");
+                    Console.WriteLine("I just can’t do it cap’tin, we just don’t have tha power!");
                 }
             }
             else
             {
-                Console.WriteLine("Can't shoot that target, Captain. It is friendly!");
+                Console.WriteLine("Sorry Captain, we don’t permit friendly fire, yar");
             }
         }
 
@@ -235,7 +237,7 @@ namespace SadCL
                     case "friends":
                         PrintFriends();
                         break;
-                    case "scallywags":
+                    case "scoundrels":
                         PrintEnemies();
                         break;
                     default:

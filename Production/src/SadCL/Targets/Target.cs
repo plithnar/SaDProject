@@ -16,6 +16,12 @@ namespace Targets
         public bool Friend { get; private set; }
         public int Points { get; private set; }
         public int FlashRate { get; private set; }
+        public bool Alive { get; private set; }
+
+        public void Kill()
+        {
+            Alive = false;
+        }
 
         // Constructor
         public Target(string name, double x, double y, double z,
@@ -28,6 +34,7 @@ namespace Targets
             Friend = friend;
             Points = points;
             FlashRate = flashrate;
+            Alive = true;
         }
     }
 }
