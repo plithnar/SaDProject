@@ -48,6 +48,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conversions.cs" />
     <Compile Include="DreamCheeky.cs" />
     <Compile Include="IMissileLauncher.cs" />
     <Compile Include="MissileLauncherControl.cs" />

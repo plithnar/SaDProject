@@ -12,5 +12,6 @@ namespace MissileLauncher
         void moveTo(double x, double y);
         void moveBy(double x, double y);
         void reload();
+        string status();
     }
 }

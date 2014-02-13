@@ -8,12 +8,12 @@ namespace MissileLauncher
 {
     public class Mock : IMissileLauncher
     {
-	private string[] nameList = {"MockFry",
-			     	     "MockLeela",
-			     	     "MockBender",
-			     	     "MockFlexo",
-			     	     "MockProfessor",
-			     	     "MockLurr" };
+	    private string[] nameList = {"MockFry",
+			     	        "MockLeela",
+			     	        "MockBender",
+			     	        "MockFlexo",
+			     	        "MockProfessor",
+			     	        "MockLurr" };
 
         private int maxMissiles;
         private string name;
@@ -49,8 +49,13 @@ namespace MissileLauncher
         }
         public void fire()
         {
-            Console.WriteLine("Fire in the hole!");
-            currentMissiles--;
+            if (currentMissiles > 0)
+            {
+                Console.WriteLine("Fire in the hole!");
+                currentMissiles--;
+            }
+            else
+                throw new InvalidOperationException();
         }
 
         public void moveBy(double phi, double theta)//double x, double y)
@@ -77,9 +82,9 @@ namespace MissileLauncher
             return nameList[namesIndex];
         }
 
-        public void printStatus()
+        public string status()
         {
-            Console.WriteLine("Launcher: {0} \nMissiles: {1} of {2} remain", name, currentMissiles, maxMissiles);
+            return ("Launcher: " + name + "\nMissiles: " + currentMissiles + " of " + maxMissiles + " remain");
         }
 
         enum POSSIBLE_NAMES

@@ -9,12 +9,12 @@ namespace MissileLauncher
 {
     public class DreamCheeky : IMissileLauncher
     {
-	private string[] nameList = {"Fry",
-			     	     "Leela",
-			     	     "Bender",
-			     	     "Flexo",
-			     	     "Professor",
-			     	     "Lurr" };
+	    private string[] nameList = {"Fry",
+		    	     	     "Leela",
+			         	     "Bender",
+			         	     "Flexo",
+			     	         "Professor",
+			     	         "Lurr" };
 
         private int maxMissiles;
         private string name;
@@ -52,8 +52,13 @@ namespace MissileLauncher
         }
         public void fire()
         {
-            controller.command_Fire();
-            currentMissiles--;
+            if (currentMissiles > 0)
+            {
+                controller.command_Fire();
+                currentMissiles--;
+            }
+            else
+                throw new InvalidOperationException();
         }
 
         public void moveBy(double phi, double theta)//double x, double y)
@@ -116,9 +121,9 @@ namespace MissileLauncher
             return nameList[namesIndex];
         }
 
-        public void printStatus()
+        public string status()
         {
-            Console.WriteLine("Launcher: {0} \nMissiles: {1} of {2} remain", name, currentMissiles, maxMissiles);
+            return ("Launcher: "+name+"\nMissiles: "+currentMissiles+" of "+maxMissiles+" remain");
         }
 
         enum POSSIBLE_NAMES

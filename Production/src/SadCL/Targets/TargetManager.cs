@@ -11,6 +11,24 @@ namespace Targets
         private List<Target> m_targets;
 
         private static TargetManager m_instance;
+        public List<Target> Friends
+        {
+            get
+            {
+                return (from i in m_targets
+                        where i.Friend == true
+                        select i).ToList();
+            }
+        }
+        public List<Target> Enemies
+        {
+            get
+            {
+                return (from i in m_targets
+                        where i.Friend == false
+                        select i).ToList();
+            }
+        }
 
         // Property for instance of singleton class
         public static TargetManager Instance
