@@ -44,7 +44,7 @@ namespace Targets
                 throw new InvalidName();
             }
             else
-                return name;
+                return name.Trim('"');
         }
         /*
          * ValidateCoord() attempt to convert a string to a double.

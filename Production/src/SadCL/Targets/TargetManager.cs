@@ -95,7 +95,7 @@ namespace Targets
          */
         public static void AddTargets(List<Target> targets)
         {
-            Instance.m_targets = Instance.m_targets.Concat(targets).ToList<Target>();
+            Instance.m_targets = targets;
         }
     }
 }

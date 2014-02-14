@@ -142,8 +142,8 @@ namespace SadCL
             }
             if (!target.Friend)
             {
-                var phi = Conversions.calcPhi(target.X, target.Y, target.Z);
-                var theta = Conversions.calcTheta(target.X, target.Y);
+                var theta = Conversions.calcTheta(target.X, target.Y, target.Z);
+                var phi = Conversions.calcPhi(target.X, target.Y);
                 launcher.moveTo(phi, theta);
                 try
                 {
@@ -163,7 +163,7 @@ namespace SadCL
 
         static void Main(string[] args)
         {
-            var launcher = MissileLauncherFactory.Create(MissileLauncherTypes.DreamCheeky);
+            var launcher = MissileLauncherFactory.Create(MissileLauncherTypes.Mock);
 
             Console.WriteLine("mcommandlinePrompt> SadCL");
             Console.WriteLine("System Loaded.");
