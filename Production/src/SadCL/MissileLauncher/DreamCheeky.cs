@@ -23,6 +23,11 @@ namespace MissileLauncher
         double currentTheta;
         MissileLauncherControl controller;
 
+        //Max Theta, phi offsets
+        private double maxPhi = 90;
+        private double minTheta = -5;
+        private double maxTheta = 20;
+        private int timeTo90 = 1600;
         public DreamCheeky()
         {
             maxMissiles = 4;
@@ -61,26 +66,43 @@ namespace MissileLauncher
                 throw new InvalidOperationException();
         }
 
-        public void moveBy(double phi, double theta)//double x, double y)
+        public void moveBy(double phi, double theta)
         {
+            if(phi+currentPhi > maxPhi)
+            {
+                phi = maxPhi - currentPhi;
+            }
+            else if(phi+currentPhi < -maxPhi)
+            {
+                phi = -maxPhi - currentPhi;
+            }
+
             if(phi > 0)
             {
-                controller.command_Right((int)Math.Floor(((phi) / 90) * 1600));
+                controller.command_Right((int)Math.Floor(((phi) / maxPhi) * timeTo90));
             }
             else
             {
-                controller.command_Left((int)Math.Floor(((phi * -1.0) / 90) * 1600));
+                controller.command_Left((int)Math.Floor(((phi * -1.0) / maxPhi) * timeTo90));
             }
             if(theta > 0)
             {
-                controller.command_Up((int)Math.Floor(((theta) / 90) * 1600));
+                controller.command_Up((int)Math.Floor(((theta) / maxPhi) * timeTo90));
             }
             else
             {
-                controller.command_Down((int)Math.Floor(((theta * -1.0) / 90) * 1600));
+                controller.command_Down((int)Math.Floor(((theta * -1.0) / maxPhi) * timeTo90));
             }
             currentPhi += phi;
             currentTheta += theta;
+            if(currentPhi > maxPhi)
+            {
+                currentPhi = maxPhi;
+            }
+            else if (currentPhi < -maxPhi)
+            {
+                currentPhi = -maxPhi;
+            }
         }
 
         public void moveTo(double phi, double theta)//double x, double y, double z)
@@ -89,28 +111,45 @@ namespace MissileLauncher
             //double phi = Math.Atan(y / x);
             //double theta = Math.Acos(z / radius);
 
+            if (phi > maxPhi)
+            {
+                phi = maxPhi;
+            }
+            if (phi < -maxPhi)
+            {
+                phi = -maxPhi;
+            }
+
             double phiOffset = phi - currentPhi;
-            double thetaOffset = theta - currentTheta;
+            double thetaOffset = theta - currentTheta;            
 
             if(phiOffset > 0)
             {
-                controller.command_Right((int) Math.Floor(((phiOffset)/90) * 1600));
+                controller.command_Right((int) Math.Floor(((phiOffset)/maxPhi) * timeTo90));
             }
             else
             {
-                controller.command_Left((int)Math.Floor(((phiOffset * -1.0) / 90) * 1600));
+                controller.command_Left((int)Math.Floor(((phiOffset * -1.0) / maxPhi) * timeTo90));
             }
 
             if(thetaOffset > 0)
             {
-                controller.command_Up((int)Math.Floor(((thetaOffset) / 90) * 1600));
+                controller.command_Up((int)Math.Floor(((thetaOffset) / maxPhi) * timeTo90));
             }
             else
             {
-                controller.command_Down((int)Math.Floor(((thetaOffset * -1.0) / 90) * 1600));
+                controller.command_Down((int)Math.Floor(((thetaOffset * -1.0) / maxPhi) * timeTo90));
             }
             currentTheta = theta;
             currentPhi = phi;
+            if (currentPhi > maxPhi)
+            {
+                currentPhi = maxPhi;
+            }
+            else if (currentPhi < -maxPhi)
+            {
+                currentPhi = -maxPhi;
+            }
         }
 
         private string getNewName()
