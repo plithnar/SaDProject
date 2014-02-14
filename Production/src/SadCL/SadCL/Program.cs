@@ -163,7 +163,7 @@ namespace SadCL
 
         static void Main(string[] args)
         {
-            var launcher = MissileLauncherFactory.Create(MissileLauncherTypes.Mock);
+            var launcher = MissileLauncherFactory.Create(MissileLauncherTypes.DreamCheeky);
 
             Console.WriteLine("mcommandlinePrompt> SadCL");
             Console.WriteLine("System Loaded.");

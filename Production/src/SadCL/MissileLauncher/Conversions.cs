@@ -15,6 +15,7 @@ namespace MissileLauncher
         public static double calcRadius(double x, double y, double z)
         {
             return Math.Sqrt(Math.Pow(x, 2) + Math.Pow(y, 2) + Math.Pow(z, 2));
+            
         }
         public static double calcTheta(double x, double y, double z)
         {
@@ -22,7 +23,10 @@ namespace MissileLauncher
         }
         public static double calcPhi(double x, double y)
         {
-            return radiansToDegrees(Math.Atan(y/x));
+            var phi = radiansToDegrees(Math.Atan2(y, x));
+            if (phi > 90)
+                phi = (phi - 90) * -1;
+            return phi;
         }
     }
 }
