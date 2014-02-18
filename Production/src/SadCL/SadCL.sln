@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissileLauncher", "MissileL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Targets", "Targets\Targets.csproj", "{170654B5-D437-4F05-B138-3E529507D83C}"
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "SadCLDiagrams", "SadCLDiagrams\SadCLDiagrams.modelproj", "{8F84E798-AC1A-4ED9-9982-B0088358746A}"
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "SadCLDiagrams", "..\..\doc\Diagrams\SadCLDiagrams\SadCLDiagrams.modelproj", "{8F84E798-AC1A-4ED9-9982-B0088358746A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
