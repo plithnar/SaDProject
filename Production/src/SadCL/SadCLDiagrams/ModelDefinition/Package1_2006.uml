@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="868dba64-8441-4e88-a3ba-561c21859e98"
+  name="UsbLibrary"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="934f83f7-f3c5-4fa5-bb6f-f3f392310d08"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DUsbLibrary"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0db32709-bfb7-43ba-9364-133b3ad62c29">
+      <profileInstance
+        Id="2a1085e3-e4b0-4bb7-a877-2c59328c044b"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="807006b0-037a-464a-bc2b-4faf399f6437"
+        name="DataRecievedEventArgs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="c206422e-79d9-4358-8422-29fda07e69ac"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FMissileLauncher%2Fbin%2FDebug%2FUSBLib.dll&quot; Namespace%3DUsbLibrary Type%3DDataRecievedEventArgs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e6ca5e87-3524-4a57-ac90-4f357507ff60"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c7665fd1-ad96-4f2e-971c-65521dac8732">
+                <propertyInstance
+                  Id="c1a372e6-d828-4c10-80b6-f5675183a769"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="69d1ca69-38b8-4a1a-9579-05b3b1ef02d4">
+                <propertyInstance
+                  Id="6c2667e0-c337-4150-a1ce-7df8e95d4e1b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="978b38ed-e424-4cb8-96b8-1a1571fc1d95">
+                <propertyInstance
+                  Id="b7b93f20-d111-4438-be53-1c9230146f34"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="62a43f45-fc0f-4b0f-a775-38abfbee96ac">
+                <propertyInstance
+                  Id="5f865a2b-4bb4-4990-9652-0698aa1f6c6a"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9e031ed7-8f70-4113-95e3-dd522e5670f6">
+                <propertyInstance
+                  Id="b346f282-638d-4102-a951-5480d4ecf1ab"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="b951a765-5ad6-4c5f-99d9-fdc009ac73c3"
+            isSubstitutable="false">
+            <classMoniker
+              Id="09a89ab5-ad13-4c66-a9aa-bd86bfa5d370"
+              LastKnownName="EventArgs"
+              LastKnownLocation="Package1_1954.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a4c68422-037c-46c7-8ab3-d63549cc7daf"
+        name="UsbHidPort"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="86f18d13-941a-4dfe-9d4a-db8cd1d7575d"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FMissileLauncher%2Fbin%2FDebug%2FUSBLib.dll&quot; Namespace%3DUsbLibrary Type%3DUsbHidPort"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1d8f1bfa-b264-4680-9fc6-095554114e68"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a3cc0144-593d-4830-a344-6ee95e36e1dc">
+                <propertyInstance
+                  Id="504943de-daee-40ff-a3a6-cb4178cc2633"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a08a01fb-1b5a-4657-bfe3-53e2c338f17a">
+                <propertyInstance
+                  Id="7b4405d3-028c-44b8-9f69-2d9b0a68599d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b72f0443-3d47-41c7-9c70-18c2eba21928">
+                <propertyInstance
+                  Id="955ee113-ae0d-4125-89e9-b726713185e0"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="36cd92ac-8a09-4072-b22a-96d082ee4374">
+                <propertyInstance
+                  Id="a916dcce-a6de-4c33-aaa1-658893293abc"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="90ff8c36-3588-4e11-ac6b-a807b8c04b91">
+                <propertyInstance
+                  Id="b9a08d50-8982-4eac-89ea-1a714ca7a54a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,893 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="3b3c8069-7a3e-4b51-a060-4b1d21943913"
+  name="SadCL"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="266f705e-f48b-4a5a-93b7-295b3b088fbb"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSadCL"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="f289be08-2ed7-4c5c-a5b5-e3d713848897"
+        name="Program"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="2c2a0cee-4ab9-4a4c-b786-62d3bd1a4a97"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FSadCL%2Fbin%2FDebug%2FSadCL.exe&quot; Namespace%3DSadCL Type%3DProgram"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="db13e39b-4ea1-426e-a3d4-54d968a229ee"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bcb1f56b-92f9-4f04-ad81-49adedd48c31">
+                <propertyInstance
+                  Id="7ea79186-c1c9-4228-bef6-11747fa161ae"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d1cde9d5-2ca9-4f4b-8b1c-0d0d8e2fb8db">
+                <propertyInstance
+                  Id="3c917114-2fe3-4406-9ea6-2bba0c40f92a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0620cc50-dbfe-4e4b-8617-077a3c3ccfa5">
+                <propertyInstance
+                  Id="02662f38-30fd-44f9-abfc-e9b87af69521"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="187cbad6-459d-4f60-a67a-cccb6c0a082f">
+                <propertyInstance
+                  Id="a4c95f13-1a76-487f-8eac-7393108a513e"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0bedcc5b-f77f-46bf-a6ac-df4098e525b6">
+                <propertyInstance
+                  Id="d0e4110d-e3f4-4e21-b838-c72b456b3e46"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="cccd1f83-6ed4-4e1f-a230-12d85359ed49"
+            name="AddTargets"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="78010378-3f13-445a-8fff-7b8dc8673f4f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FSadCL%2Fbin%2FDebug%2FSadCL.exe&quot; Namespace%3DSadCL Type%3DProgram Member%3D(Name%3DAddTargets OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ab4af54c-94c0-4d3c-b541-cedcb327578e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b74c9162-1039-4090-aa59-b1bd90089033">
+                    <propertyInstance
+                      Id="2091589a-0679-479a-84dd-5a5c6dc77c47"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1d7d1578-651a-405a-a5c4-1690f718f0c9">
+                    <propertyInstance
+                      Id="b6f59559-0f70-44b2-8fa8-01beafd3639f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="333aa977-86b6-44d6-8607-ace9ae8befd6">
+                    <propertyInstance
+                      Id="b72ba977-5932-48c5-bdbf-67587209d34b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="db78ada3-246e-48ee-91a2-f2a7c2b4ac2c">
+                    <propertyInstance
+                      Id="68ec918e-efa0-4d0f-9c97-ed96b4239f9d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="46480154-e98d-4b98-b749-b80d42bb1c94">
+                    <propertyInstance
+                      Id="91f74fdf-74a2-44f8-bcfd-96cc3a66b87b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5ea34a5-d02d-441b-922f-cca829797b28">
+                    <propertyInstance
+                      Id="b37a7240-c45d-4673-96ce-c8a86fcd72ae"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2ca3d9ee-8b71-4e3e-a8bc-5ac6aa5427f1"
+                  name="TargetFile"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6925a05b-661c-46e1-a0e7-842017ca29bf"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FSadCL%2Fbin%2FDebug%2FSadCL.exe&quot; Namespace%3DSadCL Type%3DProgram Member%3D(Name%3DAddTargets OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DTargetFile"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="SadCLDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7f49b09b-e394-44f0-b488-7aae0add2453"
+            name="PrintTarget"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="220fe549-d7bb-4350-ae4e-c8a7f9276f36"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FSadCL%2Fbin%2FDebug%2FSadCL.exe&quot; Namespace%3DSadCL Type%3DProgram Member%3D(Name%3DPrintTarget OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FTargets%2Fbin%2FDebug%2FTargets.dll&quot; Namespace%3DTargets Type%3DTarget)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2db92fd9-cce7-4be0-aa1d-ce28bc09701c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f84cf183-6eac-4fd6-9bda-84d056f0314a">
+                    <propertyInstance
+                      Id="f689060f-2f13-4776-bd40-447139a43f56"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="126c67ed-e773-460e-8b47-018058f8f712">
+                    <propertyInstance
+                      Id="c6e7a15f-0ce9-4eea-8789-c980beb437b3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3810f535-a31a-4782-888a-5f5c06273029">
+                    <propertyInstance
+                      Id="d0f94462-b192-45f0-930c-f07fcf6e8e87"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6028a687-272f-4dab-87b1-ed4113db87e7">
+                    <propertyInstance
+                      Id="bfad6c91-7ecd-40e6-9017-62a5d875b567"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="624ac41e-73c1-4068-a8d3-ec0599e56c3b">
+                    <propertyInstance
+                      Id="5b1e17af-5646-4318-97c5-99f6ec748559"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9499330e-728d-41a1-8d12-78ecf73c8704">
+                    <propertyInstance
+                      Id="df4d01c9-f2e0-4f12-9c97-d7fc42b7c1bf"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ca27b513-7c21-4817-8f86-3996b68dd6e2"
+                  name="target"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7b038b40-59a8-4949-afd3-ca627c03e967"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FSadCL%2Fbin%2FDebug%2FSadCL.exe&quot; Namespace%3DSadCL Type%3DProgram Member%3D(Name%3DPrintTarget OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FTargets%2Fbin%2FDebug%2FTargets.dll&quot; Namespace%3DTargets Type%3DTarget)]) ParameterIdentifier%3Dtarget"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="34f43361-88fa-4489-9a90-500540cc4cae"
+                      LastKnownName="Target"
+                      LastKnownLocation="Package_2012.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d9f53b55-085b-4dc6-b14a-59148e0a1b27"
+            name="PrintTarget"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8964c928-840a-4e97-86b9-1e63b9de9d86"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FSadCL%2Fbin%2FDebug%2FSadCL.exe&quot; Namespace%3DSadCL Type%3DProgram Member%3D(Name%3DPrintTarget OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7d82f136-6bb2-4e82-a69b-ac665833bfb4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d702f95-c9d9-4c59-bb06-47af9470c852">
+                    <propertyInstance
+                      Id="7ff1080c-87c2-42f3-928b-3084bab25b0d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="110f8ef0-76d0-4d41-8ff3-d333eb99f102">
+                    <propertyInstance
+                      Id="e7678802-6152-47ed-b7b1-6fa0ce75543b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4dc4f0d4-6fdc-4ac1-ac9b-70e55612990d">
+                    <propertyInstance
+                      Id="e8b851d7-0af2-49fb-be4e-f87f0c951623"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aa39fa4c-93cf-4ce9-b31a-66a492d33f16">
+                    <propertyInstance
+                      Id="c6f41977-f151-4e41-992d-343bc2059f15"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b54dbcb0-82fc-4a55-8b44-94b9ee2ac6a3">
+                    <propertyInstance
+                      Id="1d909337-da37-47f7-94e9-910a174d944b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="015d02c1-1ab3-49bd-8a92-60dfb5a1d256">
+                    <propertyInstance
+                      Id="d7b1576d-d8d4-4d1e-bc8d-b24f0dc6819c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="25912138-ff23-4846-9c60-23716fa25725"
+                  name="targetName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="55c327c7-b6b7-4520-884f-9ddf3fbfa3be"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FSadCL%2Fbin%2FDebug%2FSadCL.exe&quot; Namespace%3DSadCL Type%3DProgram Member%3D(Name%3DPrintTarget OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DtargetName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="SadCLDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="39df1ed5-b8ed-400c-9d4a-8ac4f3519c57"
+            name="PrintCommand"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="dfacbc86-8e7f-4c8c-83ef-f3077a9ccb7a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FSadCL%2Fbin%2FDebug%2FSadCL.exe&quot; Namespace%3DSadCL Type%3DProgram Member%3DPrintCommand"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="049a8705-5ba2-4ad7-9d6b-b0a221900455"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c21707fd-dad2-4c91-b8fa-c21a8adb92d7">
+                    <propertyInstance
+                      Id="07ed93bc-6523-4697-ac5b-d9c0797b023a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a16af21-c6e3-4c75-b55a-c79c0ebb4441">
+                    <propertyInstance
+                      Id="7582946f-3a7e-4e23-9c98-99023c5647e9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="718faa8d-c722-43de-9f9a-74e19f576037">
+                    <propertyInstance
+                      Id="0270fb0f-24a1-4ec7-a2d1-116774163323"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00408f22-7c76-46e1-92d6-1e8c4b76335b">
+                    <propertyInstance
+                      Id="45370e0a-adc2-48d3-b234-e97fb9717667"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b7d7cee-8019-4095-a413-8b7d331e0075">
+                    <propertyInstance
+                      Id="e879afae-add4-4eeb-ba84-5aa9f1636c96"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c5e0de9-80ca-4959-907a-2d3cc1c85f3e">
+                    <propertyInstance
+                      Id="29562aa2-ee6d-4c7b-ab19-c18db7bb8c0f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="694eebe4-330c-4e1d-9f1e-e06bff3b6404"
+            name="IsFriend"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="fff1e245-c914-4ff9-98f9-33d8897971ca"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FSadCL%2Fbin%2FDebug%2FSadCL.exe&quot; Namespace%3DSadCL Type%3DProgram Member%3D(Name%3DIsFriend OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9b29abaa-a7b6-4325-8f07-17d05bcf49e6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd80f9ae-93b6-4a8a-9d43-8355da502ae5">
+                    <propertyInstance
+                      Id="7658cee3-113f-47b7-a4bf-9da0329866d0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3f397451-d126-452f-84ef-2bc61139b686">
+                    <propertyInstance
+                      Id="33a3b79a-4b96-4d2b-b841-3a049c5bac4a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d6241995-e01f-487a-98f0-42f5293aef35">
+                    <propertyInstance
+                      Id="3600954d-6d1f-4d76-8dd3-cc36d1550c18"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9a0baab-f8d8-4be5-8e6b-6787040cac22">
+                    <propertyInstance
+                      Id="9eb77b09-63b3-40d3-bfa6-86f15ef94c55"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f5dfa267-574b-4881-9bdb-79feee4ccef5">
+                    <propertyInstance
+                      Id="88457adb-d773-4a41-842d-faf43735db2e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c0bc2ca3-6410-4e99-b6af-4556b4887010">
+                    <propertyInstance
+                      Id="184e02e0-c363-4c61-90fe-ccc69b366c3b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="92b65a7b-3b3d-457f-8239-955d1764f612"
+                  name="targetName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d7650308-62cb-46d9-ba4d-1b49a67c7763"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FSadCL%2Fbin%2FDebug%2FSadCL.exe&quot; Namespace%3DSadCL Type%3DProgram Member%3D(Name%3DIsFriend OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DtargetName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="SadCLDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c34ade95-9dea-4c38-9110-a08e8d6b8597"
+            name="PrintFriends"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="28622222-b615-49bf-86b5-9675542267ac"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FSadCL%2Fbin%2FDebug%2FSadCL.exe&quot; Namespace%3DSadCL Type%3DProgram Member%3DPrintFriends"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="87c424c4-13bb-4d96-a70d-d199a257073b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="79c8c2ee-1fb1-46e7-a41b-8b4151bbcbef">
+                    <propertyInstance
+                      Id="042fc13d-9303-4029-bce8-6f918347977b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb500a85-4f5d-4a5e-8a95-48dc7156ca90">
+                    <propertyInstance
+                      Id="b72845bb-7070-4b74-a3df-967ee0112c5a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f38d0a77-0f5c-4c28-a8c8-362656e92fd2">
+                    <propertyInstance
+                      Id="6a3b0df3-b57d-4e01-bab2-c47286227b5b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40f6e443-1360-4cf9-83cc-a68d708153a4">
+                    <propertyInstance
+                      Id="f1c90f4f-05f9-4b7b-ae8c-9ab1a45aab60"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="57283a05-1739-48af-a654-9cd80309f185">
+                    <propertyInstance
+                      Id="7b4730fb-1276-441f-b0a8-070ef5631f0e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4489061a-8100-4d7e-a01c-1c64f24d6881">
+                    <propertyInstance
+                      Id="0709e5fe-2a41-4da1-8871-886504a0aca9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="f6ada4de-507b-4e41-aa7e-e1e299f2b750"
+            name="PrintEnemies"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="231f9641-ca15-47cb-a9b0-a11e42681f84"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FSadCL%2Fbin%2FDebug%2FSadCL.exe&quot; Namespace%3DSadCL Type%3DProgram Member%3DPrintEnemies"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b2c55aad-23c2-4c68-8932-e609e4abbbf2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1cc00f7-372c-4db8-82af-ed58f4f360af">
+                    <propertyInstance
+                      Id="16b67834-45cf-486a-846d-e2d3979ab16c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf08d2c6-8364-4f17-a6e2-a1c0a18ae611">
+                    <propertyInstance
+                      Id="3acc3dce-3f88-41ac-a10d-619d99ca1db9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c602567-4eec-4829-8a75-a57c7f6e25be">
+                    <propertyInstance
+                      Id="931cccf4-7c01-4778-b8c3-5a6f76729f85"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc07e6a3-e68c-4eda-b6a8-0cbbb911bba5">
+                    <propertyInstance
+                      Id="43a5375d-58be-4b23-b95f-ace9c80f1dac"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="315a11a6-b1b5-4488-b6b1-99e40c6b6661">
+                    <propertyInstance
+                      Id="0c859e52-f5ef-4d2b-989e-20e22c2acc58"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6be7f4fd-c758-4412-a63d-e00025d22a20">
+                    <propertyInstance
+                      Id="120a73e8-523c-44f1-ad3b-b0aa25d5a4b3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="ad0924af-7c1e-4229-a41a-64e8acb41f76"
+            name="Kill"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c87664dc-de30-4a0f-bc76-e61ab1931137"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FSadCL%2Fbin%2FDebug%2FSadCL.exe&quot; Namespace%3DSadCL Type%3DProgram Member%3D(Name%3DKill OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FMissileLauncher%2Fbin%2FDebug%2FMissileLauncher.dll&quot; Namespace%3DMissileLauncher Type%3DIMissileLauncher)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8fc884df-c82b-43c4-a4b8-3a27408bf7a3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e926292-7a4a-4454-be91-b6215f4b9210">
+                    <propertyInstance
+                      Id="1292a869-f583-41da-a08f-2a638d50952a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="710e4c0f-0e64-4bce-b928-1ac34279eb98">
+                    <propertyInstance
+                      Id="748ad717-4a18-4f0d-b61c-1fcd9cd526d0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f4f662d4-e082-4879-8e93-f9c4a52c7cb5">
+                    <propertyInstance
+                      Id="70788f6f-99d2-4437-b2d7-064aacca5989"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4820dd0-eefe-4fa8-b398-00ad6459c071">
+                    <propertyInstance
+                      Id="6a515785-f576-4e1f-b857-8eb56e79ab37"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4547e33-5d75-43a6-9598-e579df513a4c">
+                    <propertyInstance
+                      Id="de5c2e12-2834-4742-9414-666475653ae4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="20bfcff7-81c7-429e-87a7-897fce1352a9">
+                    <propertyInstance
+                      Id="8f60627d-67b2-464b-b7c4-04743588a245"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0ab21b6e-b64e-4140-afa0-f084fcf066c5"
+                  name="launcher"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="85564fde-fc4b-44ad-8468-2236b1d3f6e1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FSadCL%2Fbin%2FDebug%2FSadCL.exe&quot; Namespace%3DSadCL Type%3DProgram Member%3D(Name%3DKill OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FMissileLauncher%2Fbin%2FDebug%2FMissileLauncher.dll&quot; Namespace%3DMissileLauncher Type%3DIMissileLauncher)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dlauncher"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="31d05aff-fd4e-4f7c-ada4-822690b28d76"
+                      LastKnownName="IMissileLauncher"
+                      LastKnownLocation="Package_2006.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e6abb99b-fd6f-4839-a2af-076aefd1680a"
+                  name="targetName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="38b04c6d-2ff8-47ab-ad19-48b9f1cf4bf4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FSadCL%2Fbin%2FDebug%2FSadCL.exe&quot; Namespace%3DSadCL Type%3DProgram Member%3D(Name%3DKill OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FMissileLauncher%2Fbin%2FDebug%2FMissileLauncher.dll&quot; Namespace%3DMissileLauncher Type%3DIMissileLauncher)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DtargetName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="SadCLDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8e04ca30-8b1a-4a08-9b98-1bbc6f1fecbf"
+            name="Main"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7733fce1-00e6-4b00-9fc7-332eb4ca3882"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FSadCL%2Fbin%2FDebug%2FSadCL.exe&quot; Namespace%3DSadCL Type%3DProgram Member%3D(Name%3DMain OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f5258e79-d615-4dde-ba04-64cb1683df00"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="11b6660c-3cca-43ba-8727-d8121817a1f8">
+                    <propertyInstance
+                      Id="da361971-8135-4bf0-96f5-0d904106cebd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f6951a0-b593-40d9-842c-196d850af57b">
+                    <propertyInstance
+                      Id="6b70f415-c16e-4a48-a2ce-82a8e16bbdfe"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e4ea613-cc41-4afc-9ac4-edef35a032a7">
+                    <propertyInstance
+                      Id="0c49fc8c-4fa5-42f0-ada5-f67d2a125050"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="adb4e1d9-f951-4aa2-bda6-5c080381b3b6">
+                    <propertyInstance
+                      Id="6060a62f-6e30-4bfe-ab18-c9d5d21a8b73"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1255321d-822a-47fc-bdc4-d78282cf0af4">
+                    <propertyInstance
+                      Id="6215e560-0978-4fc5-a383-2d0f5047e905"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58590382-f7d5-435e-b702-715c3bc73a52">
+                    <propertyInstance
+                      Id="50d81f32-969e-44ec-b968-c4416c6dd19e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1119983d-cde1-4444-97db-bb8d3b22b671"
+                  name="args"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="df1f8c39-cf32-42fb-8859-b2156bc067ce"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FSadCL%2Fbin%2FDebug%2FSadCL.exe&quot; Namespace%3DSadCL Type%3DProgram Member%3D(Name%3DMain OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))]) ParameterIdentifier%3Dargs"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="39a68f01-fbf3-4976-8b67-65171e518519"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="020ab076-2575-4207-bdeb-1a69e61816b5"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="SadCLDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="735b7f45-4684-4e73-acd5-2aabcec25ebb"
+            name="Program"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="201eafa4-37d2-4c25-b59b-b844acdd5295"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FSadCL%2Fbin%2FDebug%2FSadCL.exe&quot; Namespace%3DSadCL Type%3DProgram Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="103737bf-d4e4-43e3-a77a-402caaac89cb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d2581104-98ec-4f8d-be72-66988d94ba51">
+                    <propertyInstance
+                      Id="b27b2380-6906-4291-a282-8a678ad68429"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c18d7921-1e35-4c90-9c9f-1ca8af3494dc">
+                    <propertyInstance
+                      Id="9236aafc-ce92-4a4e-9206-2114c14830c4"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a38c378e-3589-45d3-b2f5-1748b4dc5368">
+                    <propertyInstance
+                      Id="b8285926-6063-43d0-b598-67a8dc893037"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e53705bf-1213-469e-8ebb-567db49b927a">
+                    <propertyInstance
+                      Id="8da32935-94b2-47f8-87f6-f2e61a2c0d97"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a7e8b47a-cd6a-4869-8e75-c2e590a8aecb">
+                    <propertyInstance
+                      Id="dd492045-9b1f-4e31-a5c4-92411471b8f5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1144f3d9-2ec2-4484-b566-428d5565558b">
+                    <propertyInstance
+                      Id="e3c3c78c-2578-45dc-8bc4-6b439113b4e7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
