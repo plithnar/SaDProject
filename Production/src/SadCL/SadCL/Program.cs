@@ -22,6 +22,11 @@ namespace SadCL
                 TargetManager.AddTargets(targets);
                 Console.WriteLine("argghh argghh new targets in sight");
             }
+            catch (ArgumentException)
+            {
+                Console.WriteLine("Your target file contains a duplicate property for a target.");
+                return;
+            }
             catch (NullReferenceException)
             {
                 Console.WriteLine("Ya, that's just a bad file.");
