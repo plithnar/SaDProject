@@ -4993,6 +4993,45 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="fc8906a3-f7e2-42dc-a535-40ffd6fcbd23"
+            isDerived="false"
+            sourceEndRoleName="MissileLauncherFactory"
+            targetEndRoleName="IMissileLauncher"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="31d05aff-fd4e-4f7c-ada4-822690b28d76"
+              LastKnownName="IMissileLauncher"
+              LastKnownLocation="Package_2006.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="af6755ce-1195-4eaf-89d9-806b76f1f98d"
+                  name="MissileLauncherFactory"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c107b780-943f-4a36-bd40-52d83063be3b"
+                  name="IMissileLauncher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedOperationsInternal>
           <operation

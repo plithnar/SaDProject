@@ -1,0 +1,17 @@
+﻿<Window x:Class="SadGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:MongooseViews="clr-namespace:SadGUI.Views"
+        Title="Sad Fighting Mongooses" Height="350" Width="350">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <MongooseViews:LauncherControl Grid.Row="1" DataContext="{Binding MissileLauncher}" />
+        <MongooseViews:TargetList Grid.Row="0" DataContext="{Binding TargetList}" />
+    </Grid>
+</Window>

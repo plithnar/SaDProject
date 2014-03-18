@@ -2863,6 +2863,45 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="04ae5dc0-1c95-41cc-afbf-a84183351004"
+            isDerived="false"
+            sourceEndRoleName="TargetFileReaderFactory"
+            targetEndRoleName="ITargetFileReader"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="fcc378c1-40d5-46fd-af14-5a852d8c8c49"
+              LastKnownName="ITargetFileReader"
+              LastKnownLocation="Package_2012.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="720d4cc6-2c2e-4d93-9bdd-a2953ee05bf5"
+                  name="TargetFileReaderFactory"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f64c9e80-57be-4a4e-8665-cddd1f09a146"
+                  name="ITargetFileReader"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedOperationsInternal>
           <operation

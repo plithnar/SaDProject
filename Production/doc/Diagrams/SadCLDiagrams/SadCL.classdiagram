@@ -4081,6 +4081,22 @@
                   </relationshipOwnedElementsInternal>
                   <elementDefinition Id="fea4f3e6-35c6-46fe-8b21-0e6bc8faf41f" />
                 </association>
+                <association Id="b90cd68b-afa1-44b8-8e61-833ffa784581" isDerived="false" sourceEndRoleName="MissileLauncherFactory" targetEndRoleName="IMissileLauncher" isLeaf="false" isAbstract="false">
+                  <interfaceMoniker Id="3659909f-62e7-4bfb-b8dc-d890e6a1e030" LastKnownName="IMissileLauncher" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="71b52d0f-e677-4ed1-a5ed-681398042300" name="MissileLauncherFactory" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="af6755ce-1195-4eaf-89d9-806b76f1f98d" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="1f24ebce-c148-4e7e-9c0f-3cb4dfdeff7e" name="IMissileLauncher" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="c107b780-943f-4a36-bd40-52d83063be3b" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="fc8906a3-f7e2-42dc-a535-40ffd6fcbd23" />
+                </association>
               </targetEnds>
               <ownedOperationsInternal>
                 <operation Id="786defa2-51ac-4112-b9eb-6a9537811947" name="Create" isLeaf="false" isStatic="true" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -5607,6 +5623,22 @@
                     </associationHasOwnedEnds>
                   </relationshipOwnedElementsInternal>
                   <elementDefinition Id="2f3e0015-9853-4dd8-8f53-c0afcabaec80" />
+                </association>
+                <association Id="f7334f96-d74a-4860-acd8-c556898491de" isDerived="false" sourceEndRoleName="TargetFileReaderFactory" targetEndRoleName="ITargetFileReader" isLeaf="false" isAbstract="false">
+                  <interfaceMoniker Id="ce167f75-b895-412f-84ed-a06400500c4a" LastKnownName="ITargetFileReader" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="e09e47bf-c149-4a83-b61f-e174981da005" name="TargetFileReaderFactory" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="720d4cc6-2c2e-4d93-9bdd-a2953ee05bf5" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="26cf629f-3ea2-4aab-b8e4-bb66dc7438a5" name="ITargetFileReader" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="f64c9e80-57be-4a4e-8665-cddd1f09a146" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="04ae5dc0-1c95-41cc-afbf-a84183351004" />
                 </association>
               </targetEnds>
               <ownedOperationsInternal>
