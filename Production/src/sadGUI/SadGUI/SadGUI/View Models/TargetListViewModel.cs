@@ -2,16 +2,20 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using Targets;
 
 namespace SadGUI.View_Models
 {
     public class TargetListViewModel: ViewModelBase
     {
-        ObservableCollection<TargetViewModel> Targets;
+        public ObservableCollection<TargetViewModel> Targets { get; set; }
+
+        public TargetViewModel SelectedTarget { get; set; }
 
         IMissileLauncher m_launcher;
 
@@ -57,21 +61,84 @@ namespace SadGUI.View_Models
             {
                 // Open document 
                 string filename = dlg.FileName;
-                var reader = TargetFileReaderFactory.Create(filename);
-                var TargetList = reader.read();
 
-                Targets.Clear();
-
-                foreach (var target in TargetList)
+                ITargetFileReader reader = null;
+                try
                 {
-                    Targets.Add(new TargetViewModel(target));
+                    reader = TargetFileReaderFactory.Create(filename);
+                    var targets = reader.read();
+
+                    Targets.Clear();
+
+                    foreach (var target in targets)
+                    {
+                        Targets.Add(new TargetViewModel(target));
+                    }
+
+                }
+                catch (ArgumentException)
+                {
+                    MessageBox.Show("Your target file contains a duplicate property for a target.");
+                    return;
+                }
+                catch (NullReferenceException)
+                {
+                    MessageBox.Show("Ya, that's just a bad file.");
+                    return;
+                }
+                catch (FileNotFoundException)
+                {
+                    MessageBox.Show("No file exists.");
+                    return;
+                }
+                catch (FormatException)
+                {
+                    // Couldn't convert either coords, points, or flashrate
+                    MessageBox.Show("Target file contains invalid integer or float.");
+                    return;
+                }
+                catch (INITargetFileReader.InvalidName)
+                {
+                    // Name contained a space
+                    MessageBox.Show("A target name contains a space.");
+                    return;
+                }
+                catch (INITargetFileReader.InvalidTarget)
+                {
+                    // Missing an entry in a target
+                    MessageBox.Show("Incomplete target.");
+                    return;
+                }
+                catch (FileHandlers.FileReader.InvalidHeader)
+                {
+                    // Broken header tag
+                    MessageBox.Show("Target contains invalid header line.\n\nValid header: [Target]");
+                    return;
                 }
             }
         }
 
         void KillTarget()
         {
-            Console.WriteLine();
+            if (SelectedTarget != null)
+            {
+                if (SelectedTarget.Friendly)
+                {
+                    MessageBox.Show("Cannot kill that target. It is friendly.");
+                    return;
+                }
+                double phi = Conversions.calcPhi(SelectedTarget.X, SelectedTarget.Y);
+                double theta = Conversions.calcTheta(SelectedTarget.X, SelectedTarget.Y, SelectedTarget.Z);
+                m_launcher.moveTo(phi, theta);
+                try
+                {
+                    m_launcher.fire();
+                }
+                catch(InvalidOperationException)
+                {
+                    MessageBox.Show("Launcher is out of ammo!");
+                }
+            }
         }
     }
 }

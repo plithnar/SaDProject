@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace SadGUI.View_Models
 {
@@ -15,6 +16,7 @@ namespace SadGUI.View_Models
         public DelegateCommand DownCommand { get; set; }
         public DelegateCommand LeftCommand { get; set; }
         public DelegateCommand RightCommand { get; set; }
+        public DelegateCommand ReloadCommand { get; set; }
 
         public MissileLauncherViewModel(IMissileLauncher launcher)
         {
@@ -34,11 +36,21 @@ namespace SadGUI.View_Models
 
             Action rightAction = Right;
             RightCommand = new DelegateCommand(rightAction);
+
+            Action reloadAction = Reload;
+            ReloadCommand = new DelegateCommand(reloadAction);
         }
 
         void Fire()
         {
-            m_launcher.fire();
+            try
+            {
+                m_launcher.fire();
+            }
+            catch (InvalidOperationException)
+            {
+                MessageBox.Show("Launcher is out of ammo!");
+            }
         }
 
         void Up()
@@ -57,6 +69,11 @@ namespace SadGUI.View_Models
         void Right()
         {
             m_launcher.moveBy(5, 0);
+        }
+
+        void Reload()
+        {
+            m_launcher.reload();
         }
     }
 }
