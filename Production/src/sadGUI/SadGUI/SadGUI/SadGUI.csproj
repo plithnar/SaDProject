@@ -55,12 +55,25 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DelegateCommand.cs" />
+    <Compile Include="MissileLauncherController.cs" />
+    <Compile Include="View Models\LauncherControlViewModel.cs" />
+    <Compile Include="View Models\MissileLauncherSelectorViewModel.cs" />
     <Compile Include="View Models\MissileLauncherViewModel.cs" />
+    <Compile Include="View Models\ModeSelectorViewModel.cs" />
     <Compile Include="View Models\TargetListViewModel.cs" />
     <Compile Include="View Models\TargetViewModel.cs" />
     <Compile Include="ViewModelBase.cs" />
     <Compile Include="Views\LauncherControl.xaml.cs">
       <DependentUpon>LauncherControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LauncherStatus.xaml.cs">
+      <DependentUpon>LauncherStatus.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MissileLauncherSelector.xaml.cs">
+      <DependentUpon>MissileLauncherSelector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ModeSelector.xaml.cs">
+      <DependentUpon>ModeSelector.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TargetList.xaml.cs">
       <DependentUpon>TargetList.xaml</DependentUpon>
@@ -82,6 +95,18 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Views\LauncherControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LauncherStatus.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MissileLauncherSelector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ModeSelector.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -23,6 +23,66 @@ namespace MissileLauncher
         double currentTheta;
         MissileLauncherControl controller;
 
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
+        }
+
+        public int MaxMissiles
+        {
+            get
+            {
+                return maxMissiles;
+            }
+            set
+            {
+                maxMissiles = value;
+            }
+        }
+
+        public int CurrentMissiles
+        { 
+            get
+            {
+                return currentMissiles;
+            }
+            set
+            {
+                currentMissiles = value;
+            }
+        }
+        public double Phi
+        {
+            get
+            {
+                return currentPhi;
+            }
+            set
+            {
+                currentPhi = value;
+            }
+        }
+
+        public double Theta
+        {
+            get
+            {
+                return currentTheta;
+            }
+            set
+            {
+                currentTheta = value;
+            }
+        }
+
+
         //Max Theta, phi offsets
         private double maxPhi = 90;
         private double minTheta = -5;
@@ -35,20 +95,8 @@ namespace MissileLauncher
             name = getNewName();
             controller = new MissileLauncherControl();
             controller.command_reset();
-            currentPhi = 0.0;
-            currentTheta = 0.0;
-        }
-
-        public int MaxMissles
-        {
-            get { return MaxMissles; }
-            private set { MaxMissles = value; }
-        }
-
-        public string Name
-        {
-            get { return name; }
-            private set { name = value; }
+            Phi = 0.0;
+            Theta = 0.0;
         }
 
         public void reload()
@@ -93,15 +141,15 @@ namespace MissileLauncher
             {
                 controller.command_Down((int)Math.Floor(((theta * -1.0) / maxPhi) * timeTo90));
             }
-            currentPhi += phi;
-            currentTheta += theta;
+            Phi += phi;
+            Theta += theta;
             if(currentPhi > maxPhi)
             {
-                currentPhi = maxPhi;
+                Phi = maxPhi;
             }
             else if (currentPhi < -maxPhi)
             {
-                currentPhi = -maxPhi;
+                Phi = -maxPhi;
             }
         }
 

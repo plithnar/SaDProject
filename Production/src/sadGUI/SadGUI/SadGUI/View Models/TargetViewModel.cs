@@ -9,13 +9,16 @@ namespace SadGUI.View_Models
 {
     public class TargetViewModel: ViewModelBase
     {
-        private Target m_target;
+        public Target TargetInfo { get; set; }
 
         private string m_name;
 
         private bool m_friendly;
 
         private double m_x, m_y, m_z;
+        private string m_status;
+        private string m_friend;
+        private bool m_alive;
         public string Name
         {
             get
@@ -33,15 +36,53 @@ namespace SadGUI.View_Models
         {
             get
             {
-                return m_friendly;
+                return TargetInfo.Friend;
             }
             set
             {
                 m_friendly = value;
+
                 OnPropertyChanged("Friendly");
+                OnPropertyChanged("Friend");
             }
         }
 
+        public bool Alive
+        {
+            get
+            {
+                return m_alive;
+            }
+            set
+            {
+                m_alive = value;
+                OnPropertyChanged("Alive");
+                OnPropertyChanged("Status");
+            }
+        }
+
+        public string Status
+        {
+            get
+            {
+                if (Alive)
+                    return "Alive";
+                else
+                    return "Dead";
+            }
+        }
+
+        public string Friend
+        {
+            get
+            {
+                if (Friendly)
+                    return "Yes";
+                else
+                    return "No";
+            }
+        }
+        
         public double X
         {
             get
@@ -83,12 +124,13 @@ namespace SadGUI.View_Models
 
         public TargetViewModel(Target target)
         {
-            m_target = target;
+            TargetInfo = target;
             Name = target.Name;
             Friendly = target.Friend;
             X = target.X;
             Y = target.Y;
             Z = target.Z;
+            Alive = target.Alive;
         }
     }
 }

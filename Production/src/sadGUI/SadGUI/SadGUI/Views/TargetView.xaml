@@ -4,9 +4,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="25" d:DesignWidth="300">
+             d:DesignHeight="25">
     <StackPanel Orientation="Horizontal">
-        <Label Background="Firebrick">Name</Label>
-        <TextBlock Background="White" Foreground="Black" Text="{Binding Name}" />
+        <TextBlock Width="125" Text="{Binding Name}" />
+        <TextBlock Width="100" Text="{Binding Friend}" />
+        <TextBlock Width="100" Text="{Binding Status}" />
+        <TextBlock Width="100" Text="{Binding X}" />
+        <TextBlock Width="100" Text="{Binding Y}" />
+        <TextBlock Width="100" Text="{Binding Z}" />
     </StackPanel>
 </UserControl>

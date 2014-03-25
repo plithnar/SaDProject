@@ -13,37 +13,55 @@ namespace SadGUI.View_Models
 {
     public class TargetListViewModel: ViewModelBase
     {
+        private bool m_manualControl;
         public ObservableCollection<TargetViewModel> Targets { get; set; }
 
         public TargetViewModel SelectedTarget { get; set; }
 
-        IMissileLauncher m_launcher;
-
 
         public DelegateCommand ClearTargetsCommand { get; set; }
         public DelegateCommand AddTargetsCommand { get; set; }
+        public DelegateCommand AddServerTargetsCommand { get; set; }
         public DelegateCommand KillTargetCommand { get; set; }
-        
-        public TargetListViewModel(IMissileLauncher launcher)
-        {
-            m_launcher = launcher;
 
+        public bool ManualControl
+        {
+            get
+            {
+                return m_manualControl;
+            }
+            set
+            {
+                m_manualControl = value;
+                KillTargetCommand.Executable = m_manualControl;
+            }
+        }
+        
+        public TargetListViewModel()
+        {
             Targets = new ObservableCollection<TargetViewModel>();
-            Targets.Add(new TargetViewModel(new Target("asdf", 0, 0, 0, false, 10, 10)));
 
             Action clearTargetsAction = ClearTargets;
             ClearTargetsCommand = new DelegateCommand(clearTargetsAction);
+            ClearTargetsCommand.Executable = false;
 
             Action addTargetsAction = AddTargets;
             AddTargetsCommand = new DelegateCommand(addTargetsAction);
 
+            Action addServerTargetsAction = AddTargets;
+            AddServerTargetsCommand = new DelegateCommand(addServerTargetsAction);
+            AddServerTargetsCommand.Executable = false;
+
             Action killTargetAction = KillTarget;
             KillTargetCommand = new DelegateCommand(killTargetAction);
+
+            ManualControl = false;
         }
 
         void ClearTargets()
         {
             Targets.Clear();
+            ClearTargetsCommand.Executable = false;
         }
 
         void AddTargets()
@@ -74,6 +92,7 @@ namespace SadGUI.View_Models
                     {
                         Targets.Add(new TargetViewModel(target));
                     }
+                    ClearTargetsCommand.Executable = true;
 
                 }
                 catch (ArgumentException)
@@ -122,22 +141,7 @@ namespace SadGUI.View_Models
         {
             if (SelectedTarget != null)
             {
-                if (SelectedTarget.Friendly)
-                {
-                    MessageBox.Show("Cannot kill that target. It is friendly.");
-                    return;
-                }
-                double phi = Conversions.calcPhi(SelectedTarget.X, SelectedTarget.Y);
-                double theta = Conversions.calcTheta(SelectedTarget.X, SelectedTarget.Y, SelectedTarget.Z);
-                m_launcher.moveTo(phi, theta);
-                try
-                {
-                    m_launcher.fire();
-                }
-                catch(InvalidOperationException)
-                {
-                    MessageBox.Show("Launcher is out of ammo!");
-                }
+                MissileLauncherController.Instance.Launcher.Kill(SelectedTarget);
             }
         }
     }

@@ -13,5 +13,12 @@ namespace MissileLauncher
         void moveBy(double x, double y);
         void reload();
         string status();
+
+        string Name { get; set; }
+        int CurrentMissiles { get; set; }
+        int MaxMissiles { get; set; }
+        double Phi { get; set; }
+
+        double Theta { get; set; }
     }
 }

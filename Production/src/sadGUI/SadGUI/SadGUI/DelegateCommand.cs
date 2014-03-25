@@ -21,6 +21,16 @@ namespace SadGUI
             return m_canExecute;
         }
 
+        public bool Executable
+        {
+            set
+            {
+                m_canExecute = value;
+                if (CanExecuteChanged != null)
+                    CanExecuteChanged(this, null);
+            }
+        }
+
         public event EventHandler CanExecuteChanged;
         private Action m_action;
 
