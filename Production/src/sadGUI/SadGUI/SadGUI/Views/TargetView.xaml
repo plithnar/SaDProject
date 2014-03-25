@@ -7,10 +7,12 @@
              d:DesignHeight="25">
     <StackPanel Orientation="Horizontal">
         <TextBlock Width="125" Text="{Binding Name}" />
-        <TextBlock Width="100" Text="{Binding Friend}" />
-        <TextBlock Width="100" Text="{Binding Status}" />
-        <TextBlock Width="100" Text="{Binding X}" />
-        <TextBlock Width="100" Text="{Binding Y}" />
-        <TextBlock Width="100" Text="{Binding Z}" />
+        <TextBlock Width="75" Text="{Binding Friend}" />
+        <TextBlock Width="75" Text="{Binding Status}" />
+        <TextBlock Width="75" Text="{Binding Points}" />
+        <TextBlock Width="75" Text="{Binding FlashRate}" />
+        <TextBlock Width="75" Text="{Binding X}" />
+        <TextBlock Width="75" Text="{Binding Y}" />
+        <TextBlock Width="75" Text="{Binding Z}" />
     </StackPanel>
 </UserControl>

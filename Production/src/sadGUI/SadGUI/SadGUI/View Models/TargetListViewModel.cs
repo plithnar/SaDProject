@@ -14,9 +14,21 @@ namespace SadGUI.View_Models
     public class TargetListViewModel: ViewModelBase
     {
         private bool m_manualControl;
+        private TargetViewModel m_selectedTarget;
         public ObservableCollection<TargetViewModel> Targets { get; set; }
 
-        public TargetViewModel SelectedTarget { get; set; }
+        public TargetViewModel SelectedTarget
+        {
+            get
+            {
+                return m_selectedTarget;
+            }
+            set
+            {
+                m_selectedTarget = value;
+                OnPropertyChanged("SelectedTarget");
+            }
+        }
 
 
         public DelegateCommand ClearTargetsCommand { get; set; }

@@ -90,6 +90,7 @@ namespace SadGUI
                 for (int i = 0; i < TargetList.Targets.Count; i++)
                 {
                     var target = TargetList.Targets[i].TargetInfo;
+                    TargetList.SelectedTarget = TargetList.Targets[i];
                     if (!target.Friend && MissileLauncherController.Instance.Launcher.Ammo > 0)
                     {
                         MissileLauncherController.Instance.Launcher.Kill(TargetList.Targets[i]);
@@ -97,10 +98,11 @@ namespace SadGUI
                     else if (MissileLauncherController.Instance.Launcher.Ammo == 0)
                     {
                         MessageBox.Show("Launcher is out of Ammo!");
-                        return;
+                        break;
                     }
 
                 }
+                Stop();
             }
             else
             {

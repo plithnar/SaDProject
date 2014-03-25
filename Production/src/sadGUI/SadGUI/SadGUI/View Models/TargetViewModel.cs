@@ -19,6 +19,8 @@ namespace SadGUI.View_Models
         private string m_status;
         private string m_friend;
         private bool m_alive;
+        private int m_points;
+        private int m_flashRate;
         public string Name
         {
             get
@@ -87,7 +89,7 @@ namespace SadGUI.View_Models
         {
             get
             {
-                return m_x;
+                return Math.Round(m_x, 3);
             }
             set
             {
@@ -100,7 +102,7 @@ namespace SadGUI.View_Models
         {
             get
             {
-                return m_y;
+                return Math.Round(m_y, 3);
             }
             set
             {
@@ -113,12 +115,38 @@ namespace SadGUI.View_Models
         {
             get
             {
-                return m_z;
+                return Math.Round(m_z, 3);
             }
             set
             {
                 m_z = value;
                 OnPropertyChanged("Z");
+            }
+        }
+
+        public int Points
+        {
+            get
+            {
+                return m_points;
+            }
+            set
+            {
+                m_points = value;
+                OnPropertyChanged("Points");
+            }
+        }
+
+        public int FlashRate
+        {
+            get
+            {
+                return m_flashRate;
+            }
+            set
+            {
+                m_flashRate = value;
+                OnPropertyChanged("FlashRate");
             }
         }
 
@@ -131,6 +159,8 @@ namespace SadGUI.View_Models
             Y = target.Y;
             Z = target.Z;
             Alive = target.Alive;
+            Points = target.Points;
+            FlashRate = target.FlashRate;
         }
     }
 }

@@ -19,12 +19,14 @@
         <StackPanel>
             <TextBlock>Targets</TextBlock>
             <StackPanel Orientation="Horizontal">
-                <TextBlock Width="125">Name</TextBlock>
-                <TextBlock Width="100">Friend?</TextBlock>
-                <TextBlock Width="100">Status</TextBlock>
-                <TextBlock Width="100">X</TextBlock>
-                <TextBlock Width="100">Y</TextBlock>
-                <TextBlock Width="100">Z</TextBlock>
+                <TextBlock Width="127">Name</TextBlock>
+                <TextBlock Width="75">Friend?</TextBlock>
+                <TextBlock Width="75">Status</TextBlock>
+                <TextBlock Width="75">Points</TextBlock>
+                <TextBlock Width="75">Flash Rate</TextBlock>
+                <TextBlock Width="75">X</TextBlock>
+                <TextBlock Width="75">Y</TextBlock>
+                <TextBlock Width="75">Z</TextBlock>
             </StackPanel>
             <ListBox
                 BorderThickness="0"
