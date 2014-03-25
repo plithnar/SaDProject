@@ -33,6 +33,8 @@ namespace SadGUI
 
         public ModeSelectorViewModel ModeSelector { get; set; }
 
+        public ConnectionListViewModel ConnectionList { get; set; }
+
         public DelegateCommand StartGame { get; private set; }
 
         public DelegateCommand StopGame { get; private set; }
@@ -49,6 +51,8 @@ namespace SadGUI
             ModeSelector = new ModeSelectorViewModel();
 
             ModeSelector.ModeChanged += ModeChanged;
+
+            ConnectionList = new ConnectionListViewModel();
 
             MissileLauncherController.Instance.LauncherChanged += LauncherChanged;
 

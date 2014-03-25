@@ -31,6 +31,7 @@
         </Grid>
         <MongooseViews:LauncherControl Grid.Row="1" Grid.Column="1" DataContext="{Binding Launcher}" />
         <MongooseViews:TargetList Grid.Row="0" Grid.Column="1" DataContext="{Binding TargetList}" />
+  
         <Grid Grid.Row="1" Grid.Column="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="33*" />
@@ -42,23 +43,15 @@
                 <ColumnDefinition Width="33*" />
                 <ColumnDefinition Width="33*" />
             </Grid.ColumnDefinitions>
-            <Button Grid.Row="2" Grid.Column="0" Command="{Binding StartGame}">Start</Button>
-            <Button Grid.Row="2" Grid.Column="1" Command="{Binding StopGame}">Stop</Button>
-            <Button Grid.Row="2" Grid.Column="2" Command="{Binding AbortGame}">Abort</Button>
+            <Button Grid.Row="0" Grid.Column="0" Command="{Binding StartGame}">Start</Button>
+            <Button Grid.Row="0" Grid.Column="1" Command="{Binding StopGame}">Stop</Button>
+            <Button Grid.Row="0" Grid.Column="2" Command="{Binding AbortGame}">Abort</Button>
+            
+            <MongooseViews:ConnectionList DataContext="{Binding ConnectionList}"  Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="3" />
         </Grid>
-        <Grid Grid.Row="2" Grid.Column="0" Background="LightBlue">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="90*"/>
-                <RowDefinition Height="10*" />
-            </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold">Video Feed</TextBlock>
-            <StackPanel Orientation="Horizontal" Grid.Row="1">
-                <RadioButton Width="300">Video On</RadioButton>
-                <RadioButton Width="300">Video Off</RadioButton>
-            </StackPanel>
-        </Grid>
-        <Grid Grid.Row="2" Grid.Column="1" Background="LightGreen">
-            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold">Twitter</TextBlock>
-        </Grid>
+
+        <MongooseViews:VideoControl Grid.Row="2" Grid.Column="0" />
+
+        <MongooseViews:TwitterControl Grid.Row="2" Grid.Column="1" />
     </Grid>
 </Window>

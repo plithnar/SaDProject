@@ -6,26 +6,26 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <StackPanel>
-        <TextBlock>Missile Launcher Status</TextBlock>
+        <TextBlock FontSize="16" FontWeight="Bold">Missile Launcher Status</TextBlock>
         <StackPanel Orientation="Horizontal">
-            <TextBlock Width="150">Name: </TextBlock>
-            <TextBlock Text="{Binding Name}" />
+            <TextBlock Width="200" FontSize="16" FontWeight="Bold">Name: </TextBlock>
+            <TextBlock Text="{Binding Name}" FontSize="16" />
         </StackPanel>
         <StackPanel Orientation="Horizontal">
-            <TextBlock Width="150">Missiles Remaining: </TextBlock>
-            <TextBlock Text="{Binding Ammo}" />
+            <TextBlock Width="200" FontSize="16" FontWeight="Bold">Missiles Remaining: </TextBlock>
+            <TextBlock Text="{Binding Ammo}" FontSize="16" />
         </StackPanel>
         <StackPanel Orientation="Horizontal">
-            <TextBlock Width="150">Capacity: </TextBlock>
-            <TextBlock Text="{Binding Capacity}" />
+            <TextBlock Width="200" FontSize="16" FontWeight="Bold">Capacity: </TextBlock>
+            <TextBlock Text="{Binding Capacity}" FontSize="16" />
         </StackPanel>
         <StackPanel Orientation="Horizontal">
-            <TextBlock Width="150">Phi: </TextBlock>
-            <TextBlock Text="{Binding Phi}" />
+            <TextBlock Width="200" FontSize="16" FontWeight="Bold">Phi: </TextBlock>
+            <TextBlock Text="{Binding Phi}" FontSize="16" />
         </StackPanel>
         <StackPanel Orientation="Horizontal">
-            <TextBlock Width="150">Theta:</TextBlock>
-            <TextBlock Text="{Binding Theta}" />
+            <TextBlock Width="200" FontSize="16" FontWeight="Bold">Theta:</TextBlock>
+            <TextBlock Text="{Binding Theta}" FontSize="16" />
         </StackPanel>
     </StackPanel>
 </UserControl>

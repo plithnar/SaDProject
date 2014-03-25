@@ -6,13 +6,13 @@
              mc:Ignorable="d" 
              d:DesignHeight="25">
     <StackPanel Orientation="Horizontal">
-        <TextBlock Width="125" Text="{Binding Name}" />
-        <TextBlock Width="75" Text="{Binding Friend}" />
-        <TextBlock Width="75" Text="{Binding Status}" />
-        <TextBlock Width="75" Text="{Binding Points}" />
-        <TextBlock Width="75" Text="{Binding FlashRate}" />
-        <TextBlock Width="75" Text="{Binding X}" />
-        <TextBlock Width="75" Text="{Binding Y}" />
-        <TextBlock Width="75" Text="{Binding Z}" />
+        <TextBlock Width="160" Text="{Binding Name}" FontSize="18" />
+        <TextBlock Width="75" Text="{Binding Friend}" FontSize="16" />
+        <TextBlock Width="75" Text="{Binding Status}" FontSize="16" />
+        <TextBlock Width="75" Text="{Binding Points}" FontSize="16" />
+        <TextBlock Width="105" Text="{Binding FlashRate}" FontSize="16" />
+        <TextBlock Width="75" Text="{Binding X}" FontSize="16" />
+        <TextBlock Width="75" Text="{Binding Y}" FontSize="16" />
+        <TextBlock Width="75" Text="{Binding Z}" FontSize="16" />
     </StackPanel>
 </UserControl>

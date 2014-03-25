@@ -16,14 +16,14 @@
                         Content="{TemplateBinding ContentPresenter.Content}"
                         IsChecked="{Binding Path=IsSelected,
                             RelativeSource={RelativeSource TemplatedParent},
-                            Mode=TwoWay}" />
+                            Mode=TwoWay}" FontSize="16" FontWeight="Bold" />
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
         </Style>
     </UserControl.Resources>
     <StackPanel>
-        <TextBlock>Select Launcher:</TextBlock>
+        <TextBlock FontSize="16" FontWeight="Bold">Select Launcher:</TextBlock>
         <ListBox ItemsSource="{Binding Path=LauncherTypes}"
                  BorderThickness="0"
             SelectedItem="{Binding SelectedLauncher, Mode=TwoWay}"/>

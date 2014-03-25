@@ -14,14 +14,14 @@
                         Content="{TemplateBinding ContentPresenter.Content}"
                         IsChecked="{Binding Path=IsSelected,
                             RelativeSource={RelativeSource TemplatedParent},
-                            Mode=TwoWay}" />
+                            Mode=TwoWay}" FontSize="16" FontWeight="Bold" />
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
         </Style>
     </UserControl.Resources>
     <StackPanel>
-        <TextBlock>Select Mode:</TextBlock>
+        <TextBlock FontSize="16" FontWeight="Bold">Select Mode:</TextBlock>
         <ListBox ItemsSource="{Binding Path=ModeTypes}"
                  BorderThickness="0"
             SelectedItem="{Binding SelectedMode, Mode=TwoWay}"/>
