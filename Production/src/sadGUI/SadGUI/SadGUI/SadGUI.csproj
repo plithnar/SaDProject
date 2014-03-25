@@ -154,10 +154,42 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Sequence Diagrams\MainViewModel_MainViewModel.sequencediagram.layout">
+      <DependentUpon>MainViewModel_MainViewModel.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequence Diagrams\MainViewModel_MainViewModel_1.sequencediagram.layout">
+      <DependentUpon>MainViewModel_MainViewModel_1.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequence Diagrams\MissileLauncherSelectorViewModel_get_SelectedLauncher.sequencediagram.layout">
+      <DependentUpon>MissileLauncherSelectorViewModel_get_SelectedLauncher.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequence Diagrams\MissileLauncherSelectorViewModel_set_SelectedLauncher.sequencediagram.layout">
+      <DependentUpon>MissileLauncherSelectorViewModel_set_SelectedLauncher.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequence Diagrams\MissileLauncherSelectorViewModel_set_SelectedLauncher_1.sequencediagram.layout">
+      <DependentUpon>MissileLauncherSelectorViewModel_set_SelectedLauncher_1.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequence Diagrams\MissileLauncherViewModel_MissileLauncherViewModel.sequencediagram.layout">
+      <DependentUpon>MissileLauncherViewModel_MissileLauncherViewModel.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequence Diagrams\MissileLauncherViewModel_MissileLauncherViewModel_1.sequencediagram.layout">
+      <DependentUpon>MissileLauncherViewModel_MissileLauncherViewModel_1.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sequence Diagrams\MissileLauncherViewModel_MissileLauncherViewModel_2.sequencediagram.layout">
+      <DependentUpon>MissileLauncherViewModel_MissileLauncherViewModel_2.sequencediagram</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Sequence Diagrams\MainViewModel_MainViewModel.sequencediagram" />
+    <None Include="Sequence Diagrams\MainViewModel_MainViewModel_1.sequencediagram" />
+    <None Include="Sequence Diagrams\MissileLauncherSelectorViewModel_get_SelectedLauncher.sequencediagram" />
+    <None Include="Sequence Diagrams\MissileLauncherSelectorViewModel_set_SelectedLauncher.sequencediagram" />
+    <None Include="Sequence Diagrams\MissileLauncherSelectorViewModel_set_SelectedLauncher_1.sequencediagram" />
+    <None Include="Sequence Diagrams\MissileLauncherViewModel_MissileLauncherViewModel.sequencediagram" />
+    <None Include="Sequence Diagrams\MissileLauncherViewModel_MissileLauncherViewModel_1.sequencediagram" />
+    <None Include="Sequence Diagrams\MissileLauncherViewModel_MissileLauncherViewModel_2.sequencediagram" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

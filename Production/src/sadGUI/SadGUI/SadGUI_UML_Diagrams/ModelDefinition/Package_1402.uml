@@ -1,0 +1,2401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="907a2b4b-8995-4a2a-8917-7188ea3443f9"
+  name="SadGUI"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="b4517fd3-08df-40fc-9f3b-5d81e6c4d8cc"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSadGUI"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="4f61a2f6-5946-40be-afb9-5ff48278dfee"
+        LastKnownName="Views"
+        LastKnownLocation="Package1_1402.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ea87f533-43c1-4b2f-be79-53890e7f26a7"
+        LastKnownName="View_Models"
+        LastKnownLocation="Package6_1402.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2f8ba80a-2d32-4367-936c-2102412aabe2"
+        name="ViewModelBase"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="305f3a83-3de0-4ab9-95bc-585c5ab8f935"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DViewModelBase"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="97cca502-3bc1-4c5f-85e9-148e7f19cf1f"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="09bfe59c-77a4-46a3-a32e-281873e192c9">
+                <propertyInstance
+                  Id="796d99e2-d4a8-406d-b345-1bc060d9a7bb"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b6d8d01e-0489-4b87-960f-593ee30e8580">
+                <propertyInstance
+                  Id="d8f51598-de00-4f52-a68c-6548ed4134ba"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7191e596-2bda-4834-89bb-a68670171972">
+                <propertyInstance
+                  Id="4d4f988e-8a7c-43bf-802c-a1da505d4c35"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f3623175-9e6e-410d-93fb-3015fe3a4368">
+                <propertyInstance
+                  Id="2b1887a2-9020-4049-8b81-27c9a25be7d9"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d55b4c16-10d4-40fd-92d4-e28e61ce7b80">
+                <propertyInstance
+                  Id="f13c3704-f01d-461c-a1c6-2becf728c796"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ba1bdc13-a0e6-474d-9bd0-c5571de359de"
+        name="MainViewModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="07b68ade-a135-454d-b578-e3bd4bed9406"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainViewModel"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="dd0f5912-418c-426d-aa40-ba93fc52e655"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3ee474c8-74e5-4bec-8b5c-40c0ed853a41">
+                <propertyInstance
+                  Id="66baf82c-1fdd-41cb-bc25-fbea146236f5"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b95276a7-bfb3-4e28-9f96-8fe7ea890c59">
+                <propertyInstance
+                  Id="1021b5eb-c50a-4140-91e5-fdfa6ff58b83"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3e9fbd8f-7064-4138-acf3-dd80d7353f97">
+                <propertyInstance
+                  Id="cbffdc62-4c2f-4dc3-8fac-61e3bf3620a8"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c94eac04-a71c-4bdf-8fa5-48fe72404578">
+                <propertyInstance
+                  Id="a007ac7d-154e-4c67-b8da-8a766d947f5f"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f9025d0e-ef12-4eee-9180-fa00497ee32f">
+                <propertyInstance
+                  Id="1491fad8-c634-4178-8c4e-627dab0b3f4d"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="0b99669a-9225-45c7-9abc-bb9ac71b9d86"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2f8ba80a-2d32-4367-936c-2102412aabe2"
+              LastKnownName="ViewModelBase"
+              LastKnownLocation="Package_1402.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="2e6eca05-be83-4d85-b108-5db618ed35c7"
+            isDerived="false"
+            sourceEndRoleName="MainViewModel"
+            targetEndRoleName="AbortGame"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="78340a0f-7416-4e6e-b902-f025938d592e"
+              LastKnownName="DelegateCommand"
+              LastKnownLocation="Package_1402.uml" />
+            <description>Property AbortGame references type DelegateCommand.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c712612a-58e6-4cb4-b53f-c8c6442c91ee"
+                  name="MainViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="faf29321-9e38-401f-948e-4a1cd7c4296d"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ae3d1947-16d9-4959-bd5d-6b679baffe2f"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="975ea29c-b8e2-44da-864e-7c063b2bdbba"
+                  name="AbortGame"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="61813ce7-ef39-49e1-b04e-5bf005bba5fe"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5760c290-b864-4f9a-a9da-dc62346ab353"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="022bcec6-d00b-40d8-84c9-b0b7ff96f41c"
+            isDerived="false"
+            sourceEndRoleName="MainViewModel"
+            targetEndRoleName="ConnectionList"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7da98966-fb4f-4eb4-90b8-b316312e90a6"
+              LastKnownName="ConnectionListViewModel"
+              LastKnownLocation="Package6_1402.uml" />
+            <description>Property ConnectionList references type ConnectionListViewModel.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="362cfed1-d440-4347-b2c6-8ea5f63da3cd"
+                  name="MainViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="19b26677-3b25-4900-a3a1-839d3c14f1f6"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="2b4d1df5-cd96-4659-9c6e-0bf85c37499c"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3d14153c-3e2f-49d3-b290-ebf9528aad05"
+                  name="ConnectionList"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="541dcb61-545f-4c8b-880e-0d107169fac1"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9a7f43e5-86ab-4267-b747-fcbdbd3c5104"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a92d70cb-c25d-4c4e-b2f7-0a3fda4c09a8"
+            isDerived="false"
+            sourceEndRoleName="MainViewModel"
+            targetEndRoleName="Launcher"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="556419ac-cc7e-48f5-a648-b8eb50473713"
+              LastKnownName="MissileLauncherViewModel"
+              LastKnownLocation="Package6_1402.uml" />
+            <description>Property Launcher references type MissileLauncherViewModel.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e64ee9a8-011b-401e-8f97-f01c58744a96"
+                  name="MainViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="15ea7427-d109-4b2d-88ea-a5e54001db87"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="db811383-85ca-4eda-9a3d-7fb4ee4bf81d"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dee00450-9767-4025-b7d4-5271bafd67a5"
+                  name="Launcher"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="090a137a-c6d4-4f40-b21b-2be5c8f8efdf"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="789e044e-fc5d-4661-8084-f7a97a9ee1d3"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6e05da8d-450c-4109-ae08-e3b4e1664d14"
+            isDerived="false"
+            sourceEndRoleName="MainViewModel"
+            targetEndRoleName="MissileLauncherSelector"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7314ab75-ad17-4b9a-8e28-935326e4869a"
+              LastKnownName="MissileLauncherSelectorViewModel"
+              LastKnownLocation="Package6_1402.uml" />
+            <description>Property MissileLauncherSelector references type MissileLauncherSelectorViewModel.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="faa0df90-102e-4114-8539-cc68cb63044e"
+                  name="MainViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5bdef8ac-308d-485b-8a5f-5084d2fc8b81"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="202498fc-9e82-4652-9302-c7678aba2fe3"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="34237ecf-f205-4927-9d3a-e54e71171cc6"
+                  name="MissileLauncherSelector"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="66571ad1-f708-4791-bfc6-4d5f60f2f3ca"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="4cb450ac-053e-4beb-acb6-2a6f19c0f53c"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="573fe34b-89fe-4e0f-bf71-30d2e51e4c50"
+            isDerived="false"
+            sourceEndRoleName="MainViewModel"
+            targetEndRoleName="ModeSelector"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="f5d636ff-c569-4daa-8a9b-6924f98be3bc"
+              LastKnownName="ModeSelectorViewModel"
+              LastKnownLocation="Package6_1402.uml" />
+            <description>Property ModeSelector references type ModeSelectorViewModel.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="640e119f-c2f0-4f17-8b6c-c3a8e5269420"
+                  name="MainViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="749e3b10-8d4a-4718-ad12-f75140f41355"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="98000132-8e5c-429f-b653-0f6540600fdb"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="950e511a-5efe-4b85-be36-72430ed128e3"
+                  name="ModeSelector"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4a21ed7a-0863-452d-980a-7565851dd4e3"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="7bae38cb-daf3-46a2-bdb2-0df610c89b93"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f86dfe93-54d0-42ea-a59f-dca24c3a69f5"
+            isDerived="false"
+            sourceEndRoleName="MainViewModel"
+            targetEndRoleName="StartGame"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="78340a0f-7416-4e6e-b902-f025938d592e"
+              LastKnownName="DelegateCommand"
+              LastKnownLocation="Package_1402.uml" />
+            <description>Property StartGame references type DelegateCommand.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a8fe7764-0526-4d3d-8e4d-40ca8eae7058"
+                  name="MainViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8dd49b7b-9f7b-4e1e-83e4-0326819099cf"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d60f7391-9fff-4911-981f-91ed17a1318b"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="67023b67-d74a-40c7-90d9-c37eb746c7bc"
+                  name="StartGame"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6fe2d000-1ff6-495f-b5df-dfdf845a93d1"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="cda2533c-5382-423e-8515-fc766ec0138b"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fef2e1df-b7e2-4852-880a-73bce9d5305b"
+            isDerived="false"
+            sourceEndRoleName="MainViewModel"
+            targetEndRoleName="StopGame"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="78340a0f-7416-4e6e-b902-f025938d592e"
+              LastKnownName="DelegateCommand"
+              LastKnownLocation="Package_1402.uml" />
+            <description>Property StopGame references type DelegateCommand.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d647ba05-b8d2-4b4f-bf71-844b56843376"
+                  name="MainViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a0fa0ccc-b344-46ed-8d24-73cbd7787790"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="b9e63e9e-379c-4145-8fca-d9e3408a61c3"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="32091e3b-9e03-49da-8fc8-a50600a16bb2"
+                  name="StopGame"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="dd2ce935-4dbc-4009-934f-5910164f3732"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="90b5850a-8574-446c-b2d4-44fe0a0cdbfd"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="51d48aad-4b01-48ee-a1b2-c0d8218d6009"
+            isDerived="false"
+            sourceEndRoleName="MainViewModel"
+            targetEndRoleName="TargetList"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6e03be43-26a3-4593-97fd-dedc4262acc3"
+              LastKnownName="TargetListViewModel"
+              LastKnownLocation="Package6_1402.uml" />
+            <description>Property TargetList references type TargetListViewModel.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4cd25d18-69e1-4cc3-b1c5-09e534791197"
+                  name="MainViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="56de180b-120e-4dce-964a-a7b920884b4c"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6e872be3-02a7-49f3-b24a-73f649d8fe71"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="038c488c-680c-4e38-9568-e94fcfedc0d8"
+                  name="TargetList"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7d96d50d-ceb6-4ba1-9158-4ad748288973"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="bda9b1a0-e308-48b4-a8f1-df922a06ad2e"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="bf105692-cc17-44d7-a0d7-ee79d94eaa13"
+            isDerived="false"
+            sourceEndRoleName="MainViewModel"
+            targetEndRoleName="MainWindow"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="e27e5e5c-c455-4925-89f6-015c443a0782"
+              LastKnownName="MainWindow"
+              LastKnownLocation="Package_1402.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="58599d95-b224-472e-808b-cc9f417cd83f"
+                  name="MainViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="53085eb9-9364-456b-866b-e9acff3f3acd"
+                  name="MainWindow"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="27e2c021-8d47-4b29-a093-06d7782343e1"
+            name="AbortGame"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5ebdaa1e-aeb1-4c70-8871-5000c8cf0d23"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainViewModel Member%3DAbortGame"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c39c430d-1acd-430a-9be2-498238441945"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de6090bb-e974-49e2-8af9-b330808fe385">
+                    <propertyInstance
+                      Id="12e9719b-e40d-4805-9302-e32b971927e4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb6eb96f-0254-4443-9f3d-5a231f7eb2ac">
+                    <propertyInstance
+                      Id="b6b582a8-8e46-46e5-b651-27cdba3a4f94"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="942dd714-81a8-40fd-ac70-9a350381dc06">
+                    <propertyInstance
+                      Id="2bd4b7a5-76e0-459d-8206-72378efd832c"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="62be77ab-847a-4cd2-8070-b8e5710479ce">
+                    <propertyInstance
+                      Id="07748a4e-3006-4034-9428-5cfb4c7e9d44"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f9ec3fb-b107-4ba9-a307-e421ff786c9a">
+                    <propertyInstance
+                      Id="4b3d61bc-9441-4150-aab7-21b4131f780c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e53539bd-36a5-4f33-8059-c6d961fb00e6">
+                    <propertyInstance
+                      Id="3eb8821b-5935-466b-9f44-db1ac6cae0b4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fae7d537-8514-4c17-a588-631ca33c0229">
+                    <propertyInstance
+                      Id="a0644893-0411-4b4c-ae72-5a0a7a032787"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="78340a0f-7416-4e6e-b902-f025938d592e"
+                LastKnownName="DelegateCommand"
+                LastKnownLocation="Package_1402.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5492e300-e950-444b-8ae7-ae3316a3a856"
+            name="ConnectionList"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="8870dfb9-f8fc-479f-921e-11da42f1d1e0"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainViewModel Member%3DConnectionList"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="28195bb6-250b-41ef-9b78-d199654a03e0"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f4ee7d3c-3e7c-4a90-ad83-2e20803a1080">
+                    <propertyInstance
+                      Id="557b3637-b20e-4021-a520-8ccb95c11d56"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="72fd63d8-e3a2-4b35-b914-4c01caf8def3">
+                    <propertyInstance
+                      Id="7ebed165-4dd6-4b6f-aa1e-38fabcc3d06a"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c412883-1b72-4f8d-a554-33304ed86223">
+                    <propertyInstance
+                      Id="32166912-7afd-412f-90dd-04f859ae6bd5"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48e4b1ff-49e3-42e6-9722-44396d54fc23">
+                    <propertyInstance
+                      Id="b1fd6f9e-45ce-47e6-a9a1-f66aaf9de5a5"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d20c6066-8abb-479e-aba1-db10d6ae7b91">
+                    <propertyInstance
+                      Id="ae021275-d142-493c-88b0-2a9d0cfaddac"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="412a1347-7d7b-461b-894e-77bbb8ffb6fe">
+                    <propertyInstance
+                      Id="39297fc1-06a4-4b6f-a6f9-803afcf337bb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="51182bcc-ee4e-4324-bee8-8e878154e748">
+                    <propertyInstance
+                      Id="9eaf87cc-95e8-445b-8b9d-34516b752ebe"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="7da98966-fb4f-4eb4-90b8-b316312e90a6"
+                LastKnownName="ConnectionListViewModel"
+                LastKnownLocation="Package6_1402.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5c38f22e-6645-406d-8a8e-9fca0c912979"
+            name="Launcher"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="9438e3ed-3e8d-4282-82ca-3a7715272cd6"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainViewModel Member%3DLauncher"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a18fdeb8-8f8a-4461-aa98-da866e8b1d28"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="25e1741e-4eb9-4a2b-876a-f9d3deac3063">
+                    <propertyInstance
+                      Id="17c86fd8-2c7c-40ad-9de2-6ea9bcd5dd21"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7afb4f19-57a5-49d5-86f6-224c99fccfc6">
+                    <propertyInstance
+                      Id="75d95013-a99f-47a7-af4c-b6e65f7aeb03"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1d9feff8-1fd8-47f2-a416-9eb8ef02b3fc">
+                    <propertyInstance
+                      Id="7bb8fd2d-d7e6-493b-89d4-a2a254def644"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b34241b-77d8-4946-8215-a20d516f498f">
+                    <propertyInstance
+                      Id="d4e6fbd1-855d-4863-859f-a8f0e661066d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16fc8208-afbd-4fd7-8bc4-042faefb6efc">
+                    <propertyInstance
+                      Id="56e4071f-91a1-4c17-9c81-916e5907d43e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b0e0c1b-26ae-4dbd-a400-a1f5a1db6081">
+                    <propertyInstance
+                      Id="c9f28576-6e58-471e-99e1-1724eb5cd752"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d9ed1e77-e891-4263-b66c-7ab5d250db82">
+                    <propertyInstance
+                      Id="8cda67c2-9bc0-4344-a333-7e5a6f0c0530"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="556419ac-cc7e-48f5-a648-b8eb50473713"
+                LastKnownName="MissileLauncherViewModel"
+                LastKnownLocation="Package6_1402.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c5e24cc2-cb6b-4dc5-b890-f3ddf93da934"
+            name="MissileLauncherSelector"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="f8eba1e6-2a7b-423d-9e1f-53baa1b8677e"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainViewModel Member%3DMissileLauncherSelector"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4cf2ad66-e109-4e91-86cc-ba7df6a56bea"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0794786-a58a-4e43-a907-990933ac91e1">
+                    <propertyInstance
+                      Id="ab9d4b66-1f7b-4ca2-93ec-a7f8ab35b6e5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="96b9451e-3c6f-4977-a38d-3b840f7bfa6a">
+                    <propertyInstance
+                      Id="248d77b5-6aaf-4e8d-8727-74c4a6b72482"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4907d875-73d7-4c65-8c62-e7b5945caa7e">
+                    <propertyInstance
+                      Id="affd7662-4af9-45b9-9c6a-8d9ee730bc58"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c8d3468-58e1-41ff-b0df-1be4fcf02347">
+                    <propertyInstance
+                      Id="ba75ba66-3d94-4ca6-a828-dfd1349e678a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd09808f-beaf-444c-b6b8-0e6fc9a74954">
+                    <propertyInstance
+                      Id="8ec4c817-675e-496c-9a3e-2b5a122f28ba"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ee45e83-3859-4d0b-a232-b9d020abd122">
+                    <propertyInstance
+                      Id="f83d4f70-2e01-41ee-898a-b71ea43dfc11"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="deb4edf3-3fa5-4025-a501-767628975042">
+                    <propertyInstance
+                      Id="8ebc1bc7-60e6-4983-8e5e-8490db512719"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="7314ab75-ad17-4b9a-8e28-935326e4869a"
+                LastKnownName="MissileLauncherSelectorViewModel"
+                LastKnownLocation="Package6_1402.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="233afb3f-727c-4bbb-9340-2a3c09c218fb"
+            name="ModeSelector"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="09a244ca-c952-4144-b00c-ceacd22df5fa"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainViewModel Member%3DModeSelector"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3c658217-27e7-439f-9b83-ebdcecac0632"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f982ee1d-bcc0-43f6-ae82-544bda5882bd">
+                    <propertyInstance
+                      Id="e6aa433a-ff0e-4e80-b2be-d11103fa8212"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e27eb4ab-33b1-40b9-a568-bb34b2edd68c">
+                    <propertyInstance
+                      Id="1b2def34-81f7-4d35-a38e-faab8fac30ac"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea151987-e94a-44f2-a4d5-bece8ece379a">
+                    <propertyInstance
+                      Id="561ed9ad-af87-4a59-9057-9551558b3262"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37b83b12-bdfb-4314-bb16-7599b9b91027">
+                    <propertyInstance
+                      Id="50ff80aa-1297-4394-8b24-0600595b3c1a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc49078b-3379-4411-a0b6-b9aa75353349">
+                    <propertyInstance
+                      Id="e6d38b54-04ce-422e-b5bc-4951e5c2af5c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="141fe9b9-07ee-4293-9c7c-798613e45816">
+                    <propertyInstance
+                      Id="5452265a-62b4-4e47-a586-0ebb3bccc2bb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="90bd1d07-df8a-4ccf-8da2-afd60f5a7b08">
+                    <propertyInstance
+                      Id="b524add4-9620-4365-80f6-3d461f40b4a8"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="f5d636ff-c569-4daa-8a9b-6924f98be3bc"
+                LastKnownName="ModeSelectorViewModel"
+                LastKnownLocation="Package6_1402.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ba1805c9-a634-43fd-8bb8-2e441289bd31"
+            name="StartGame"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="025dbb49-31bf-470a-ae77-c9b65a6e2574"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainViewModel Member%3DStartGame"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="50d6c2e5-c0dd-4f89-b743-c74cfc4e344f"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58a165ef-c9ff-4ffc-b2e8-3c6ed0a0ceb6">
+                    <propertyInstance
+                      Id="375ab347-6b26-4cc3-96d1-497f5abbe502"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aa50a04c-07f9-4dfe-b1bd-6f6e9631f3c2">
+                    <propertyInstance
+                      Id="b85a3b91-8566-4f53-8938-50284ef4f0f9"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8714ba14-a1a7-4fc1-89e5-3854764bbdaa">
+                    <propertyInstance
+                      Id="599be039-a291-4c8e-bda6-0f0990ecfaac"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e09a11a-221b-4de1-80ec-7e90f2f4c0e2">
+                    <propertyInstance
+                      Id="0086edda-c14c-4f21-a90a-3e69158a4b64"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f66e892a-b84f-473c-89f4-7e890bff02e5">
+                    <propertyInstance
+                      Id="3c8f453c-ebf0-45f1-b7a8-6ca410f8098f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="362d528f-0130-4bff-b479-f9b562389e14">
+                    <propertyInstance
+                      Id="fe48370f-ade0-4da2-8007-6c17c75f649e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5c1a883-ff51-4764-a941-81dd574a5102">
+                    <propertyInstance
+                      Id="87544a56-34dd-4236-b715-99a6dd090550"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="78340a0f-7416-4e6e-b902-f025938d592e"
+                LastKnownName="DelegateCommand"
+                LastKnownLocation="Package_1402.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="15512834-3747-4d15-8923-9cd4186d7e45"
+            name="StopGame"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="beb00bd6-0052-4d15-ae5e-a80f6128a817"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainViewModel Member%3DStopGame"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9de705a8-9dd9-40ea-9200-85b8370fefd9"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2079e619-dac0-4a0b-a91c-a5299cb75d72">
+                    <propertyInstance
+                      Id="23319c3a-053e-4710-a7e1-bd8ad06e84a5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="98a80a29-1b65-4e7d-8a15-5aa33e6797f9">
+                    <propertyInstance
+                      Id="9192bddf-9b9c-4840-a52f-3d504537ed00"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0df2579b-7b08-42ce-b435-f8b93bd16a20">
+                    <propertyInstance
+                      Id="f8e4c88f-6435-4f5c-b76c-77759ac1d163"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44e8a506-3e34-4b73-9400-f881da57e7a6">
+                    <propertyInstance
+                      Id="324930fb-218d-4e2a-b808-5bd505fcaa74"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28a729cf-6dd0-4210-aac4-3d4f1415cb02">
+                    <propertyInstance
+                      Id="b0760b8a-b873-4fe2-89f9-ed53f43984bc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07a35678-7c3d-4396-8bc0-064c2379228a">
+                    <propertyInstance
+                      Id="f0054e5a-f381-40ed-b835-1c5867d57fc6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52fd9b2a-45ed-4405-80b0-fc8f6c1c9e4f">
+                    <propertyInstance
+                      Id="c9d54563-f477-4975-92ed-3641d9864edc"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="78340a0f-7416-4e6e-b902-f025938d592e"
+                LastKnownName="DelegateCommand"
+                LastKnownLocation="Package_1402.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="008347dc-9d5e-4d02-b30d-5a662d35543d"
+            name="TargetList"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="06d21c1a-8906-43dc-86c2-392e7cb5eccc"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainViewModel Member%3DTargetList"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="160bec2c-f7ff-4454-92e1-e94e97c49ec0"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fd311178-589c-4a04-9115-3caaa6f94b91">
+                    <propertyInstance
+                      Id="5964f87e-64a4-40a2-b39c-f968487aefab"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="11ba7218-0763-449e-bd55-b13a0e188617">
+                    <propertyInstance
+                      Id="635c01dc-436a-4b6a-8e40-c40bd728d762"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ee8bb2c-6db3-4a50-b203-984c5b3ace11">
+                    <propertyInstance
+                      Id="110273c6-4f7b-479f-9bd0-e2f467a4a1fc"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6c200b7-43b2-4cd9-b09e-76dca324bed9">
+                    <propertyInstance
+                      Id="e0586755-6ac6-4a8d-a9f1-479621c8eff5"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a19d662-165c-49ef-954c-64f93894f262">
+                    <propertyInstance
+                      Id="8a465178-f775-45ec-9090-fd8f3a957c36"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf650e14-7840-49d5-add5-8b9158357fc4">
+                    <propertyInstance
+                      Id="b21db980-1a62-4743-af0f-016265c589f8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bfb5274c-c1e8-48bd-8c66-53dba6fa4787">
+                    <propertyInstance
+                      Id="537f516a-720b-4a1d-95e5-415308387ba5"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="6e03be43-26a3-4593-97fd-dedc4262acc3"
+                LastKnownName="TargetListViewModel"
+                LastKnownLocation="Package6_1402.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ddbe2ded-f6bf-4ebd-a1da-d571745000e3"
+            name="m_launcherViewModel"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5e84c8bf-dc79-4ba8-930d-c636cf8fa5c6"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainViewModel Member%3Dm_launcherViewModel"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c2087cc4-327f-41a9-9d47-d4525d0e3d06"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b62ed120-c291-49fc-9a46-3202c4da4f22">
+                    <propertyInstance
+                      Id="c779e41c-d5a7-441d-addc-36e7b3cd43eb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f858a1a5-dff3-4db8-b204-1736c9b11bb0">
+                    <propertyInstance
+                      Id="afd43d62-77dc-47bc-9d4c-467631a8ddd7"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf5e08f7-a40a-46e9-8f8d-6a089b31faa6">
+                    <propertyInstance
+                      Id="1817618f-f559-48d7-9eeb-084ad0190e9a"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b42541e-01d6-422d-ae42-dfeae98d2dcb">
+                    <propertyInstance
+                      Id="a7e161b3-fea2-4a98-b130-4f648807d07f"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="421c4ca8-fc16-4877-ab77-9dce08d91166">
+                    <propertyInstance
+                      Id="bfc44404-9537-47a1-8ab9-72254e520b3a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="556419ac-cc7e-48f5-a648-b8eb50473713"
+                LastKnownName="MissileLauncherViewModel"
+                LastKnownLocation="Package6_1402.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="0cb994f7-19bd-47f1-835d-449b96a7cdd0"
+            name="ModeChanged"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d64c00e0-4720-4a4a-8743-f85364968910"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainViewModel Member%3D(Name%3DModeChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8d222090-8e75-41ed-9331-fdd6887c2744"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84ae07bc-abc0-4b52-88e1-d125df24852e">
+                    <propertyInstance
+                      Id="e570977e-2fde-45a4-99a2-7e542594f7ec"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5ff1600-7794-47be-9a6f-ff62b41d30e3">
+                    <propertyInstance
+                      Id="1bb31e7a-adb5-43ce-90c1-34ff729969e5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="247aa443-2cd8-4ea6-a041-ba24e3337afb">
+                    <propertyInstance
+                      Id="973189b1-ae6c-4a1d-a664-5497a7340ce1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2e81390-d7fc-4fe5-824b-6dde900cd143">
+                    <propertyInstance
+                      Id="1cf232a8-8e37-4e22-a76a-b34f4be31f71"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e29f38e0-5969-40f2-857f-64182e1abd61">
+                    <propertyInstance
+                      Id="121d25f1-4d4b-4d93-a4b0-d2d6e7edb4cb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ae24bb3-d5d9-4b5b-93c3-8c83a9db5805">
+                    <propertyInstance
+                      Id="775b7209-51ae-4d23-a8ae-5c2100cde3a2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="716f756d-8e33-4e8c-98fa-5e103f625f02"
+                  name="sender"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="494472b0-abf0-4b83-a63f-e8e92161f771"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainViewModel Member%3D(Name%3DModeChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3Dsender"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="aa3a7292-9f1a-4797-91de-97dc3cca9343"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1402.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e8166f61-15a3-40f9-976f-9519382256de"
+                  name="e"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="584d6c12-521f-48a0-a106-052c379a96e4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainViewModel Member%3D(Name%3DModeChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DEventArgs)]) ParameterIdentifier%3De"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="45841f59-3166-4233-9aaa-73ae1856da0a"
+                      LastKnownName="EventArgs"
+                      LastKnownLocation="Package2_1402.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="52afd7df-bfc8-49ca-855c-e51a25c2fc3b"
+            name="MainViewModel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8ecd540e-b2b8-433a-a6e7-79ea9c5202ac"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainViewModel Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="bc7fc2d4-5ce7-49f9-8e52-dd3c5a335fc8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d35a1333-cbb9-4c74-a1b0-033d9cca5ae4">
+                    <propertyInstance
+                      Id="616ac9ec-7b62-49c3-8dc2-437fb2ea55df"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f307251-fd3e-4a7c-ad6a-2a09ae5a847f">
+                    <propertyInstance
+                      Id="0f9cd6f1-8eec-46c8-bfcc-22bb40e3b13e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5154d916-5623-46cd-8edd-7cffe92d1e42">
+                    <propertyInstance
+                      Id="412ef330-ee64-4e28-b9b1-981759162aaf"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="90ccb81f-3224-494c-ae43-5d81875bba55">
+                    <propertyInstance
+                      Id="69a36dbb-4d07-4762-92ec-008bda41b44e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="98af58f8-d44b-4181-84ae-5ceb810b0d78">
+                    <propertyInstance
+                      Id="b7980c33-a48f-4d3c-836d-057115953990"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4392374b-df5e-4d6a-a985-b3d58d264b69">
+                    <propertyInstance
+                      Id="cc742b06-506c-4f84-9db4-421d7d31d219"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="8a539c21-6cf9-4c5e-b963-849ca3adce15"
+            name="LauncherChanged"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a65c86e5-46fb-471b-969e-973a47410baf"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainViewModel Member%3DLauncherChanged"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a753b1a8-1812-4d2b-9513-c4ab18085e08"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de598997-7245-4a9b-a786-c5c337cc2ca0">
+                    <propertyInstance
+                      Id="e2ced1ca-3ec9-4fb4-bbbc-e1e884700fc2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a7b4456d-3bcd-475d-b1d9-0c0492fb73e3">
+                    <propertyInstance
+                      Id="31519918-063d-42bf-8f28-3d39efe4286f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="db45a960-e61f-4061-ab11-8859f09b006a">
+                    <propertyInstance
+                      Id="74b3300f-1525-41fa-a89b-496c51303268"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aa8ca1ea-c548-4f0f-8664-6db7d5d6c659">
+                    <propertyInstance
+                      Id="d459da09-b79c-46fb-bce9-94efda311a5a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d389388d-7afd-4dbc-a574-d88e18af9ae0">
+                    <propertyInstance
+                      Id="c2244c2f-310d-4265-a805-4b57be50f333"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a1b9769a-9ecb-42de-9cb9-a8a1bdfe9dcf">
+                    <propertyInstance
+                      Id="0bbfb666-9ff9-4f4f-bb86-f786b0948353"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="53bbee83-b241-42a7-b142-03c8ef6b7281"
+            name="Start"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ff6c7dc5-c4f3-4859-989d-f74e66e87ff5"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainViewModel Member%3DStart"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="53fb343a-c39b-4a12-9034-9b5c2544c206"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="214c13a2-ad51-4d84-bc63-e37e3a7e5176">
+                    <propertyInstance
+                      Id="dab5ac90-1b6a-49a9-ae58-3a30a6ac5ff3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fd582a10-5dd5-4ead-b54d-d261cb82f0e5">
+                    <propertyInstance
+                      Id="0ea8142a-4440-4d65-9e03-8fe462defe03"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df6a2d1d-0876-4f60-b251-fd62d695d96e">
+                    <propertyInstance
+                      Id="2d215ec1-eae4-4ec1-99ee-5e3feec45b8f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5193b0e-1c5a-4767-a9a4-0d6a9398bb15">
+                    <propertyInstance
+                      Id="8b949fed-455f-4d77-af74-f99844867b9a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8b6499b-502e-40f5-84f9-038360298f04">
+                    <propertyInstance
+                      Id="bc322c51-f9e1-4376-a639-8936669c3f82"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dafbc20b-6f7c-430e-b79d-65284b184c7d">
+                    <propertyInstance
+                      Id="0c484a7d-2541-45b9-a055-5024a1c72133"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="d571e0f7-e560-47a9-a90d-24dcbafae8df"
+            name="Stop"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7c160a6b-a9b1-4bc6-aa08-b4f828ca7711"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainViewModel Member%3DStop"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="05d36081-9544-4fd1-8387-1ff85a5b928c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="475c7b1c-23b5-40f5-97e3-075f6c6f0edd">
+                    <propertyInstance
+                      Id="dc42eac9-794b-4e23-bb3e-614b2625fcc6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8fbf2075-494f-4c87-9d62-123254799d19">
+                    <propertyInstance
+                      Id="5d35cb54-340b-4ca9-9ecb-391d48a82e3f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7333371f-a554-4544-8442-434c2bcaf743">
+                    <propertyInstance
+                      Id="1129e2d0-f92c-4bbf-86bb-e14a40e147ef"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b321e977-22bb-4549-913a-653eeb307e2f">
+                    <propertyInstance
+                      Id="9e90e761-7fad-409f-90d0-e20195cd741d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5aee861e-b619-49ed-9c48-fd8b6de273d2">
+                    <propertyInstance
+                      Id="7c6398b4-8382-4586-8b12-9fc48f9ea896"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6068e7ca-0400-4e72-8790-5d51ddb34db3">
+                    <propertyInstance
+                      Id="e1c9ead7-8c68-4903-8bf2-55fca3251410"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="78340a0f-7416-4e6e-b902-f025938d592e"
+        name="DelegateCommand"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="601afe42-7f0d-4a0c-a381-b29b849651ef"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DDelegateCommand"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="bbd82c7d-b98b-49bc-870a-d71a89616848"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="17af2389-6458-49a7-a5c1-5e8889d94109">
+                <propertyInstance
+                  Id="7a6b9013-7bc2-44b1-a069-d661625578a1"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2ba959f2-b77b-4679-8264-ff07ec3d18c5">
+                <propertyInstance
+                  Id="e4286b25-488f-4cc6-a53c-e63e545efa28"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f6df840c-a4d3-4dbf-b30b-6e70771ece71">
+                <propertyInstance
+                  Id="05dc3eb2-008f-4274-8b38-3634c8ad0284"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="40bf8364-d8e9-42cb-9739-3ea4e91d8e2a">
+                <propertyInstance
+                  Id="c4c5147f-844d-4413-89d5-e4628086db49"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7e3fe28f-3ac4-4863-8d96-22e92d970e40">
+                <propertyInstance
+                  Id="92ec9421-d13e-416d-a0be-82ae260c8a54"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e27e5e5c-c455-4925-89f6-015c443a0782"
+        name="MainWindow"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f14ed8c5-7708-46fe-b428-6d5179c7dbb4"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainWindow"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2520436f-c744-47b6-bb04-62f9dd4c4fdd"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eaefb9ec-5c66-47fd-9bcc-b2a9f2a9ff2c">
+                <propertyInstance
+                  Id="8e5950f3-fee7-4c55-9e97-2f7aecc5330a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="60a8f6e1-7416-4512-8fcd-56d30b9091b1">
+                <propertyInstance
+                  Id="e369feb1-e0a6-464e-8802-85da99758ad3"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ac42a069-e25d-4815-ad61-991977da628b">
+                <propertyInstance
+                  Id="59f229bc-5251-48b3-ba5e-25b43acf41ec"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dc1c8aaa-af64-48b6-97f4-f5b05bfa3f48">
+                <propertyInstance
+                  Id="82d9dbb7-c400-45bf-bf10-e1a38fd7cb03"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6ad715c7-051c-4932-adb5-aa2638238a29">
+                <propertyInstance
+                  Id="00e5ed6f-56ca-4e7c-98c0-b1983223aa1f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="75cbd510-cac0-4967-9c91-105ee50c0f3e">
+            <interfaceMoniker
+              Id="9f106a93-a720-441f-886a-b9e1270a4135"
+              LastKnownName="IComponentConnector"
+              LastKnownLocation="Package4_1402.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="ec37bceb-bcc6-41f8-916c-8017929b40fd"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b4634b1f-d367-4cd5-ab60-b19c5580090b"
+              LastKnownName="Window"
+              LastKnownLocation="Package3_1402.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="f7917155-c82f-47c0-aa3d-ecadbf099b25"
+            isDerived="false"
+            sourceEndRoleName="MainWindow"
+            targetEndRoleName="MainViewModel"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ba1bdc13-a0e6-474d-9bd0-c5571de359de"
+              LastKnownName="MainViewModel"
+              LastKnownLocation="Package_1402.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c54eb950-3a89-4e55-a527-347a03c8ea0c"
+                  name="MainWindow"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7749bd7c-fbe4-4d52-a36b-4b59b327d959"
+                  name="MainViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="4ed97431-3783-4a38-b535-c69cd943edac"
+            name="_contentLoaded"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="0c632831-0a0f-443f-a9ae-9cbe2a041c49"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainWindow Member%3D_contentLoaded"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="894de70e-2349-498f-990d-7492fedba3a0"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e16225a8-3528-4db0-bfde-e6f3f47be2b4">
+                    <propertyInstance
+                      Id="8d84116a-6803-413c-a22e-3653779af09b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="304219d1-0b4f-451c-9d21-dfa9365ac43e">
+                    <propertyInstance
+                      Id="b1caeca9-6d02-413c-8042-e2b1797edfb2"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e516d2c-0bea-49da-8f25-84e05f767f2f">
+                    <propertyInstance
+                      Id="aa5e54f2-fd3c-423a-9de8-9ee5c72ade33"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f50431c-3d8d-43fb-b5ae-e44f039b1b70">
+                    <propertyInstance
+                      Id="759fc63a-0948-4187-b823-1923dfa76776"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e6d1630-c93e-479c-9096-f7ec95d7e1b8">
+                    <propertyInstance
+                      Id="a124c469-d35e-4746-ba0c-84666f7b2e14"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="SadGUI_UML_Diagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="b84a5603-96e1-4798-a57f-4907489c1fb8"
+            name="System‎.Windows‎.Markup‎.IComponentConnector‎.Connect"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8984ac80-7983-4117-aac6-8cbbb3254c58"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainWindow Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e7c25cc0-e765-429c-a530-25b8e2432322"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aec6b7b1-d5e6-4d65-bef9-8561d6e63f95">
+                    <propertyInstance
+                      Id="48ecdb69-d1e3-4c40-9760-09458e3e8fec"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8f8c364b-2dfd-4739-81f5-8825e8878db1">
+                    <propertyInstance
+                      Id="63fd33a4-357f-4da3-91ae-021d1e6e4abd"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba5a0cc5-036e-448a-97aa-e198ef2d980f">
+                    <propertyInstance
+                      Id="c24bccef-f234-4e2f-8ebc-ebde4b46df00"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4215a66-669b-486e-85c4-693231a936ac">
+                    <propertyInstance
+                      Id="1325763c-a8de-4b6d-92b0-c8aa787b4eae"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3114865b-d7c1-4ee6-a277-acd6890b04bd">
+                    <propertyInstance
+                      Id="20b91666-2a5f-4fa8-994a-599c23b99aaa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b525812-d3d2-42fd-8769-df9e98fa873e">
+                    <propertyInstance
+                      Id="7c68e036-714c-4f84-a295-52d6ba5cba94"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d221e952-a7fa-4889-a853-5b6e684ad18e"
+                  name="connectionId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e44acbfe-e978-4882-b2d7-306479081116"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainWindow Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3DconnectionId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="SadGUI_UML_Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b781d233-b639-41bc-a320-822777a3a2df"
+                  name="target"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="455a67ac-4812-48db-958a-e80b2ea2848e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainWindow Member%3D(Name%3DSystem.Windows.Markup.IComponentConnector.Connect OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3Dtarget"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="aa3a7292-9f1a-4797-91de-97dc3cca9343"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package2_1402.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="44472f50-730d-4725-9f9c-3ebc0dbee3e9"
+            name="_CreateDelegate"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2044d9a3-2a3b-4847-a464-8eba5be5af7f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainWindow Member%3D(Name%3D_CreateDelegate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="07d40a4c-2fe5-4172-8b2b-257ac649f0f7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="50cec2eb-4b7a-4898-9b25-9b572d0b64d4">
+                    <propertyInstance
+                      Id="a12eba00-4c4a-445d-bc03-a0dcb9fc3a31"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3059d041-8c15-40c6-8854-3e8badb8115b">
+                    <propertyInstance
+                      Id="cfa7ba8a-fb7e-4d93-a763-f6a7e7bc4ca3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e0bbea6b-8aa9-4137-88b3-6b7b2402ca34">
+                    <propertyInstance
+                      Id="7984f5e3-f7cb-4811-b247-f92b733105bc"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0e619630-de26-4364-b907-21635d82beac">
+                    <propertyInstance
+                      Id="b9e53a6f-1c91-4c57-ae34-3f0b66f290a8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="841f2659-7861-493f-ba01-01ef031d46d9">
+                    <propertyInstance
+                      Id="a05c7d53-6135-4035-b46e-b4785c9da751"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba1660a2-c2b6-4927-8e3e-8a0beb3c39bc">
+                    <propertyInstance
+                      Id="3f94c55e-45bd-476b-ab87-09009efe7ecb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7687c4ff-406d-4926-852e-c325d7b7f443"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="22ddb2df-112d-46a6-992d-062f765b7a71"
+                      LastKnownName="Delegate"
+                      LastKnownLocation="Package2_1402.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b90f63a7-4349-4eca-948f-da13b302947a"
+                  name="delegateType"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="953287b8-bc9d-42af-9a82-c91fe8738baf"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainWindow Member%3D(Name%3D_CreateDelegate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DdelegateType"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="a59593a1-38e1-477b-9060-33d79cc189dc"
+                      LastKnownName="Type"
+                      LastKnownLocation="Package2_1402.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fccaa284-f307-4dff-a2e0-02868712625b"
+                  name="handler"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="368deb97-adf8-43da-b70b-cd8be1775da6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainWindow Member%3D(Name%3D_CreateDelegate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DType)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dhandler"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="SadGUI_UML_Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6e1e619c-12a3-47bd-8c5c-d2a96c42993b"
+            name="MainWindow"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a7450418-a050-4c25-90d9-9f0f07cd4dc9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainWindow Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c56dcfe8-52dc-48ce-969e-bd849fcde958"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="763d4f7e-5ce8-4562-8283-b5ce8afd649c">
+                    <propertyInstance
+                      Id="a28e1e1f-95f1-4239-ae88-89f901a91e59"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a1c561f5-c209-4b63-9ba9-0e46843483bd">
+                    <propertyInstance
+                      Id="eff7e9cc-1bc7-441c-ab31-c1ad5bc74131"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e0a1aef5-4f90-4c40-b73a-e4a39b990c62">
+                    <propertyInstance
+                      Id="7a583c78-c47e-4340-8714-367e36ad9a6e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="865bff85-f8ae-4a17-b797-08e18005343d">
+                    <propertyInstance
+                      Id="28ae9083-4bac-4d22-abd1-36f775c27a9d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03fcd305-d9fc-439c-893a-e025dfdc1ca9">
+                    <propertyInstance
+                      Id="9f5fe401-8620-419f-ac4b-5a5d26495522"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ccd75a7-c14d-4373-811a-b6108c03ef33">
+                    <propertyInstance
+                      Id="88f5aaee-9963-447e-a680-ce438efb94c5"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="69d96bdd-2423-433b-acc2-09eb5969f0b9"
+            name="InitializeComponent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9d92dd00-bbad-4b7b-8dea-c0e398b173da"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FSadGUI%2Fbin%2FDebug%2FSadGUI.exe&quot; Namespace%3DSadGUI Type%3DMainWindow Member%3DInitializeComponent"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6963d2e8-f9b1-4039-8efb-551914796bf8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9be5bfcc-52ae-4ba1-a8d5-f81d1d1f7019">
+                    <propertyInstance
+                      Id="a442cd03-5a67-4142-983c-274e6d37ca1b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab0b5f0a-d207-4cae-88e1-1a3236f6330e">
+                    <propertyInstance
+                      Id="122919ae-ef9d-4a0e-a749-f51ff31705e8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d7ce5d0a-6537-42c0-b728-7b4cd0d345d7">
+                    <propertyInstance
+                      Id="863c05ea-9ec1-4e2c-a87c-7ed16883d43c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e4f79c55-ca0b-4b2c-a1e7-e37da5ab2695">
+                    <propertyInstance
+                      Id="0a07d50e-c370-4932-8fc7-bc800bcef53c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="965063ac-9248-4fdd-8917-75d35cb2cf25">
+                    <propertyInstance
+                      Id="b7b22562-af64-4a71-b118-7f6ff4532b71"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f481831-ef6c-4ef8-aead-e0d403e04148">
+                    <propertyInstance
+                      Id="789512bb-8c3d-4b44-8664-ca7cfbf8ed61"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
