@@ -125,6 +125,15 @@ namespace MissileLauncher
                 phi = -maxPhi - currentPhi;
             }
 
+            if (theta + currentTheta > maxTheta)
+            {
+                theta = maxTheta - currentTheta;
+            }
+            else if (theta + currentTheta < minTheta)
+            {
+                theta = minTheta - currentTheta;
+            }
+
             if(phi > 0)
             {
                 controller.command_Right((int)Math.Floor(((phi) / maxPhi) * timeTo90));
@@ -168,6 +177,14 @@ namespace MissileLauncher
                 phi = -maxPhi;
             }
 
+            if (theta > maxTheta)
+            {
+                theta = maxTheta;
+            }
+            if (theta < minTheta)
+            {
+                theta = minTheta;
+            }
             double phiOffset = phi - currentPhi;
             double thetaOffset = theta - currentTheta;            
 
