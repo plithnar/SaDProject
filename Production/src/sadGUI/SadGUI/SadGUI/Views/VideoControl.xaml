@@ -12,8 +12,7 @@
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="45" FontWeight="Bold">Video Feed</TextBlock>
         <StackPanel Orientation="Horizontal" Grid.Row="1">
-            <RadioButton Width="300" FontSize="16" FontWeight="Bold">Video On</RadioButton>
-            <RadioButton Width="300" FontSize="16" FontWeight="Bold">Video Off</RadioButton>
+            <CheckBox Width="300" FontSize="16" FontWeight="Bold">Play Video Feed</CheckBox>
         </StackPanel>
     </Grid>
 </UserControl>
