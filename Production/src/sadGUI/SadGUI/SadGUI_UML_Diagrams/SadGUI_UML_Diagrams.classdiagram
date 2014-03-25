@@ -1,25 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="86516f86-3a9b-4a2e-9895-0c3828556553" name="SadGUI_UML_Diagrams" linkedPackageId="95b5a821-ec61-496e-83f6-4f654f95ca19" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="1b143cdd-9cef-4269-a515-6ff2fa6d3f03">
-      <profileInstance Id="0323cfd8-f9be-466a-8f09-f632a490f1f2" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="4c470112-fddd-4405-9037-be503ae61565">
-      <profileInstance Id="9b120dc6-42ee-4f71-9d2a-f46d90dbf254" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="0823e9c6-6d70-4b73-b62a-e89f47ccd835">
-      <profileInstance Id="685ed1a4-be33-40a4-a829-5bef0e8f7da7" name="CSharpProfile">
-        <elementDefinition Id="6d351eb9-4685-457b-b0b4-d68b011fb575" />
-      </profileInstance>
-      <elementDefinition Id="fbcb38af-5270-455d-af29-40086a859d33" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="fa22f34d-6154-4236-8d93-11bf90935989" name="MissileLauncherSelector" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -7970,5 +7950,25 @@
   </packagedElements>
   <package Id="95b5a821-ec61-496e-83f6-4f654f95ca19" name="SadGUI_UML_Diagrams">
     <elementDefinition Id="06339ed1-3720-47e9-b31e-b5080e5c88b3" />
+    <profileInstances>
+      <packageHasProfileInstances Id="1b143cdd-9cef-4269-a515-6ff2fa6d3f03">
+        <profileInstance Id="0323cfd8-f9be-466a-8f09-f632a490f1f2" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4c470112-fddd-4405-9037-be503ae61565">
+        <profileInstance Id="9b120dc6-42ee-4f71-9d2a-f46d90dbf254" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="0823e9c6-6d70-4b73-b62a-e89f47ccd835">
+        <profileInstance Id="685ed1a4-be33-40a4-a829-5bef0e8f7da7" name="CSharpProfile">
+          <elementDefinition Id="6d351eb9-4685-457b-b0b4-d68b011fb575" />
+        </profileInstance>
+        <elementDefinition Id="fbcb38af-5270-455d-af29-40086a859d33" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>
