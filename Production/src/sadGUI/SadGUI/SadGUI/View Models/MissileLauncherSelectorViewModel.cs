@@ -22,7 +22,7 @@ namespace SadGUI.View_Models
             set
             {
                 m_selected = value;
-                MissileLauncherController.Instance.LauncherType = value;
+                MissileLauncherViewModel.Instance.LauncherType = value;
             }
         }
 

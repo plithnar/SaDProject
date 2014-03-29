@@ -13,7 +13,7 @@ namespace SadGUI
 {
     public class MainViewModel: ViewModelBase
     {
-        private MissileLauncherViewModel m_launcherViewModel;
+        private MissileLauncherViewModel m_launcherViewModel = MissileLauncherViewModel.Instance;
         public MissileLauncherViewModel Launcher
         {
             get
@@ -54,9 +54,7 @@ namespace SadGUI
 
             ConnectionList = new ConnectionListViewModel();
 
-            MissileLauncherController.Instance.LauncherChanged += LauncherChanged;
-
-            Launcher = MissileLauncherController.Instance.Launcher;
+            Launcher.LauncherChanged += LauncherChanged;
 
 
             Action startAction = Start;
@@ -76,10 +74,8 @@ namespace SadGUI
             Stop();
         }
 
-        public void LauncherChanged()
+        public void LauncherChanged(object sender, EventArgs args)
         {
-            Launcher = MissileLauncherController.Instance.Launcher;
-
             Stop();
         }
 
@@ -95,11 +91,11 @@ namespace SadGUI
                 {
                     var target = TargetList.Targets[i].TargetInfo;
                     TargetList.SelectedTarget = TargetList.Targets[i];
-                    if (!target.Friend && MissileLauncherController.Instance.Launcher.Ammo > 0)
+                    if (!target.Friend && Launcher.Ammo > 0)
                     {
-                        MissileLauncherController.Instance.Launcher.Kill(TargetList.Targets[i]);
+                        Launcher.Kill(TargetList.Targets[i]);
                     }
-                    else if (MissileLauncherController.Instance.Launcher.Ammo == 0)
+                    else if (Launcher.Ammo == 0)
                     {
                         MessageBox.Show("Launcher is out of Ammo!");
                         break;
@@ -110,14 +106,14 @@ namespace SadGUI
             }
             else
             {
-                MissileLauncherController.Instance.Launcher.ManualControl = true;
+                Launcher.ManualControl = true;
                 TargetList.ManualControl = true;
             }
         }
 
         void Stop()
         {
-            MissileLauncherController.Instance.Launcher.ManualControl = false;
+            Launcher.ManualControl = false;
             TargetList.ManualControl = false;
             StopGame.Executable = false;
             AbortGame.Executable = false;

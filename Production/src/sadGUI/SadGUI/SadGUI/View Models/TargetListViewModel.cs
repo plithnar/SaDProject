@@ -153,7 +153,7 @@ namespace SadGUI.View_Models
         {
             if (SelectedTarget != null)
             {
-                MissileLauncherController.Instance.Launcher.Kill(SelectedTarget);
+                MissileLauncherViewModel.Instance.Kill(SelectedTarget);
             }
         }
     }

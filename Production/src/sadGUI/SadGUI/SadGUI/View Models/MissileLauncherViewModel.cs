@@ -20,6 +20,18 @@ namespace SadGUI.View_Models
         private double m_theta;
         private bool m_manualControl;
 
+        private static MissileLauncherViewModel m_instance;
+
+        public static MissileLauncherViewModel Instance
+        {
+            get
+            {
+                if (m_instance == null)
+                    m_instance = new MissileLauncherViewModel();
+                return m_instance;
+            }
+        }
+
         public string Name
         {
             get
@@ -85,6 +97,21 @@ namespace SadGUI.View_Models
             }
         }
 
+        public MissileLauncherTypes LauncherType
+        {
+            get
+            {
+                return m_launcherType;
+            }
+            set
+            {
+                m_launcherType = value;
+                m_launcher = MissileLauncherFactory.Create(value);
+            }
+        }
+        
+        public event EventHandler LauncherChanged;
+        private MissileLauncherTypes m_launcherType;
         public DelegateCommand FireCommand { get; set; }
         public DelegateCommand UpCommand { get; set; }
         public DelegateCommand DownCommand { get; set; }
@@ -109,8 +136,9 @@ namespace SadGUI.View_Models
             }
         }
 
-        public MissileLauncherViewModel(MissileLauncherTypes launcherType)
+        private MissileLauncherViewModel()
         {
+            var launcherType = MissileLauncherTypes.Mock;
             m_launcher = MissileLauncherFactory.Create(launcherType);
 
             Action fireAction = Fire;

@@ -55,7 +55,6 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DelegateCommand.cs" />
-    <Compile Include="MissileLauncherController.cs" />
     <Compile Include="View Models\ConnectionListViewModel.cs" />
     <Compile Include="View Models\MissileLauncherSelectorViewModel.cs" />
     <Compile Include="View Models\MissileLauncherViewModel.cs" />
