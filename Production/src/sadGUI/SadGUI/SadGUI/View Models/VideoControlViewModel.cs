@@ -80,26 +80,36 @@ namespace SadGUI.View_Models
             m_running = true;
 
             Image<Bgr, Byte> frame = m_capture.QueryFrame();
-            Image<Gray, Byte> gFrame = frame.Convert<Gray, Byte>();
+            //Image<Gray, Byte> gFrame = frame.Convert<Gray, Byte>();
             m_image.Source = ConvertImageToBitmap(frame);
-
+            //var tester = ConvertImageToBitmap(frame).GetType();
             BackgroundWorker ImageWorker = new BackgroundWorker();
-
+            var uDispatcher = Dispatcher.CurrentDispatcher;
             ImageWorker.DoWork += new DoWorkEventHandler(
             delegate(object o, DoWorkEventArgs e)
             {
                 BackgroundWorker background = o as BackgroundWorker;
                 
+
+                //m_image.Source = null;
+
                 while (m_running)                
                 {
+                    //GetImage();
                     frame = m_capture.QueryFrame();
                     
                     if (frame != null)   
                     {
-                        gFrame = frame.Convert<Gray, Byte>();
-                        m_image.Source = ConvertImageToBitmap(frame);
+                 //       gFrame = frame.Convert<Gray, Byte>();
+                        //System.Windows.Controls.Image temporary = new System.Windows.Controls.Image();// = null;
+                        //System.Windows.Interop.InteropBitmap temp = null;
+                        uDispatcher.Invoke((Action<Image<Bgr, Byte>>)(obj => m_image.Source = (ConvertImageToBitmap(obj))), frame as Image<Bgr, Byte>);
+                        //temp = new System.Windows.Interop.InteropBitmap();
+                        //temp = (System.Windows.Interop.InteropBitmap)temporary.Source;
+                        //m_image.Source = temp;
+                        System.GC.Collect();
                     }
-                        
+                      
                     Thread.Sleep(1000 / 60);
                     
                 }
@@ -114,6 +124,16 @@ namespace SadGUI.View_Models
 
             ImageWorker.RunWorkerAsync();
 
+        }
+
+        private void GetImage()
+        {
+            Image<Bgr, Byte> frame = m_capture.QueryFrame();
+            if (frame != null)
+            {
+               // Image<Gray, Byte> gFrame = frame.Convert<Gray, Byte>();
+                m_image.Source = ConvertImageToBitmap(frame);
+            }
         }
 
         private void SetDisabled()
