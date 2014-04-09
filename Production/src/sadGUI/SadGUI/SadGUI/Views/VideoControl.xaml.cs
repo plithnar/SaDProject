@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SadGUI.View_Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,7 @@ namespace SadGUI.Views
         public VideoControl()
         {
             InitializeComponent();
+            VideoControlViewModel.Singleton.Start(image);
         }
     }
 }

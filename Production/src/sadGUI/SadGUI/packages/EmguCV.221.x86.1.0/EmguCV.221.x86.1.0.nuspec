@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>EmguCV.221.x86</id>
+    <version>1.0</version>
+    <title>EmguCV 2.2.1 x86</title>
+    <authors>Wagner Leonardi</authors>
+    <owners>Wagner Leonardi</owners>
+    <projectUrl>http://www.emgu.com/</projectUrl>
+    <iconUrl>http://www.emgu.com/wiki/files/EmguCVLogo.gif</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This is a lightweight package (15 MB), with OpenCV 2.2.0. (2010) and can do a lot of OpenCV stuff. Current OpenCV versions is about &gt; 100 MB.
+
+How to install EmguCV in your project:
+1 - Install this NuGet package in project
+2 - Project -&gt; Add -&gt; Existing Item
+3 - Open this packages directory (Probably is (Solution Directory)/packages/EmguCV.221.xXX.X.X)
+4 - Open "opencv" directory
+5 - Click to display "All Files (*.*)"
+6 - Select all *.dll files
+7 - Instead clicking on "Add" button, click in the arrow located at this button, and click "Add as Link"
+
+Q: Why add as link instead simply add files?
+A: Because in this mode you don't need to put *.dlls in source control, and you don't need to copy *.dlls twice, since they're already in the NuGet package.
+
+You can also notice "haarcascade" folder, these files are for face detection, you can add'em in the same way if you'll use this feature.</description>
+    <summary>Wrapper for OpenCV 2.2.0</summary>
+    <releaseNotes>x86</releaseNotes>
+    <tags>emgucv opencv</tags>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Drawing" targetFramework="" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

@@ -11,6 +11,7 @@
             <RowDefinition Height="10*" />
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="45" FontWeight="Bold">Video Feed</TextBlock>
+        <Image Name="image" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill"/>
         <StackPanel Orientation="Horizontal" Grid.Row="1">
             <CheckBox Width="300" FontSize="16" FontWeight="Bold">Play Video Feed</CheckBox>
         </StackPanel>
