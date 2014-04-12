@@ -1,14 +1,30 @@
 ﻿using MissileLauncher;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using Targets;
 
 namespace SadGUI.View_Models
 {
+    enum LauncherAction { MoveTo, MoveBy, Fire, Kill, Reload };
+    class LauncherCommand
+    {
+        public double Phi { get; private set; }
+        public double Theta { get; private set; }
+        public LauncherAction Action { get; private set; }
+        public LauncherCommand(LauncherAction action, double phi=0.0, double theta=0.0)
+        {
+            Action = action;
+            Phi = phi;
+            Theta = theta;
+        }
+    }
+
     public class MissileLauncherViewModel: ViewModelBase
     {
         private const double moveAmount = 5;
@@ -19,6 +35,8 @@ namespace SadGUI.View_Models
         private double m_phi;
         private double m_theta;
         private bool m_manualControl;
+        private BackgroundWorker m_launcherWorker;
+        private Queue<LauncherCommand> m_commands;
 
         private static MissileLauncherViewModel m_instance;
 
@@ -136,6 +154,101 @@ namespace SadGUI.View_Models
             }
         }
 
+        private void ExecuteCommands(object o, DoWorkEventArgs e)
+        {
+            m_launcher.calibrate();
+            try
+            {
+                while (!m_launcherWorker.CancellationPending)
+                {
+                    if (m_commands.Count > 0)
+                    {
+                        var currentCommand = m_commands.Dequeue();
+                        switch (currentCommand.Action)
+                        {
+                            case LauncherAction.Fire:
+                                try
+                                {
+                                    m_launcher.fire();
+                                    Ammo = m_launcher.CurrentMissiles;
+                                }
+                                catch (InvalidOperationException)
+                                {
+                                    MessageBox.Show("Launcher is out of ammo.");
+                                    m_commands.Clear();
+                                }
+                                break;
+                            case LauncherAction.Reload:
+                                m_launcher.reload();
+                                Ammo = m_launcher.CurrentMissiles;
+                                break;
+                            case LauncherAction.MoveBy:
+                                m_launcher.moveBy(currentCommand.Phi, currentCommand.Theta);
+                                Phi = m_launcher.Phi;
+                                Theta = m_launcher.Theta;
+                                break;
+                            case LauncherAction.MoveTo:
+                                m_launcher.moveTo(currentCommand.Phi, currentCommand.Theta);
+                                Phi = m_launcher.Phi;
+                                Theta = m_launcher.Theta;
+                                break;
+                            case LauncherAction.Kill:
+                                m_launcher.moveTo(currentCommand.Phi, currentCommand.Theta);
+                                Phi = m_launcher.Phi;
+                                Theta = m_launcher.Theta;
+                                try
+                                {
+                                    m_launcher.fire();
+                                    Ammo = m_launcher.CurrentMissiles;
+                                }
+                                catch (InvalidOperationException)
+                                {
+                                    MessageBox.Show("Launcher is out of ammo.");
+                                    m_commands.Clear();
+                                    return;
+                                }
+                                break;
+                        }
+                    }
+                }
+            }
+            finally
+            {
+                Phi = m_launcher.Phi;
+                Theta = m_launcher.Theta;
+                Ammo = m_launcher.CurrentMissiles;
+            }
+        }
+
+        private void Cancel()
+        {
+            if (m_launcherWorker.IsBusy)
+            {
+                m_launcherWorker.CancelAsync();
+            }
+        }
+
+        public void Start(object sender, EventArgs e)
+        {
+            Cancel();
+            m_launcherWorker.RunWorkerAsync();
+        }
+
+        public void Stop(object sender, EventArgs e)
+        {
+            Cancel();
+            m_launcher.moveTo(0, 0);
+            Phi = m_launcher.Phi;
+            Theta = m_launcher.Theta;
+            m_commands.Clear();
+        }
+
+        public void Abort(object sender, EventArgs e)
+        {
+            Cancel();
+            m_commands.Clear();
+        }
+
         private MissileLauncherViewModel()
         {
             var launcherType = MissileLauncherTypes.Mock;
@@ -167,6 +280,11 @@ namespace SadGUI.View_Models
             Theta = m_launcher.Theta;
 
             ManualControl = false;
+
+            m_commands = new Queue<LauncherCommand>();
+            m_launcherWorker = new BackgroundWorker();
+            m_launcherWorker.DoWork += ExecuteCommands;
+            m_launcherWorker.WorkerSupportsCancellation = true;
         }
 
         public void Kill(TargetViewModel targetvm)
@@ -181,63 +299,37 @@ namespace SadGUI.View_Models
                 }
                 double phi = Conversions.calcPhi(target.X, target.Y);
                 double theta = Conversions.calcTheta(target.X, target.Y, target.Z);
-                m_launcher.moveTo(phi, theta);
-                Phi = m_launcher.Phi;
-                Theta = m_launcher.Theta;
-                try
-                {
-                    m_launcher.fire();
-                    Ammo--;
-                    targetvm.Alive = false;
-                }
-                catch (InvalidOperationException)
-                {
-                    MessageBox.Show("Launcher is out of ammo!");
-                }
+                m_commands.Enqueue(new LauncherCommand(LauncherAction.Kill, phi, theta));
             }
         }
 
         void Fire()
         {
-            try
-            {
-                m_launcher.fire();
-                Ammo--;
-            }
-            catch (InvalidOperationException)
-            {
-                MessageBox.Show("Launcher is out of ammo!");
-            }
+            m_commands.Enqueue(new LauncherCommand(LauncherAction.Fire));
         }
 
         void Up()
         {
-            m_launcher.moveBy(0, moveAmount);
-            Theta = m_launcher.Theta;
+            m_commands.Enqueue(new LauncherCommand(LauncherAction.MoveBy, 0, moveAmount));
         }
         void Down()
         {
-            m_launcher.moveBy(0, -1*moveAmount);
-            Theta = m_launcher.Theta;
+            m_commands.Enqueue(new LauncherCommand(LauncherAction.MoveBy, 0, -1*moveAmount));
         }
         void Left()
         {
-            m_launcher.moveBy(-1*moveAmount, 0);
-            Phi = m_launcher.Phi;
+            m_commands.Enqueue(new LauncherCommand(LauncherAction.MoveBy, -1*moveAmount, 0));
         }
 
         void Right()
         {
-            m_launcher.moveBy(moveAmount, 0);
-            Phi = m_launcher.Phi;
+            m_commands.Enqueue(new LauncherCommand(LauncherAction.MoveBy, moveAmount, 0));
         }
 
         void Reload()
         {
             m_launcher.reload();
-            Ammo = m_launcher.MaxMissiles;
+            Ammo = m_launcher.CurrentMissiles;
         }
-
-
     }
 }

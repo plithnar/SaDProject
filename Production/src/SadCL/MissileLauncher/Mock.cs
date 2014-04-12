@@ -90,6 +90,12 @@ namespace MissileLauncher
             Theta = 0.0;
         }
 
+        public void calibrate()
+        {
+            Phi = 0.0;
+            Theta = 0.0;
+        }
+
         public void reload()
         {
             Console.WriteLine("Reloading...");

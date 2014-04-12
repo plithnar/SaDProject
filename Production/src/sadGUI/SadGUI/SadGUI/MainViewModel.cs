@@ -41,6 +41,10 @@ namespace SadGUI
 
         public DelegateCommand AbortGame { get; private set; }
 
+        event EventHandler StartGameEvent;
+        event EventHandler StopGameEvent;
+        event EventHandler AbortGameEvent;
+
         public MainViewModel()
         {
 
@@ -64,9 +68,14 @@ namespace SadGUI
             StopGame = new DelegateCommand(stopAction);
             StopGame.Executable = false;
 
-            Action abortAction = Stop;
+            Action abortAction = Abort;
             AbortGame = new DelegateCommand(abortAction);
             AbortGame.Executable = false;
+
+            StartGameEvent += Launcher.Start;
+            StopGameEvent += Launcher.Stop;
+            AbortGameEvent += Launcher.Abort;
+
         }
 
         public void ModeChanged(object sender, EventArgs e)
@@ -81,7 +90,6 @@ namespace SadGUI
 
         void Start()
         {
-            Stop();
             StartGame.Executable = false;
             StopGame.Executable = true;
             AbortGame.Executable = true;
@@ -91,23 +99,19 @@ namespace SadGUI
                 {
                     var target = TargetList.Targets[i].TargetInfo;
                     TargetList.SelectedTarget = TargetList.Targets[i];
-                    if (!target.Friend && Launcher.Ammo > 0)
+                    if (!target.Friend)
                     {
                         Launcher.Kill(TargetList.Targets[i]);
+                        TargetList.Targets[i].Alive = false;
                     }
-                    else if (Launcher.Ammo == 0)
-                    {
-                        MessageBox.Show("Launcher is out of Ammo!");
-                        break;
-                    }
-
                 }
-                Stop();
+                StartGameEvent(this, null);
             }
             else
             {
                 Launcher.ManualControl = true;
                 TargetList.ManualControl = true;
+                StartGameEvent(this, null);
             }
         }
 
@@ -118,6 +122,17 @@ namespace SadGUI
             StopGame.Executable = false;
             AbortGame.Executable = false;
             StartGame.Executable = true;
+            StopGameEvent(this, null);
+        }
+
+        void Abort()
+        {
+            Launcher.ManualControl = false;
+            TargetList.ManualControl = false;
+            StopGame.Executable = false;
+            AbortGame.Executable = false;
+            StartGame.Executable = true;
+            AbortGameEvent(this, null);
         }
     }
 }

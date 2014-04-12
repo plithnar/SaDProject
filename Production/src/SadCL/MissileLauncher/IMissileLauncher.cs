@@ -8,6 +8,7 @@ namespace MissileLauncher
 {
     public interface IMissileLauncher
     {
+        void calibrate();
         void fire();
         void moveTo(double x, double y);
         void moveBy(double x, double y);

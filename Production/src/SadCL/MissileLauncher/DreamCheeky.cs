@@ -94,6 +94,12 @@ namespace MissileLauncher
             currentMissiles = maxMissiles;
             name = getNewName();
             controller = new MissileLauncherControl();
+            Phi = 0.0;
+            Theta = 0.0;
+        }
+
+        public void calibrate()
+        {
             controller.command_reset();
             Phi = 0.0;
             Theta = 0.0;
