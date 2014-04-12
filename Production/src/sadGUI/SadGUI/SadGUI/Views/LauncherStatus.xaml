@@ -27,5 +27,9 @@
             <TextBlock Width="200" FontSize="16" FontWeight="Bold">Theta:</TextBlock>
             <TextBlock Text="{Binding Theta}" FontSize="16" />
         </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Width="200" FontSize="16" FontWeight="Bold">Time:</TextBlock>
+            <TextBlock Text="{Binding GameTime}" FontSize="16" />
+        </StackPanel>
     </StackPanel>
 </UserControl>

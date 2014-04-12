@@ -38,6 +38,8 @@ namespace SadGUI.View_Models
         private BackgroundWorker m_launcherWorker;
         private Queue<LauncherCommand> m_commands;
 
+        private BackgroundWorker m_timer;
+
         private static MissileLauncherViewModel m_instance;
 
         public static MissileLauncherViewModel Instance
@@ -56,7 +58,7 @@ namespace SadGUI.View_Models
             {
                 return m_name;
             }
-            set
+            private set
             {
                 m_name = value;
                 OnPropertyChanged("Name");
@@ -69,7 +71,7 @@ namespace SadGUI.View_Models
             {
                 return m_ammo;
             }
-            set
+            private set
             {
                 m_ammo = value;
                 OnPropertyChanged("Ammo");
@@ -82,7 +84,7 @@ namespace SadGUI.View_Models
             {
                 return m_capacity;
             }
-            set
+            private set
             {
                 m_capacity = value;
                 OnPropertyChanged("Capacity");
@@ -95,7 +97,7 @@ namespace SadGUI.View_Models
             {
                 return m_phi;
             }
-            set
+            private set
             {
                 m_phi = value;
                 OnPropertyChanged("Phi");
@@ -108,7 +110,7 @@ namespace SadGUI.View_Models
             {
                 return m_theta;
             }
-            set
+            private set
             {
                 m_theta = value;
                 OnPropertyChanged("Theta");
@@ -127,9 +129,23 @@ namespace SadGUI.View_Models
                 m_launcher = MissileLauncherFactory.Create(value);
             }
         }
+
+        public string GameTime
+        {
+            get
+            {
+                return m_gameTime;
+            }
+            private set
+            {
+                m_gameTime = value;
+                OnPropertyChanged("GameTime");
+            }
+        }
         
         public event EventHandler LauncherChanged;
         private MissileLauncherTypes m_launcherType;
+        private string m_gameTime;
         public DelegateCommand FireCommand { get; set; }
         public DelegateCommand UpCommand { get; set; }
         public DelegateCommand DownCommand { get; set; }
@@ -220,6 +236,33 @@ namespace SadGUI.View_Models
             }
         }
 
+        private void KeepTime(object o, DoWorkEventArgs e)
+        {
+            int time = 0;
+            while (!m_timer.CancellationPending)
+            {
+                int hours = time / 3600;
+                int minutes = (time % 3600) / 60;
+                int seconds = (time % 3600) % 60;
+                var strb = new StringBuilder();
+                strb.AppendFormat("{0}:{1}:{2}", hours, minutes, seconds);
+                GameTime = strb.ToString();
+                time++;
+                Thread.Sleep(1000);
+            }
+        }
+
+        private void StartTime()
+        {
+            m_timer.RunWorkerAsync();
+        }
+
+        private void EndTime()
+        {
+            m_timer.CancelAsync();
+            GameTime = "0:0:0";
+        }
+
         private void Cancel()
         {
             if (m_launcherWorker.IsBusy)
@@ -230,12 +273,14 @@ namespace SadGUI.View_Models
 
         public void Start(object sender, EventArgs e)
         {
+            StartTime();
             Cancel();
             m_launcherWorker.RunWorkerAsync();
         }
 
         public void Stop(object sender, EventArgs e)
         {
+            EndTime();
             Cancel();
             m_launcher.moveTo(0, 0);
             Phi = m_launcher.Phi;
@@ -245,6 +290,7 @@ namespace SadGUI.View_Models
 
         public void Abort(object sender, EventArgs e)
         {
+            EndTime();
             Cancel();
             m_commands.Clear();
         }
@@ -285,6 +331,11 @@ namespace SadGUI.View_Models
             m_launcherWorker = new BackgroundWorker();
             m_launcherWorker.DoWork += ExecuteCommands;
             m_launcherWorker.WorkerSupportsCancellation = true;
+
+            GameTime = "0:0:0";
+            m_timer = new BackgroundWorker();
+            m_timer.DoWork += KeepTime;
+            m_timer.WorkerSupportsCancellation = true;
         }
 
         public void Kill(TargetViewModel targetvm)
