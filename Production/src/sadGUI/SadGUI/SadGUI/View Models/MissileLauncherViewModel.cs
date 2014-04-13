@@ -146,12 +146,13 @@ namespace SadGUI.View_Models
         public event EventHandler LauncherChanged;
         private MissileLauncherTypes m_launcherType;
         private string m_gameTime;
-        public DelegateCommand FireCommand { get; set; }
-        public DelegateCommand UpCommand { get; set; }
-        public DelegateCommand DownCommand { get; set; }
-        public DelegateCommand LeftCommand { get; set; }
-        public DelegateCommand RightCommand { get; set; }
-        public DelegateCommand ReloadCommand { get; set; }
+        public DelegateCommand FireCommand { get; private set; }
+        public DelegateCommand UpCommand { get; private set; }
+        public DelegateCommand DownCommand { get; private set; }
+        public DelegateCommand LeftCommand { get; private set; }
+        public DelegateCommand RightCommand { get; private set; }
+        public DelegateCommand ReloadCommand { get; private set; }
+        public DelegateCommand CenterCommand { get; private set; }
 
         public bool ManualControl
         {
@@ -167,6 +168,7 @@ namespace SadGUI.View_Models
                 DownCommand.Executable = m_manualControl;
                 LeftCommand.Executable = m_manualControl;
                 RightCommand.Executable = m_manualControl;
+                CenterCommand.Executable = m_manualControl;
             }
         }
 
@@ -221,7 +223,6 @@ namespace SadGUI.View_Models
                                 {
                                     MessageBox.Show("Launcher is out of ammo.");
                                     m_commands.Clear();
-                                    return;
                                 }
                                 break;
                         }
@@ -326,6 +327,9 @@ namespace SadGUI.View_Models
             Action reloadAction = Reload;
             ReloadCommand = new DelegateCommand(reloadAction);
 
+            Action centerAction = Center;
+            CenterCommand = new DelegateCommand(centerAction);
+
 
             Name = m_launcher.Name;
             Ammo = m_launcher.CurrentMissiles;
@@ -381,6 +385,11 @@ namespace SadGUI.View_Models
         void Right()
         {
             m_commands.Enqueue(new LauncherCommand(LauncherAction.MoveBy, moveAmount, 0));
+        }
+
+        void Center()
+        {
+            m_commands.Enqueue(new LauncherCommand(LauncherAction.MoveTo));
         }
 
         void Reload()
