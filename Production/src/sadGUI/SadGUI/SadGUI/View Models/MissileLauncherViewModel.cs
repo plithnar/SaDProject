@@ -236,6 +236,14 @@ namespace SadGUI.View_Models
             }
         }
 
+        private BackgroundWorker InitLauncherWorker()
+        {
+            var launcherWorker = new BackgroundWorker();
+            launcherWorker.DoWork += ExecuteCommands;
+            launcherWorker.WorkerSupportsCancellation = true;
+            return launcherWorker;
+        }
+
         private void KeepTime(object o, DoWorkEventArgs e)
         {
             int time = 0;
@@ -275,6 +283,7 @@ namespace SadGUI.View_Models
         {
             StartTime();
             Cancel();
+            m_launcherWorker = InitLauncherWorker();
             m_launcherWorker.RunWorkerAsync();
         }
 
@@ -328,9 +337,7 @@ namespace SadGUI.View_Models
             ManualControl = false;
 
             m_commands = new Queue<LauncherCommand>();
-            m_launcherWorker = new BackgroundWorker();
-            m_launcherWorker.DoWork += ExecuteCommands;
-            m_launcherWorker.WorkerSupportsCancellation = true;
+            m_launcherWorker = InitLauncherWorker();
 
             GameTime = "0:0:0";
             m_timer = new BackgroundWorker();
