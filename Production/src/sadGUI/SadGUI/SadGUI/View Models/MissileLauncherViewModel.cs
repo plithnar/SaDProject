@@ -290,11 +290,10 @@ namespace SadGUI.View_Models
         public void Stop(object sender, EventArgs e)
         {
             EndTime();
-            Cancel();
-            m_launcher.moveTo(0, 0);
+            m_commands.Clear();
+            m_commands.Enqueue(new LauncherCommand(LauncherAction.MoveTo));
             Phi = m_launcher.Phi;
             Theta = m_launcher.Theta;
-            m_commands.Clear();
         }
 
         public void Abort(object sender, EventArgs e)
