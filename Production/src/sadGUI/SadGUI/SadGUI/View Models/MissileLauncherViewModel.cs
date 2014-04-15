@@ -52,6 +52,12 @@ namespace SadGUI.View_Models
             }
         }
 
+        public bool GameRunning
+        {
+            get;
+            private set;
+        }
+
         public string Name
         {
             get
@@ -172,6 +178,12 @@ namespace SadGUI.View_Models
             }
         }
 
+        private void AddCommand(LauncherCommand command)
+        {
+            if (GameRunning)
+                m_commands.Enqueue(command);
+        }
+
         private void ExecuteCommands(object o, DoWorkEventArgs e)
         {
             m_launcher.calibrate();
@@ -272,24 +284,15 @@ namespace SadGUI.View_Models
             GameTime = "0:0:0";
         }
 
-        private void Cancel()
-        {
-            if (m_launcherWorker.IsBusy)
-            {
-                m_launcherWorker.CancelAsync();
-            }
-        }
-
         public void Start(object sender, EventArgs e)
         {
             StartTime();
-            Cancel();
-            m_launcherWorker = InitLauncherWorker();
-            m_launcherWorker.RunWorkerAsync();
+            GameRunning = true;
         }
 
         public void Stop(object sender, EventArgs e)
         {
+            GameRunning = false;
             EndTime();
             m_commands.Clear();
             m_commands.Enqueue(new LauncherCommand(LauncherAction.MoveTo));
@@ -300,7 +303,7 @@ namespace SadGUI.View_Models
         public void Abort(object sender, EventArgs e)
         {
             EndTime();
-            Cancel();
+            GameRunning = false;
             m_commands.Clear();
         }
 
@@ -330,7 +333,7 @@ namespace SadGUI.View_Models
             Action centerAction = Center;
             CenterCommand = new DelegateCommand(centerAction);
 
-
+            GameRunning = false;
             Name = m_launcher.Name;
             Ammo = m_launcher.CurrentMissiles;
             Capacity = m_launcher.MaxMissiles;
@@ -341,6 +344,7 @@ namespace SadGUI.View_Models
 
             m_commands = new Queue<LauncherCommand>();
             m_launcherWorker = InitLauncherWorker();
+            m_launcherWorker.RunWorkerAsync();
 
             GameTime = "0:0:0";
             m_timer = new BackgroundWorker();
@@ -366,30 +370,30 @@ namespace SadGUI.View_Models
 
         void Fire()
         {
-            m_commands.Enqueue(new LauncherCommand(LauncherAction.Fire));
+            AddCommand(new LauncherCommand(LauncherAction.Fire));
         }
 
         void Up()
         {
-            m_commands.Enqueue(new LauncherCommand(LauncherAction.MoveBy, 0, moveAmount));
+            AddCommand(new LauncherCommand(LauncherAction.MoveBy, 0, moveAmount));
         }
         void Down()
         {
-            m_commands.Enqueue(new LauncherCommand(LauncherAction.MoveBy, 0, -1*moveAmount));
+            AddCommand(new LauncherCommand(LauncherAction.MoveBy, 0, -1*moveAmount));
         }
         void Left()
         {
-            m_commands.Enqueue(new LauncherCommand(LauncherAction.MoveBy, -1*moveAmount, 0));
+            AddCommand(new LauncherCommand(LauncherAction.MoveBy, -1*moveAmount, 0));
         }
 
         void Right()
         {
-            m_commands.Enqueue(new LauncherCommand(LauncherAction.MoveBy, moveAmount, 0));
+            AddCommand(new LauncherCommand(LauncherAction.MoveBy, moveAmount, 0));
         }
 
         void Center()
         {
-            m_commands.Enqueue(new LauncherCommand(LauncherAction.MoveTo));
+            AddCommand(new LauncherCommand(LauncherAction.MoveTo));
         }
 
         void Reload()
