@@ -48,7 +48,7 @@ namespace SadGUI.View_Models
         }
         public void Start(System.Windows.Controls.Image image)
         {
-/*            if(image != null)
+            if(image != null)
             {
                 m_image = image;
             }
@@ -122,7 +122,7 @@ namespace SadGUI.View_Models
                 m_image.Source = ConvertImageToBitmap(null as Image<Bgr, Byte>);
             });
 
-            ImageWorker.RunWorkerAsync(); */
+            ImageWorker.RunWorkerAsync(); 
 
         }
 
