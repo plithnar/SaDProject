@@ -47,6 +47,13 @@ namespace SadGUI.View_Models
         {
             //Start(image);
         }
+
+        public void StopVideo()
+        {
+            m_running = false;
+            m_capture = null;
+            m_camera = null;
+        }
         public void Start(System.Windows.Controls.Image image)
         {
             if(image != null)
@@ -145,19 +152,23 @@ namespace SadGUI.View_Models
 
         private static BitmapSource ConvertImageToBitmap(IImage image)
         {
-            using(Bitmap source = image.Bitmap)
+            if (image != null)
             {
-                var hbitmap = source.GetHbitmap();
+                using (Bitmap source = image.Bitmap)
+                {
+                    var hbitmap = source.GetHbitmap();
 
-                var bitmap = System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(hbitmap, IntPtr.Zero,
-                                                     Int32Rect.Empty,
-                                                     BitmapSizeOptions.FromEmptyOptions());
+                    var bitmap = System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(hbitmap, IntPtr.Zero,
+                                                         Int32Rect.Empty,
+                                                         BitmapSizeOptions.FromEmptyOptions());
 
-                DeleteObject(hbitmap);
-                
-                bitmap.Freeze();
-                return bitmap;
+                    DeleteObject(hbitmap);
+
+                    bitmap.Freeze();
+                    return bitmap;
+                }
             }
+            return null;
         }
 
         [DllImport("gdi32")]

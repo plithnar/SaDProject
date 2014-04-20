@@ -24,6 +24,20 @@ namespace SadGUI.Views
         public VideoControl()
         {
             InitializeComponent();
+
+            //EventHandler StartButton_Click
+            //{
+            //    VideoControlViewModel.Singleton.Start(image);
+            //}
+        }
+
+        private void StopButton_Click(object sender, RoutedEventArgs e)
+        {
+            VideoControlViewModel.Singleton.StopVideo();
+        }
+
+        private void StartButton_Click(object sender, RoutedEventArgs e)
+        {
             VideoControlViewModel.Singleton.Start(image);
         }
     }
