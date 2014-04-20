@@ -3,6 +3,7 @@ using Emgu.CV.Structure;
 using System;
 using System.ComponentModel;
 using System.Drawing;
+using System.Runtime.InteropServices;
 using System.Threading;
 using System.Windows;
 using System.Windows.Media.Imaging;
@@ -151,11 +152,17 @@ namespace SadGUI.View_Models
                 var bitmap = System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(hbitmap, IntPtr.Zero,
                                                      Int32Rect.Empty,
                                                      BitmapSizeOptions.FromEmptyOptions());
+
+                DeleteObject(hbitmap);
+                
                 bitmap.Freeze();
                 return bitmap;
             }
         }
-        
+
+        [DllImport("gdi32")]
+        private static extern int DeleteObject(IntPtr ptr);
+
         public void Stop()
         {
             m_running = false;
