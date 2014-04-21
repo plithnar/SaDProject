@@ -92,6 +92,7 @@
     </ApplicationDefinition>
     <Compile Include="DelegateCommand.cs" />
     <Compile Include="View Models\ConnectionListViewModel.cs" />
+    <Compile Include="View Models\GameListViewModel.cs" />
     <Compile Include="View Models\MissileLauncherSelectorViewModel.cs" />
     <Compile Include="View Models\MissileLauncherViewModel.cs" />
     <Compile Include="View Models\ModeSelectorViewModel.cs" />
@@ -101,6 +102,9 @@
     <Compile Include="ViewModelBase.cs" />
     <Compile Include="Views\ConnectionList.xaml.cs">
       <DependentUpon>ConnectionList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GameListView.xaml.cs">
+      <DependentUpon>GameListView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\LauncherControl.xaml.cs">
       <DependentUpon>LauncherControl.xaml</DependentUpon>
@@ -140,6 +144,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Views\ConnectionList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GameListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -248,6 +256,10 @@
     <ProjectReference Include="..\..\..\SadCL\Targets\Targets.csproj">
       <Project>{170654b5-d437-4f05-b138-3e529507d83c}</Project>
       <Name>Targets</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TargetServer\GameServerCommunicator.csproj">
+      <Project>{7a445aa6-73a5-4f33-be56-55b9ba9d8857}</Project>
+      <Name>GameServerCommunicator</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

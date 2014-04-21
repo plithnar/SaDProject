@@ -36,6 +36,8 @@ namespace SadGUI.View_Models
         public DelegateCommand AddServerTargetsCommand { get; set; }
         public DelegateCommand KillTargetCommand { get; set; }
 
+        public GameListViewModel GameListViewModel { get; private set; }
+
         public bool ManualControl
         {
             get
@@ -60,20 +62,31 @@ namespace SadGUI.View_Models
             Action addTargetsAction = AddTargets;
             AddTargetsCommand = new DelegateCommand(addTargetsAction);
 
-            Action addServerTargetsAction = AddTargets;
+            Action addServerTargetsAction = AddTargetsFromServer;
             AddServerTargetsCommand = new DelegateCommand(addServerTargetsAction);
-            AddServerTargetsCommand.Executable = false;
 
             Action killTargetAction = KillTarget;
             KillTargetCommand = new DelegateCommand(killTargetAction);
 
             ManualControl = false;
+
+            GameListViewModel = new GameListViewModel();
         }
 
         void ClearTargets()
         {
             Targets.Clear();
             ClearTargetsCommand.Executable = false;
+        }
+
+        void AddTargetsFromServer()
+        {
+            var targets = GameListViewModel.GetTargetList();
+            Targets.Clear();
+            foreach (var target in targets)
+            {
+                Targets.Add(new TargetViewModel(target));
+            }
         }
 
         void AddTargets()

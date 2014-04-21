@@ -47,7 +47,7 @@
             <Button Grid.Row="0" Grid.Column="1" Command="{Binding StopGame}">Stop</Button>
             <Button Grid.Row="0" Grid.Column="2" Command="{Binding AbortGame}">Abort</Button>
             
-            <MongooseViews:ConnectionList DataContext="{Binding ConnectionList}"  Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="3" />
+            <!-- <MongooseViews:ConnectionList DataContext="{Binding ConnectionList}"  Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="3" /> -->
         </Grid>
 
         <MongooseViews:VideoControl Grid.Row="2" Grid.Column="0" />
