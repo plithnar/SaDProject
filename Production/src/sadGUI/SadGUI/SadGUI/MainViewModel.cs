@@ -13,6 +13,8 @@ namespace SadGUI
 {
     public class MainViewModel: ViewModelBase
     {
+        private string m_serverIp;
+        private string m_port;
         private MissileLauncherViewModel m_launcherViewModel = MissileLauncherViewModel.Instance;
         public MissileLauncherViewModel Launcher
         {
@@ -41,6 +43,33 @@ namespace SadGUI
 
         public DelegateCommand AbortGame { get; private set; }
 
+        public DelegateCommand Connect { get; private set; }
+
+        public string ServerIP
+        {
+            get
+            {
+                return m_serverIp;
+            }
+            set
+            {
+                m_serverIp = value;
+                OnPropertyChanged("ServerIP");
+            }
+        }
+        public string ServerPort
+        {
+            get
+            {
+                return m_port;
+            }
+            set
+            {
+                m_port = value;
+                OnPropertyChanged("ServerPort");
+            }
+        }
+        
         event EventHandler StartGameEvent;
         event EventHandler StopGameEvent;
         event EventHandler AbortGameEvent;
@@ -48,6 +77,8 @@ namespace SadGUI
         public MainViewModel()
         {
 
+            ServerIP = "Mock";
+            ServerPort = "0";
             MissileLauncherSelector = new MissileLauncherSelectorViewModel();
 
             TargetList = new TargetListViewModel();
@@ -76,6 +107,8 @@ namespace SadGUI
             StopGameEvent += Launcher.Stop;
             AbortGameEvent += Launcher.Abort;
 
+            Action connectAction = ConnectServer;
+            Connect = new DelegateCommand(connectAction);
         }
 
         public void ModeChanged(object sender, EventArgs e)
@@ -88,11 +121,27 @@ namespace SadGUI
             Stop();
         }
 
+        void ConnectServer()
+        {
+            if (!ServerIP.Contains('.')) ServerIP = "Mock";
+            TargetList.GameListViewModel.ServerIP = ServerIP;
+            if (ServerPort == "") ServerPort = "0";
+            try
+            {
+                TargetList.GameListViewModel.ServerPort = Convert.ToInt32(ServerPort);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Invalid port number");
+            }
+        }
+
         void Start()
         {
             StartGame.Executable = false;
             StopGame.Executable = true;
             AbortGame.Executable = true;
+            Connect.Executable = false;
             if (ModeSelector.SelectedMode == Modes.Automatic)
             {
                 for (int i = 0; i < TargetList.Targets.Count; i++)
@@ -122,6 +171,7 @@ namespace SadGUI
             StopGame.Executable = false;
             AbortGame.Executable = false;
             StartGame.Executable = true;
+            Connect.Executable = true;
             StopGameEvent(this, null);
         }
 
