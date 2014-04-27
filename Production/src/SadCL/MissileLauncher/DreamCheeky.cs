@@ -101,7 +101,7 @@ namespace MissileLauncher
         public void calibrate()
         {
             controller.command_reset();
-	    MoveBy(0.0, -5.0) // To correct for height over targets
+            moveBy(0.0, -5.0); // To correct for height over targets
             Phi = 0.0;
             Theta = 0.0;
         }

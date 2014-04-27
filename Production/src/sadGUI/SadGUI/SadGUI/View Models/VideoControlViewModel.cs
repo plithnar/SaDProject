@@ -51,8 +51,8 @@ namespace SadGUI.View_Models
         public void StopVideo()
         {
             m_running = false;
-            m_capture = null;
-            m_camera = null;
+            //m_capture = null;
+            //m_camera = null;
         }
         public void Start(System.Windows.Controls.Image image)
         {

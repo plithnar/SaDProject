@@ -15,7 +15,6 @@
         <StackPanel Orientation="Horizontal" Grid.Row="1">
             <Button Width="200" FontSize="16" FontWeight="Bold" Click="StartButton_Click">Start Video Feed</Button>
             <Button Width="200" FontSize="16" FontWeight="Bold" Click="StopButton_Click">Stop Video Feed</Button>
-            <CheckBox Width="300" FontSize="16" FontWeight="Bold">Play Video Feed</CheckBox>
         </StackPanel>
     </Grid>
 </UserControl>

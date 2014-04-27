@@ -42,6 +42,8 @@ namespace SadGUI.View_Models
 
         private static MissileLauncherViewModel m_instance;
 
+        private static TwitterControlViewModel m_twitter;
+
         public static MissileLauncherViewModel Instance
         {
             get
@@ -353,6 +355,7 @@ namespace SadGUI.View_Models
             m_timer = new BackgroundWorker();
             m_timer.DoWork += KeepTime;
             m_timer.WorkerSupportsCancellation = true;
+            m_twitter = TwitterControlViewModel.Twitter;
         }
 
         public void Kill(TargetViewModel targetvm)
@@ -368,6 +371,7 @@ namespace SadGUI.View_Models
                 double phi = Conversions.calcPhi(target.X, target.Y);
                 double theta = Conversions.calcTheta(target.X, target.Y, target.Z);
                 m_commands.Enqueue(new LauncherCommand(LauncherAction.Kill, phi, theta));
+                m_twitter.TweetText = "Shot at "+target.Name+" at " + m_gameTime;
             }
         }
 
