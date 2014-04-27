@@ -37,6 +37,30 @@ namespace SadGUI.View_Models
             LoadGameListCommand = new DelegateCommand(loadGameList);
         }
 
+        public void StartGame()
+        {
+            try
+            {
+                m_gameServer.StartGame(SelectedGame);
+            }
+            catch (System.Net.WebException)
+            {
+                MessageBox.Show("Could not connect to server to start game.");
+            }
+        }
+
+        public void StopGame()
+        {
+            try
+            {
+                m_gameServer.StopRunningGame();
+            }
+            catch (System.Net.WebException)
+            {
+                MessageBox.Show("Could not connect to server to stop game.");
+            }
+        }
+
         void ClearGameList()
         {
             GameList.Clear();

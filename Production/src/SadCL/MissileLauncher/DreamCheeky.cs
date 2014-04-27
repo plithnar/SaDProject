@@ -85,9 +85,9 @@ namespace MissileLauncher
 
         //Max Theta, phi offsets
         private double maxPhi = 90;
-        private double minTheta = -5;
-        private double maxTheta = 20;
-        private int timeTo90 = 1600;
+        private double minTheta = 0;
+        private double maxTheta = 25;
+        private int timeTo90 = 1500;
         public DreamCheeky()
         {
             maxMissiles = 4;
@@ -101,6 +101,7 @@ namespace MissileLauncher
         public void calibrate()
         {
             controller.command_reset();
+	    MoveBy(0.0, -5.0) // To correct for height over targets
             Phi = 0.0;
             Theta = 0.0;
         }

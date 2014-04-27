@@ -152,23 +152,30 @@ namespace SadGUI.View_Models
 
         private static BitmapSource ConvertImageToBitmap(IImage image)
         {
-            if (image != null)
-            {
-                using (Bitmap source = image.Bitmap)
+                if (image != null)
                 {
-                    var hbitmap = source.GetHbitmap();
-
-                    var bitmap = System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(hbitmap, IntPtr.Zero,
+                    using (Bitmap source = image.Bitmap)
+                    {
+                        var hbitmap = source.GetHbitmap();
+                        try
+                        {
+                            var bitmap = System.Windows.Interop.Imaging.CreateBitmapSourceFromHBitmap(hbitmap, IntPtr.Zero,
                                                          Int32Rect.Empty,
                                                          BitmapSizeOptions.FromEmptyOptions());
+                            DeleteObject(hbitmap);
+                            bitmap.Freeze();
+                            return bitmap;
+                        }
+                        catch
+                        {
+                            image = null;
+                        }
 
-                    DeleteObject(hbitmap);
-
-                    bitmap.Freeze();
-                    return bitmap;
+                        //bitmap.Freeze();
+                        //return bitmap;
+                    }
                 }
-            }
-            return null;
+                return null;
         }
 
         [DllImport("gdi32")]

@@ -23,7 +23,7 @@ namespace MissileLauncher
         }
         public static double calcPhi(double x, double y)
         {
-            var phi = radiansToDegrees(Math.Atan2(y, x));
+            var phi = radiansToDegrees(Math.Atan2(x, y));
             if (phi > 90)
                 phi = (phi - 90) * -1;
             return phi;

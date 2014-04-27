@@ -142,6 +142,7 @@ namespace SadGUI
             StopGame.Executable = true;
             AbortGame.Executable = true;
             Connect.Executable = false;
+            TargetList.GameListViewModel.StartGame();
             if (ModeSelector.SelectedMode == Modes.Automatic)
             {
                 for (int i = 0; i < TargetList.Targets.Count; i++)
@@ -166,6 +167,7 @@ namespace SadGUI
 
         void Stop()
         {
+            TargetList.GameListViewModel.StopGame();
             Launcher.ManualControl = false;
             TargetList.ManualControl = false;
             StopGame.Executable = false;

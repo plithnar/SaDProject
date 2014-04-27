@@ -11,7 +11,7 @@ using Targets;
 
 namespace SadGUI.View_Models
 {
-    enum LauncherAction { MoveTo, MoveBy, Fire, Kill, Reload };
+    enum LauncherAction { MoveTo, MoveBy, Fire, Kill, Reload, Recalibrate };
     class LauncherCommand
     {
         public double Phi { get; private set; }
@@ -27,7 +27,7 @@ namespace SadGUI.View_Models
 
     public class MissileLauncherViewModel: ViewModelBase
     {
-        private const double moveAmount = 5;
+        private const double moveAmount = 15;
         private IMissileLauncher m_launcher;
         private string m_name;
         private int m_ammo;
@@ -237,6 +237,9 @@ namespace SadGUI.View_Models
                                     m_commands.Clear();
                                 }
                                 break;
+                            case LauncherAction.Recalibrate:
+                                m_launcher.calibrate();
+                                break;
                         }
                     }
                 }
@@ -295,7 +298,7 @@ namespace SadGUI.View_Models
             GameRunning = false;
             EndTime();
             m_commands.Clear();
-            m_commands.Enqueue(new LauncherCommand(LauncherAction.MoveTo));
+            m_commands.Enqueue(new LauncherCommand(LauncherAction.Recalibrate));
             Phi = m_launcher.Phi;
             Theta = m_launcher.Theta;
         }
@@ -393,7 +396,8 @@ namespace SadGUI.View_Models
 
         void Center()
         {
-            AddCommand(new LauncherCommand(LauncherAction.MoveTo));
+            //AddCommand(new LauncherCommand(LauncherAction.MoveTo));
+            AddCommand(new LauncherCommand(LauncherAction.Recalibrate));
         }
 
         void Reload()
