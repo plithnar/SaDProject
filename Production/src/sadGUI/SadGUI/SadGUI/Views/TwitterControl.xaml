@@ -10,7 +10,10 @@
             <RowDefinition Height="10*"/>
             <RowDefinition Height="90*"/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="36" FontWeight="Bold">Twitter</TextBlock>
-        <TextBlock Grid.Row="1" Height="200" Width="250" Margin="10,10,10,10" TextWrapping="Wrap" Text="{Binding TweetText}" VerticalAlignment="Top" />
+
+        <TextBlock Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold">Twitter</TextBlock>
+
+        <StackPanel/>
+        <TextBlock Height="200" Margin="10,10,40,0" FontSize="18" FontWeight="Black" Text="{Binding TweetText}" VerticalAlignment="Top" Grid.Row="1" />
     </Grid>
 </UserControl>

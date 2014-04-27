@@ -9,7 +9,7 @@ namespace SadGUI.View_Models
 {
     class TwitterControlViewModel : ViewModelBase
     {
-        private string m_tweet;
+        private string m_tweet = "";
 
         private const int MaxTweetSize  = 140;
 
@@ -45,9 +45,14 @@ namespace SadGUI.View_Models
             }
         }
 
+        public void Tweet()
+        {
+            m_service.SendTweet(new SendTweetOptions {Status = TweetText});
+        }
 
         private TwitterControlViewModel()
         {
+            TweetText = "HI";
             m_service = new TwitterService(cKey, cSec, tokn, tSec);
         }
 
