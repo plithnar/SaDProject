@@ -25,8 +25,11 @@ namespace SadGUI.View_Models
 
         public string TweetText
         {
-            get { return m_tweet; }
-            set 
+            get 
+            { 
+                return m_tweet;
+            }
+            private set 
             { 
                 m_tweet = value; 
                 OnPropertyChanged("TweetText"); 
@@ -45,9 +48,10 @@ namespace SadGUI.View_Models
             }
         }
 
-        public void Tweet()
+        public void Tweet(string value)
         {
-            m_service.SendTweet(new SendTweetOptions {Status = TweetText});
+            TweetText = value;
+            //m_service.SendTweet(new SendTweetOptions {Status = TweetText});
         }
 
         private TwitterControlViewModel()

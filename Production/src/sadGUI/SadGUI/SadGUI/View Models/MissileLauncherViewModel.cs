@@ -371,8 +371,10 @@ namespace SadGUI.View_Models
                 double phi = Conversions.calcPhi(target.X, target.Y);
                 double theta = Conversions.calcTheta(target.X, target.Y, target.Z);
                 m_commands.Enqueue(new LauncherCommand(LauncherAction.Kill, phi, theta));
-                m_twitter.TweetText = "Shot at "+target.Name+" at " + m_gameTime;
-                m_twitter.Tweet();
+                
+
+                string tweetText = "Shot at "+target.Name+" at " + m_gameTime;
+                m_twitter.Tweet(tweetText);
             }
         }
 
