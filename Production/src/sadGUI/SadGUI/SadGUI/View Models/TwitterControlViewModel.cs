@@ -7,7 +7,7 @@ using TweetSharp;
 
 namespace SadGUI.View_Models
 {
-    class TwitterControlViewModel : ViewModelBase
+    public class TwitterControlViewModel : ViewModelBase
     {
         private string m_tweet = "";
 

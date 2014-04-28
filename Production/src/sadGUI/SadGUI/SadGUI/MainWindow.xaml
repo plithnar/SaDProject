@@ -68,6 +68,6 @@
 
         <MongooseViews:VideoControl Grid.Row="2" Grid.Column="0" />
 
-        <MongooseViews:TwitterControl Grid.Row="2" Grid.Column="1" />
+        <MongooseViews:TwitterControl DataContext="{Binding TwitterControl}" Grid.Row="2" Grid.Column="1" />
     </Grid>
 </Window>

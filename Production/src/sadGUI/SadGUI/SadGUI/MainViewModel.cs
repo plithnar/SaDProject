@@ -37,6 +37,8 @@ namespace SadGUI
 
         public ConnectionListViewModel ConnectionList { get; set; }
 
+        public TwitterControlViewModel TwitterControl { get; set; }
+
         public DelegateCommand StartGame { get; private set; }
 
         public DelegateCommand StopGame { get; private set; }
@@ -88,6 +90,8 @@ namespace SadGUI
             ModeSelector.ModeChanged += ModeChanged;
 
             ConnectionList = new ConnectionListViewModel();
+
+            TwitterControl = TwitterControlViewModel.Twitter;
 
             Launcher.LauncherChanged += LauncherChanged;
 

@@ -23,6 +23,8 @@ namespace SadGUI.View_Models
         public ObservableCollection<string> GameList { get; private set; }
         public string SelectedGame { get; set; }
 
+        public GameServerType ServerType { get; set; }
+
         public GameListViewModel()
         {
             m_gameServer = null;
@@ -41,7 +43,8 @@ namespace SadGUI.View_Models
         {
             try
             {
-                m_gameServer.StartGame(SelectedGame);
+                if (m_gameServer != null & ServerType == GameServerType.WebClient)
+                    m_gameServer.StartGame(SelectedGame);
             }
             catch (System.Net.WebException)
             {
@@ -53,7 +56,8 @@ namespace SadGUI.View_Models
         {
             try
             {
-                m_gameServer.StopRunningGame();
+                if (m_gameServer != null & ServerType == GameServerType.WebClient)
+                    m_gameServer.StopRunningGame();
             }
             catch (System.Net.WebException)
             {
@@ -73,10 +77,12 @@ namespace SadGUI.View_Models
             ClearGameListCommand.Executable = true;
             if (ServerIP == "Mock" && ServerPort == 0)
             {
+                ServerType = GameServerType.Mock;
                 m_gameServer = GameServerFactory.Create(GameServerType.Mock, "The Fighting Mongooses", "", 0);
             }
             else
             {
+                ServerType = GameServerType.WebClient;
                 m_gameServer = GameServerFactory.Create(GameServerType.WebClient, "The Fighting Mongooses", ServerIP, ServerPort);
             }
             var list = new List<string>();
