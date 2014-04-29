@@ -16,12 +16,14 @@ namespace SadGUI.View_Models
     {
         public double Phi { get; private set; }
         public double Theta { get; private set; }
+        public string Message { get; private set; }
         public LauncherAction Action { get; private set; }
-        public LauncherCommand(LauncherAction action, double phi=0.0, double theta=0.0)
+        public LauncherCommand(LauncherAction action, double phi=0.0, double theta=0.0, string message="")
         {
             Action = action;
             Phi = phi;
             Theta = theta;
+            Message = message;
         }
     }
 
@@ -232,6 +234,7 @@ namespace SadGUI.View_Models
                                 {
                                     m_launcher.fire();
                                     Ammo = m_launcher.CurrentMissiles;
+                                    m_twitter.Tweet(currentCommand.Message);
                                 }
                                 catch (InvalidOperationException)
                                 {
@@ -293,6 +296,7 @@ namespace SadGUI.View_Models
         {
             StartTime();
             GameRunning = true;
+            m_twitter.Tweet(string.Format("Game started at {0}!", DateTime.Now.ToString("HH:mm ss tt")));
         }
 
         public void Stop(object sender, EventArgs e)
@@ -303,6 +307,7 @@ namespace SadGUI.View_Models
             m_commands.Enqueue(new LauncherCommand(LauncherAction.Recalibrate));
             Phi = m_launcher.Phi;
             Theta = m_launcher.Theta;
+            m_twitter.Tweet(string.Format("Game stopped at {0}!", DateTime.Now.ToString("HH:mm ss tt")));
         }
 
         public void Abort(object sender, EventArgs e)
@@ -310,6 +315,7 @@ namespace SadGUI.View_Models
             EndTime();
             GameRunning = false;
             m_commands.Clear();
+            m_twitter.Tweet(string.Format("Game aborted at {0}!", DateTime.Now.ToString("HH:mm ss tt")));
         }
 
         private MissileLauncherViewModel()
@@ -370,11 +376,11 @@ namespace SadGUI.View_Models
                 }
                 double phi = Conversions.calcPhi(target.X, target.Y);
                 double theta = Conversions.calcTheta(target.X, target.Y, target.Z);
-                m_commands.Enqueue(new LauncherCommand(LauncherAction.Kill, phi, theta));
-                
 
-                string tweetText = "Shot at "+target.Name+" at " + m_gameTime;
-                m_twitter.Tweet(tweetText);
+                string tweetText = "Shot at " + target.Name + " at " + m_gameTime;
+
+                m_commands.Enqueue(new LauncherCommand(LauncherAction.Kill, phi, theta, tweetText));
+                
             }
         }
 
