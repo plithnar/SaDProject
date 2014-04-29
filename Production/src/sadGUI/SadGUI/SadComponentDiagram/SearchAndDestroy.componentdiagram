@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="4f6b1c44-6356-45a9-998a-18c533e92cf6" name="SearchAndDestroy" linkedPackageId="a55d96d6-73d2-4af6-9075-397df3900678" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="abb6ccda-c112-4282-926f-f5f9ed45dbed">
+      <profileInstance Id="38f78f5f-409b-4e3c-bd92-4be23d8c421c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="0b4d131f-aa71-4108-a652-727d1adddd4d">
+      <profileInstance Id="2f2e0de2-18ca-401e-9505-d7a591ffa974" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="9943d494-728b-476d-aef6-4491d0d9bd8b" name="MissileLauncher" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="66ffa89b-c6e8-4f2c-8e86-a3380ce05117" />
+        <ownedAttributesInternal>
+          <providedInterface Id="b51e15ed-5b4b-4370-8b51-4f502140a793" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="1c4209c4-a775-477f-a7bb-b4b2420025fc" />
+            <targetNamedElementsInternal>
+              <connector Id="d0f33f28-75e1-4a50-859a-412317cb1bef" isLeaf="false" isStatic="false">
+                <partMoniker Id="cdb6869f-1c4e-4203-8f90-d747a6e7d46a" LastKnownName="Mock" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="0500dc64-c715-43fc-b2a4-8c24b769d33e">
+                      <elementDefinition Id="eb9f0352-0b41-453c-8616-7666293406e9" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="8861896e-a5ef-4efa-81ad-8a3a335a2e53">
+                      <elementDefinition Id="c32bb69c-26aa-4bfb-af75-19f1c9b81f8f" />
+                      <portWithPart>
+                        <providedInterfaceMoniker Id="639f4561-1888-44f3-9fd7-7a437c693b10" LastKnownName="Port1" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="73599661-1508-4d17-8925-b9fd6360b42d" />
+              </connector>
+              <connector Id="8ae6e886-c7e3-4f66-bd3a-b274f24acc06" isLeaf="false" isStatic="false">
+                <partMoniker Id="7aa5607f-c53f-4203-8659-5141c60978d2" LastKnownName="DreamCheeky" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="5cfa6c72-0ead-4e6e-9b7a-81e715b16a28">
+                      <elementDefinition Id="e59bf562-6bf0-469f-8edd-4b0ebe868b68" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="2c2a440a-1762-499f-aee5-6a4816b76daa">
+                      <elementDefinition Id="b385afc5-9da2-41d3-8229-8df15e6b7b57" />
+                      <portWithPart>
+                        <providedInterfaceMoniker Id="19238fd5-a83d-4281-b1bf-08a3b91f7453" LastKnownName="Port1" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="ca7c7227-2bc5-49eb-9925-cb61747c97ec" />
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="df645b6a-2740-4dbc-a94e-633a8c80aa05" LastKnownName="IMissileLauncher" />
+            </type_NamedElement>
+          </providedInterface>
+          <part Id="7aa5607f-c53f-4203-8659-5141c60978d2" name="DreamCheeky" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="182746fb-6670-4c53-8b7a-8b954f8fa322" />
+            <type_NamedElement>
+              <componentMoniker Id="7dee438a-4f65-4099-b453-8f7f9b7a34b4" />
+            </type_NamedElement>
+          </part>
+          <part Id="cdb6869f-1c4e-4203-8f90-d747a6e7d46a" name="Mock" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="4938d37b-1539-4de9-a859-df6f1d490322" />
+            <type_NamedElement>
+              <componentMoniker Id="cb66e33d-5aba-4671-92bc-3db046b95948" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="df645b6a-2740-4dbc-a94e-633a8c80aa05" name="IMissileLauncher" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="56d20ee9-5260-4085-a855-f699d4ca9598" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="7dee438a-4f65-4099-b453-8f7f9b7a34b4" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="96b6ac13-fcc4-4f5f-8d1e-dc160b44cc27" />
+        <ownedAttributesInternal>
+          <providedInterface Id="19238fd5-a83d-4281-b1bf-08a3b91f7453" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="df14ab0e-965b-4547-a968-e6e1aea75f92" />
+            <type_NamedElement>
+              <interfaceMoniker Id="6eb46afb-80af-43a4-8a2f-4e175571a3b6" LastKnownName="IMissileLauncher" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="cb66e33d-5aba-4671-92bc-3db046b95948" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9e199908-b8b8-4cc3-a386-1164936a86eb" />
+        <ownedAttributesInternal>
+          <providedInterface Id="639f4561-1888-44f3-9fd7-7a437c693b10" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="3441251a-b4d2-43c9-916c-19ff457621f5" />
+            <type_NamedElement>
+              <interfaceMoniker Id="bd297e73-a4d0-4f1c-a16d-faab9d785651" LastKnownName="IMissileLauncher" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="bd297e73-a4d0-4f1c-a16d-faab9d785651" name="IMissileLauncher" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="93a3f9d4-407c-4b8d-9994-b7df2e9bf57a" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="6eb46afb-80af-43a4-8a2f-4e175571a3b6" name="IMissileLauncher" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e9f0c924-a23b-482b-8574-387c5dab530a" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="b0e5b1de-723b-41a8-b1fb-7b48e643b4d5" name="GameServerFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="13780bae-bb4a-43fd-9469-8794359e4131" />
+        <ownedAttributesInternal>
+          <providedInterface Id="8d715493-8c35-4e86-bd95-8b648df68eea" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="c55c2565-9b53-4563-871b-1fe14e7aeb06" />
+            <type_NamedElement>
+              <interfaceMoniker Id="06168abb-1fff-454c-a9b7-dc440ccd28aa" LastKnownName="IGameServer" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="06168abb-1fff-454c-a9b7-dc440ccd28aa" name="IGameServer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="207cdf54-4980-4aa0-b419-bbe136ef29fc" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="361846a0-3f38-488b-ab67-d05e6567502e" name="IniTargetFileReader" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="102661fc-d4c6-4520-a3b3-537a5482be0c" />
+        <ownedAttributesInternal>
+          <providedInterface Id="47abfde2-28d8-4329-a187-d5e65e9af00f" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="23a70dc3-8ae4-424e-988e-75cc49e6a83b" />
+            <type_NamedElement>
+              <interfaceMoniker Id="0f00e111-4f25-48cc-84b0-a6f6618a1eec" LastKnownName="ITargetFileReader" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="0f00e111-4f25-48cc-84b0-a6f6618a1eec" name="ITargetFileReader" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8491664f-5265-4896-9559-2b6d1908d96b" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="7290496f-42d8-415a-a076-b6dbd4c14410" name="MainViewModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ac4f1b33-82f4-4203-be88-d2f04beb248d" />
+        <ownedAttributesInternal>
+          <part Id="6e67eaa2-b851-4e16-9077-ed6d35a6ca12" name="MissileLauncherViewModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="f0b08d62-dfd2-4278-a5f1-6295ff248f0d" />
+            <targetNamedElementsInternal>
+              <connector Id="75da1d98-f00f-409d-becc-f532b3a358fe" isLeaf="false" isStatic="false">
+                <requiredInterfaceMoniker Id="a7393164-7cc9-426c-8de2-80e004986d8f" LastKnownName="Port1" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="24469eb1-776c-4148-92fb-cef05174d39c">
+                      <elementDefinition Id="f50b40bb-1b27-43e4-b028-17895c0ebec4" />
+                      <portWithPart>
+                        <requiredInterfaceMoniker Id="8a7d33ff-e3f7-4727-9716-f3ee85a8c80f" LastKnownName="Port1" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="51011969-6301-44a7-900f-bfdc36ac3530">
+                      <elementDefinition Id="12ed909d-c8f1-4a0b-9007-40dcc4fa9900" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="96f8cfb6-e50c-4d37-8b04-5f06199f55de" />
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker Id="32aa74c7-b5a1-4abe-8983-d83ea7337c94" />
+            </type_NamedElement>
+          </part>
+          <requiredInterface Id="a7393164-7cc9-426c-8de2-80e004986d8f" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="1897d6ef-d975-450e-8dda-7db7a60a32b5" />
+            <suppliersInternal>
+              <dependency Id="4a5a35e1-428e-46e3-96fa-d984207f51cc">
+                <providedInterfaceMoniker Id="b51e15ed-5b4b-4370-8b51-4f502140a793" LastKnownName="Port1" />
+                <elementDefinition Id="3af55099-2333-4514-8ba4-b0944e32be56" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="b20f8d5b-a9df-4e02-8433-1e588a46a9ac" LastKnownName="IMissileLauncher" />
+            </type_NamedElement>
+          </requiredInterface>
+          <part Id="c7e745c5-cdfa-48a9-ab9b-85b260818e81" name="TargetListViewModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="b6ce5361-322d-42b3-937d-82204d20bfb3" />
+            <targetNamedElementsInternal>
+              <connector Id="f5db17f6-856d-4dfe-8e62-195b845551e0" isLeaf="false" isStatic="false">
+                <requiredInterfaceMoniker Id="e0f24e90-e930-4131-8de2-f1a72457fba2" LastKnownName="Port11" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="f67d2a6b-4d2f-4fd1-a076-1f25bd3ab0f4">
+                      <elementDefinition Id="5b385ab2-85fc-45fc-89a0-f52c9dc053ce" />
+                      <portWithPart>
+                        <requiredInterfaceMoniker Id="2ebefc46-6ec0-4b12-8db8-86de5fc4a85a" LastKnownName="Port1" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="ac09135a-0128-495f-aebb-a06f03cd72aa">
+                      <elementDefinition Id="05833f70-d9e9-4310-87b4-ba184e52f5ff" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="8e0adf23-c107-4d24-b1a9-d9202ea79e7f" />
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker Id="1b4f1e40-94fb-4d35-a52f-20d9d6e6e47c" />
+            </type_NamedElement>
+          </part>
+          <requiredInterface Id="e0f24e90-e930-4131-8de2-f1a72457fba2" name="Port11" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="9ab34968-55bf-4f04-a2a5-b8caf80de53f" />
+            <suppliersInternal>
+              <dependency Id="daf05efe-4d5b-4882-a14b-4ca7d324635b">
+                <providedInterfaceMoniker Id="47abfde2-28d8-4329-a187-d5e65e9af00f" LastKnownName="Port1" />
+                <elementDefinition Id="4bf577ce-11f8-4fb8-a4ab-392517c7face" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="f484152d-a328-476b-96ad-73909c09836e" LastKnownName="ITargetFileReader" />
+            </type_NamedElement>
+          </requiredInterface>
+          <part Id="a97d33da-2da2-4658-ac1a-b9206d7c363b" name="GameListViewModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="9ef4268f-3065-44b3-9975-9b923e4ffa07" />
+            <targetNamedElementsInternal>
+              <connector Id="bc5bdc96-5ea8-41ea-8e15-3cc4363607e9" isLeaf="false" isStatic="false">
+                <requiredInterfaceMoniker Id="3a5057ee-82e2-470e-b4e2-04bb698a9c73" LastKnownName="Port12" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="a32119b7-c4f7-4385-8754-e60bcd3e559a">
+                      <elementDefinition Id="5d71628a-437d-44d9-8124-adaa3e854c10" />
+                      <portWithPart>
+                        <requiredInterfaceMoniker Id="4f46060a-87b1-40c0-b978-0593637df266" LastKnownName="Port1" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="363c17a2-1c9e-4bad-8b91-fc7a5d6b195d">
+                      <elementDefinition Id="479f0826-ed53-46eb-9c99-d4b87f81671b" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="2d116782-7c46-4877-804e-2fd65ec4fdf8" />
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker Id="18a5dd27-ee5e-41bd-9b2f-9cc0c1c9d143" />
+            </type_NamedElement>
+          </part>
+          <requiredInterface Id="3a5057ee-82e2-470e-b4e2-04bb698a9c73" name="Port12" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="fd42ee72-4b24-40a3-8428-91bfbdbdba91" />
+            <suppliersInternal>
+              <dependency Id="cc88117a-0277-4de7-93c6-4719f2fcea6f">
+                <providedInterfaceMoniker Id="8d715493-8c35-4e86-bd95-8b648df68eea" LastKnownName="Port1" />
+                <elementDefinition Id="5e85bd15-7acc-44f9-be1f-d9c3b88987e6" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="f270a0a8-cd47-4427-884d-5a34570f33e5" LastKnownName="IGameServer" />
+            </type_NamedElement>
+          </requiredInterface>
+          <part Id="a796791b-cbdf-4b8e-b655-dc3bbb4a6458" name="VideoControlViewModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="7c557665-a4dc-4368-811a-40f627f7dd0e" />
+            <type_NamedElement>
+              <componentMoniker Id="0f3464e6-c1c6-4307-bf9b-cdd4f39ff96d" />
+            </type_NamedElement>
+          </part>
+          <part Id="d8446f59-2d7f-4d51-bdc5-fc70a596fe18" name="MissileLauncherSelectorViewModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="e14a9d20-0501-49af-9102-7210fc121c58" />
+            <type_NamedElement>
+              <componentMoniker Id="388a1524-a193-4b2c-9b4b-22116f5b8197" />
+            </type_NamedElement>
+          </part>
+          <part Id="7621fe27-7536-4362-9e84-b10f62d0277c" name="TwitterControlViewModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="e037ea1b-f2a6-45af-887c-a28e876b8d1e" />
+            <type_NamedElement>
+              <componentMoniker Id="e9287f18-2ed7-4a20-b8a4-e0adec3aa0a2" />
+            </type_NamedElement>
+          </part>
+          <part Id="66cc1065-ab59-44ca-a8bc-8545d9117d2e" name="ModeSelectorViewModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="7fb08342-ae09-4cbc-af89-d3d4fe5887fd" />
+            <type_NamedElement>
+              <componentMoniker Id="85ce5d35-81bd-44f0-91a5-866ba36ad613" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="32aa74c7-b5a1-4abe-8983-d83ea7337c94" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5e26fc22-3446-40fc-a30a-49d47370497f" />
+        <ownedAttributesInternal>
+          <requiredInterface Id="8a7d33ff-e3f7-4727-9716-f3ee85a8c80f" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="5905510d-5824-46a8-bbc1-963e8afa2741" />
+            <type_NamedElement>
+              <interfaceMoniker Id="1d224a72-88ce-43df-920b-e5debb0eaadb" LastKnownName="IMissileLauncher" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="1d224a72-88ce-43df-920b-e5debb0eaadb" name="IMissileLauncher" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2889712d-06ae-4d39-a739-d1644db30642" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="b20f8d5b-a9df-4e02-8433-1e588a46a9ac" name="IMissileLauncher" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="11e41ff4-2b33-4afd-b876-d65c3b6dc146" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="1b4f1e40-94fb-4d35-a52f-20d9d6e6e47c" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5e4990f5-b4f0-4cb9-bb18-cb0cdaef2f1e" />
+        <ownedAttributesInternal>
+          <requiredInterface Id="2ebefc46-6ec0-4b12-8db8-86de5fc4a85a" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="10525e56-99cd-4929-8f66-41e3a2fae1c6" />
+            <type_NamedElement>
+              <interfaceMoniker Id="b7f88c0c-6972-4e27-9180-4c6cbeae8b84" LastKnownName="ITargetFileReader" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="b7f88c0c-6972-4e27-9180-4c6cbeae8b84" name="ITargetFileReader" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e5730d27-c654-47b8-bf8c-588b86ecc7b7" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="f484152d-a328-476b-96ad-73909c09836e" name="ITargetFileReader" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cb66ec10-0c9f-4e9e-abf2-4996b009b12f" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="18a5dd27-ee5e-41bd-9b2f-9cc0c1c9d143" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="57f8926b-9df3-4da4-abb2-9113e8325cb9" />
+        <ownedAttributesInternal>
+          <requiredInterface Id="4f46060a-87b1-40c0-b978-0593637df266" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="abe55af5-fcec-4703-8fb4-bbd265aece32" />
+            <type_NamedElement>
+              <interfaceMoniker Id="481f02cc-803a-4c95-a5d9-497f9dcdc8f8" LastKnownName="IGameServer" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="481f02cc-803a-4c95-a5d9-497f9dcdc8f8" name="IGameServer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7460a94e-7b9d-4c1e-a21d-14cc1783a59e" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="f270a0a8-cd47-4427-884d-5a34570f33e5" name="IGameServer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="50a8db2a-5af2-4f05-97bb-20977cf03998" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="0f3464e6-c1c6-4307-bf9b-cdd4f39ff96d" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fe88bf8f-77ac-4100-a7e3-b11c43ee91fc" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="388a1524-a193-4b2c-9b4b-22116f5b8197" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a04ca546-36ff-4de6-b06a-66db67f0c7b5" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="e9287f18-2ed7-4a20-b8a4-e0adec3aa0a2" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b9b7361b-c4bf-4708-9fdd-c165d5211f8e" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="85ce5d35-81bd-44f0-91a5-866ba36ad613" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d963e2e3-9a7b-4702-9ea1-897c2d51973a" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="a55d96d6-73d2-4af6-9075-397df3900678" name="SadComponentDiagram">
+    <elementDefinition Id="054cee0e-270b-488c-ae58-256daac7d63d" />
+  </package>
+</componentModel>
