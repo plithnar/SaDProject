@@ -272,6 +272,10 @@
       <Project>{7a445aa6-73a5-4f33-be56-55b9ba9d8857}</Project>
       <Name>GameServerCommunicator</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Strategies\Strategies.csproj">
+      <Project>{f4bc5264-3cea-406f-969b-58a53131e8fa}</Project>
+      <Name>Strategies</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.1">

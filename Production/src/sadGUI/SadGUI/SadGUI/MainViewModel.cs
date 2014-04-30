@@ -1,5 +1,6 @@
 ﻿using MissileLauncher;
 using SadGUI.View_Models;
+using Strategies;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -16,6 +17,7 @@ namespace SadGUI
         private string m_serverIp;
         private string m_port;
         private MissileLauncherViewModel m_launcherViewModel = MissileLauncherViewModel.Instance;
+        private IStrategy m_strategy;
         public MissileLauncherViewModel Launcher
         {
             get
@@ -78,10 +80,11 @@ namespace SadGUI
 
         public MainViewModel()
         {
-
+            m_strategy = new KillEmAllStrategy();
             ServerIP = "Mock";
             ServerPort = "0";
             MissileLauncherSelector = new MissileLauncherSelectorViewModel();
+            Launcher.LauncherFired += GetNextTarget;
 
             TargetList = new TargetListViewModel();
 
@@ -117,12 +120,10 @@ namespace SadGUI
 
         public void ModeChanged(object sender, EventArgs e)
         {
-            Stop();
         }
 
         public void LauncherChanged(object sender, EventArgs args)
         {
-            Stop();
         }
 
         void ConnectServer()
@@ -140,6 +141,13 @@ namespace SadGUI
             }
         }
 
+        void GetNextTarget(object sender, EventArgs e)
+        {
+            var targets = TargetList.GameListViewModel.GetTargetList();
+            var target = m_strategy.GetHighestPriorityTarget(targets, Launcher.Time);
+            Launcher.Kill(target);
+        }
+
         void Start()
         {
             StartGame.Executable = false;
@@ -147,19 +155,11 @@ namespace SadGUI
             AbortGame.Executable = true;
             Connect.Executable = false;
             TargetList.GameListViewModel.StartGame();
+            StartGameEvent(this, null);
             if (ModeSelector.SelectedMode == Modes.Automatic)
             {
-                for (int i = 0; i < TargetList.Targets.Count; i++)
-                {
-                    var target = TargetList.Targets[i].TargetInfo;
-                    TargetList.SelectedTarget = TargetList.Targets[i];
-                    if (!target.Friend)
-                    {
-                        Launcher.Kill(TargetList.Targets[i]);
-                        TargetList.Targets[i].Alive = false;
-                    }
-                }
-                StartGameEvent(this, null);
+                var targets = TargetList.GetTargets();
+                Launcher.Kill(m_strategy.GetHighestPriorityTarget(targets, Launcher.Time));
             }
             else
             {

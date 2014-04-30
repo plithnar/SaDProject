@@ -166,8 +166,18 @@ namespace SadGUI.View_Models
         {
             if (SelectedTarget != null)
             {
-                MissileLauncherViewModel.Instance.Kill(SelectedTarget);
+                MissileLauncherViewModel.Instance.Kill(SelectedTarget.TargetInfo);
             }
+        }
+
+        public List<Target> GetTargets()
+        {
+            var targets = new List<Target>();
+            foreach (var target in Targets)
+            {
+                targets.Add(new Target(target.Name, target.X, target.Y, target.Z, target.Friendly, target.points, target.FlashRate));
+            }
+            return targets;
         }
     }
 }

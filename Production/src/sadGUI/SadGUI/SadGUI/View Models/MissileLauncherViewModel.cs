@@ -152,7 +152,10 @@ namespace SadGUI.View_Models
                 OnPropertyChanged("GameTime");
             }
         }
-        
+
+        public int Time { get; private set; }
+
+        public event EventHandler LauncherFired;
         public event EventHandler LauncherChanged;
         private MissileLauncherTypes m_launcherType;
         private string m_gameTime;
@@ -204,6 +207,7 @@ namespace SadGUI.View_Models
                                 try
                                 {
                                     m_launcher.fire();
+                                    LauncherFired();
                                     Ammo = m_launcher.CurrentMissiles;
                                 }
                                 catch (InvalidOperationException)
@@ -235,6 +239,7 @@ namespace SadGUI.View_Models
                                     string tweetText = currentCommand.Message + " at " + GameTime + " into the game";
                                     m_twitter.Tweet(tweetText);
                                     m_launcher.fire();
+                                    LauncherFired();
                                     Ammo = m_launcher.CurrentMissiles;
                                 }
                                 catch (InvalidOperationException)
@@ -277,6 +282,7 @@ namespace SadGUI.View_Models
                 var strb = new StringBuilder();
                 strb.AppendFormat("{0}:{1}:{2}", hours, minutes, seconds);
                 GameTime = strb.ToString();
+                Time = time;
                 time++;
                 Thread.Sleep(1000);
             }
@@ -365,9 +371,14 @@ namespace SadGUI.View_Models
             m_twitter = TwitterControlViewModel.Twitter;
         }
 
-        public void Kill(TargetViewModel targetvm)
+        public void KillTargets(List<Target> targets, IStrategy strategy)
         {
-            var target = targetvm.TargetInfo;
+            
+        }
+
+        public void Kill(Target targetvm)
+        {
+            var target = targetvm;
             if (target != null)
             {
                 if (target.Friend)
