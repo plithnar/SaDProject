@@ -109,6 +109,7 @@ namespace SadGUI.View_Models
             try
             {
                 targetList = m_gameServer.RetrieveTargetList(SelectedGame).ToList();
+                MessageBox.Show("Successful connection");
             }
             catch (System.Net.WebException)
             {
@@ -117,7 +118,7 @@ namespace SadGUI.View_Models
 
             foreach (var target in targetList)
             {
-                var tar = new Target(target.name, (double) target.x, (double) target.y, (double) target.z, false, (int) target.points, 0);
+                var tar = new Target(target.name, (double) target.x, (double) target.y, (double) target.z, /*Convert.ToBoolean(target.status)*/ false, (int) target.points, (int)target.spawnRate);
                 targets.Add(tar);
             }
 

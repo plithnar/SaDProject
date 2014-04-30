@@ -56,10 +56,8 @@ namespace SadGUI.View_Models
 
         private TwitterControlViewModel()
         {
-            TweetText = "HI";
+            TweetText = "";
             m_service = new TwitterService(cKey, cSec, tokn, tSec);
         }
-
-
     }
 }

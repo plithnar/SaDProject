@@ -232,9 +232,10 @@ namespace SadGUI.View_Models
                                 Theta = m_launcher.Theta;
                                 try
                                 {
+                                    string tweetText = currentCommand.Message + " at " + GameTime + " into the game";
+                                    m_twitter.Tweet(tweetText);
                                     m_launcher.fire();
                                     Ammo = m_launcher.CurrentMissiles;
-                                    m_twitter.Tweet(currentCommand.Message);
                                 }
                                 catch (InvalidOperationException)
                                 {
@@ -377,7 +378,7 @@ namespace SadGUI.View_Models
                 double phi = Conversions.calcPhi(target.X, target.Y);
                 double theta = Conversions.calcTheta(target.X, target.Y, target.Z);
 
-                string tweetText = "Shot at " + target.Name + " at " + m_gameTime;
+                string tweetText = "Shot at " + target.Name;
 
                 m_commands.Enqueue(new LauncherCommand(LauncherAction.Kill, phi, theta, tweetText));
                 

@@ -146,8 +146,10 @@ namespace MissileLauncher
 
         private void SendUSBData(byte[] Data)
         {
+            
             if (this.USB.SpecifiedDevice != null)
             {
+                //TODO: TRY CATCH HERE!!!
                 this.USB.SpecifiedDevice.SendData(Data);
             }
         }
