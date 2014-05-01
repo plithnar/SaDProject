@@ -65,12 +65,12 @@
       <SubType>Content</SubType>
       <DependentUpon>SadGUI_UML_Diagrams.classdiagram</DependentUpon>
     </Content>
-    <Content Include="UMLComponentDiagram1.componentdiagram">
+    <Content Include="SearchAndDestroy.activitydiagram">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UMLComponentDiagram1.componentdiagram.layout">
+    <Content Include="SearchAndDestroy.activitydiagram.layout">
       <SubType>Content</SubType>
-      <DependentUpon>UMLComponentDiagram1.componentdiagram</DependentUpon>
+      <DependentUpon>SearchAndDestroy.activitydiagram</DependentUpon>
     </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\SadGUI_UML_Diagrams.uml">
