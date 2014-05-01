@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="4f6b1c44-6356-45a9-998a-18c533e92cf6" name="SearchAndDestroy" linkedPackageId="a55d96d6-73d2-4af6-9075-397df3900678" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="abb6ccda-c112-4282-926f-f5f9ed45dbed">
-      <profileInstance Id="38f78f5f-409b-4e3c-bd92-4be23d8c421c" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="0b4d131f-aa71-4108-a652-727d1adddd4d">
-      <profileInstance Id="2f2e0de2-18ca-401e-9505-d7a591ffa974" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <componentModelHasComponents>
       <component Id="9943d494-728b-476d-aef6-4491d0d9bd8b" name="MissileLauncher" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -183,6 +169,25 @@
                 </relationshipOwnedElementsInternal>
                 <elementDefinition Id="96f8cfb6-e50c-4d37-8b04-5f06199f55de" />
               </connector>
+              <connector Id="14c7c1ed-cc82-403e-a7ea-a5c8010d7d75" isLeaf="false" isStatic="false">
+                <requiredInterfaceMoniker Id="ed32fb91-74ee-47eb-82c3-8d97239ce295" LastKnownName="Port2" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="97c9db44-0ec0-457d-af88-8242592af624">
+                      <elementDefinition Id="6913a0b7-e3e8-42f5-8759-53e027f2fa74" />
+                      <portWithPart>
+                        <requiredInterfaceMoniker Id="2f0332a1-fd97-4039-9c8f-edea17f60d7a" LastKnownName="Port2" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="4d1ef935-be62-4c71-8140-aead5f3e0602">
+                      <elementDefinition Id="3658f7ba-eb9e-4c2f-bb72-11fc59e171bc" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="21b89a2e-bb7d-4c09-b9bf-56b84aa08218" />
+              </connector>
             </targetNamedElementsInternal>
             <type_NamedElement>
               <componentMoniker Id="32aa74c7-b5a1-4abe-8983-d83ea7337c94" />
@@ -302,6 +307,18 @@
               <componentMoniker Id="85ce5d35-81bd-44f0-91a5-866ba36ad613" />
             </type_NamedElement>
           </part>
+          <requiredInterface Id="ed32fb91-74ee-47eb-82c3-8d97239ce295" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="e6d29b12-e162-42d4-a432-c897dfb22ea9" />
+            <suppliersInternal>
+              <dependency Id="94ccabd1-8d40-4ec0-bbd3-d0476871d266">
+                <providedInterfaceMoniker Id="318fff11-a8e5-4765-bccf-eb723d4663a5" LastKnownName="Port1" />
+                <elementDefinition Id="bdf61245-197a-4e39-88a0-daf7cf372881" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="8974730b-feaf-4409-b032-f78df320e90a" LastKnownName="IStrategy" />
+            </type_NamedElement>
+          </requiredInterface>
         </ownedAttributesInternal>
       </component>
     </componentModelHasComponents>
@@ -313,6 +330,12 @@
             <elementDefinition Id="5905510d-5824-46a8-bbc1-963e8afa2741" />
             <type_NamedElement>
               <interfaceMoniker Id="1d224a72-88ce-43df-920b-e5debb0eaadb" LastKnownName="IMissileLauncher" />
+            </type_NamedElement>
+          </requiredInterface>
+          <requiredInterface Id="2f0332a1-fd97-4039-9c8f-edea17f60d7a" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="2d72f81c-051e-4630-9684-d616fc10ab8d" />
+            <type_NamedElement>
+              <interfaceMoniker Id="f2a3e551-cdea-4a68-a82d-2a5e34b7ef74" LastKnownName="IStrategy" />
             </type_NamedElement>
           </requiredInterface>
         </ownedAttributesInternal>
@@ -394,8 +417,72 @@
         <elementDefinition Id="d963e2e3-9a7b-4702-9ea1-897c2d51973a" />
       </component>
     </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="f2a3e551-cdea-4a68-a82d-2a5e34b7ef74" name="IStrategy" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2111f402-7a11-4d51-80b1-cdcd936dfc3b" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="8974730b-feaf-4409-b032-f78df320e90a" name="IStrategy" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="361db7be-78c5-41db-95b6-f52d1382d6d9" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="8ec728e9-24f8-42b8-b0b0-167dbc373048" name="Strategy" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c265268a-3dea-4b80-99cd-af7078691457" />
+        <ownedAttributesInternal>
+          <part Id="18f37e3c-cc05-4c8e-8313-6c8a9a966a82" name="KillEmAll" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="cb753494-5b28-43f4-81cd-7b7580572fab" />
+            <type_NamedElement>
+              <componentMoniker Id="061e86ec-d0ba-40c1-a609-3f7f35f2817e" />
+            </type_NamedElement>
+          </part>
+          <part Id="a483dc5c-2fec-43a2-9792-20679f309a68" name="KillMostValuable" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="c3cb7202-ee48-434a-b975-8449df91a44e" />
+            <type_NamedElement>
+              <componentMoniker Id="bd71e1b9-5526-476e-820b-28e0fe2ed17e" />
+            </type_NamedElement>
+          </part>
+          <providedInterface Id="318fff11-a8e5-4765-bccf-eb723d4663a5" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="2bcbbc29-08ea-4e66-abf8-729cf7df2b1f" />
+            <type_NamedElement>
+              <interfaceMoniker Id="5dd6aa34-13fd-40e3-88ff-970824aacc26" LastKnownName="IStrategy" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="061e86ec-d0ba-40c1-a609-3f7f35f2817e" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b72417a8-342c-4265-91f3-e4c965c3ba9a" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="bd71e1b9-5526-476e-820b-28e0fe2ed17e" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e8b8516c-dd32-447c-b9b5-715fb43dd41d" />
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="5dd6aa34-13fd-40e3-88ff-970824aacc26" name="IStrategy" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5691871a-8b16-437b-8815-6289ca3d6e0a" />
+      </Interface>
+    </modelContainsNamedElements>
   </packagedElements>
   <package Id="a55d96d6-73d2-4af6-9075-397df3900678" name="SadComponentDiagram">
     <elementDefinition Id="054cee0e-270b-488c-ae58-256daac7d63d" />
+    <profileInstances>
+      <packageHasProfileInstances Id="abb6ccda-c112-4282-926f-f5f9ed45dbed">
+        <profileInstance Id="38f78f5f-409b-4e3c-bd92-4be23d8c421c" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="0b4d131f-aa71-4108-a652-727d1adddd4d">
+        <profileInstance Id="2f2e0de2-18ca-401e-9505-d7a591ffa974" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </componentModel>

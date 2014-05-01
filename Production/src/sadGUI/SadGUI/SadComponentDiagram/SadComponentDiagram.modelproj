@@ -22,6 +22,13 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
   <ItemGroup>
+    <Content Include="SearchAndDestroy.componentdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="SearchAndDestroy.componentdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>SearchAndDestroy.componentdiagram</DependentUpon>
+    </Content>
     <Content Include="UMLComponentDiagram1.componentdiagram">
       <SubType>Content</SubType>
     </Content>
