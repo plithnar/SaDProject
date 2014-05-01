@@ -23,5 +23,11 @@
         LastKnownName="ObjectModel"
         LastKnownLocation="Package_1413.uml" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="126a41f3-3d16-44ce-aac5-6779e09648d5"
+        LastKnownName="Specialized"
+        LastKnownLocation="Package_1438.uml" />
+    </packageHasNamedElement>
   </packagedElements>
 </package>

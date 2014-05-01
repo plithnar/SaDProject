@@ -6,30 +6,28 @@
   <MessageClass Name="Error" Label="Error" Option="Show errors" />
   <MessageClass Name="Property" Label="Property" Option="Show metadata" />
   <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
-  <Message Timestamp="2014-03-25T14:24:30" Importance="High" Text="Reverse Engineering Started." />
-  <Message Timestamp="2014-03-25T14:24:32" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Integer' -  (PrimitiveType)" />
-  <Message Timestamp="2014-03-25T14:24:32" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::MissileLauncher' -  (Package)" />
-  <Message Timestamp="2014-03-25T14:24:32" Importance="Medium" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::MissileLauncher::IMissileLauncher' -  (Interface)" />
-  <Message Timestamp="2014-03-25T14:24:32" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::MissileLauncher::IMissileLauncher::CurrentMissiles' -  (Property)" />
-  <Message Timestamp="2014-03-25T14:24:32" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::MissileLauncher::IMissileLauncher::fire' -  (Operation)" />
-  <Message Timestamp="2014-03-25T14:24:32" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::MissileLauncher::IMissileLauncher::MaxMissiles' -  (Property)" />
-  <Message Timestamp="2014-03-25T14:24:32" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::MissileLauncher::IMissileLauncher::moveBy' -  (Operation)" />
-  <Message Timestamp="2014-03-25T14:24:32" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::MissileLauncher::IMissileLauncher::moveBy::x' -  (Parameter)" />
-  <Message Timestamp="2014-03-25T14:24:32" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::MissileLauncher::IMissileLauncher::moveBy::y' -  (Parameter)" />
-  <Message Timestamp="2014-03-25T14:24:32" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::MissileLauncher::IMissileLauncher::moveTo' -  (Operation)" />
-  <Message Timestamp="2014-03-25T14:24:32" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::MissileLauncher::IMissileLauncher::moveTo::x' -  (Parameter)" />
-  <Message Timestamp="2014-03-25T14:24:32" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::MissileLauncher::IMissileLauncher::moveTo::y' -  (Parameter)" />
-  <Message Timestamp="2014-03-25T14:24:32" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::MissileLauncher::IMissileLauncher::Name' -  (Property)" />
-  <Message Timestamp="2014-03-25T14:24:32" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::MissileLauncher::IMissileLauncher::Phi' -  (Property)" />
-  <Message Timestamp="2014-03-25T14:24:32" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::MissileLauncher::IMissileLauncher::reload' -  (Operation)" />
-  <Message Timestamp="2014-03-25T14:24:32" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::MissileLauncher::IMissileLauncher::status' -  (Operation)" />
-  <Message Timestamp="2014-03-25T14:24:32" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::MissileLauncher::IMissileLauncher::Theta' -  (Property)" />
-  <Message Timestamp="2014-03-25T14:24:32" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::System' -  (Package)" />
-  <Message Timestamp="2014-03-25T14:24:32" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::System::Double' -  (Class)   (partially reverse engineered - definition not updated) " />
-  <Message Timestamp="2014-03-25T14:24:32" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'String' -  (PrimitiveType)" />
-  <Message Timestamp="2014-03-25T14:24:32" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: SadGUI_UML_Diagrams::MissileLauncher::IMissileLauncher to SadGUI_UML_Diagrams::System::Double (Association)" />
-  <Message Timestamp="2014-03-25T14:24:32" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: SadGUI_UML_Diagrams::MissileLauncher::IMissileLauncher to SadGUI_UML_Diagrams::System::Double (Association)" />
-  <Message Timestamp="2014-03-25T14:24:32" Importance="High" Text="(1) type(s) fully reverse engineered." />
-  <Message Timestamp="2014-03-25T14:24:32" Importance="High" Text="(1) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
-  <Message Timestamp="2014-03-25T14:24:32" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+  <Message Timestamp="2014-05-01T14:48:29" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2014-05-01T14:48:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: '33aa4540-744e-428b-a97a-d2f02f0491b5' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2014-05-01T14:48:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Integer' -  (PrimitiveType)" />
+  <Message Timestamp="2014-05-01T14:48:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::Strategies' -  (Package)" />
+  <Message Timestamp="2014-05-01T14:48:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::Strategies::IStrategy' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-05-01T14:48:30" Importance="Medium" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::Strategies::KillMostValuable' -  (Class)" />
+  <Message Timestamp="2014-05-01T14:48:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::Strategies::KillMostValuable::bestScore' -  (Property)" />
+  <Message Timestamp="2014-05-01T14:48:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::Strategies::KillMostValuable::GetHighestPriorityTarget' -  (Operation)" />
+  <Message Timestamp="2014-05-01T14:48:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::Strategies::KillMostValuable::GetHighestPriorityTarget::gameTime' -  (Parameter)" />
+  <Message Timestamp="2014-05-01T14:48:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::Strategies::KillMostValuable::GetHighestPriorityTarget::targets' -  (Parameter)" />
+  <Message Timestamp="2014-05-01T14:48:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::Strategies::KillMostValuable::index' -  (Property)" />
+  <Message Timestamp="2014-05-01T14:48:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::Strategies::KillMostValuable::KillMostValuable' -  (Operation)" />
+  <Message Timestamp="2014-05-01T14:48:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::System' -  (Package)" />
+  <Message Timestamp="2014-05-01T14:48:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::System::Collections' -  (Package)" />
+  <Message Timestamp="2014-05-01T14:48:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::System::Collections::Generic' -  (Package)" />
+  <Message Timestamp="2014-05-01T14:48:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::System::Collections::Generic::IList' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-05-01T14:48:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::System::Collections::Generic::IList&lt;Target‎&gt;' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-05-01T14:48:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::System::Double' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-05-01T14:48:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::Targets' -  (Package)" />
+  <Message Timestamp="2014-05-01T14:48:30" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'SadGUI_UML_Diagrams::Targets::Target' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2014-05-01T14:48:30" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: SadGUI_UML_Diagrams::Strategies::KillMostValuable to SadGUI_UML_Diagrams::Strategies::IStrategy (InterfaceRealization)" />
+  <Message Timestamp="2014-05-01T14:48:30" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2014-05-01T14:48:30" Importance="High" Text="(5) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2014-05-01T14:48:30" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
 </Log>

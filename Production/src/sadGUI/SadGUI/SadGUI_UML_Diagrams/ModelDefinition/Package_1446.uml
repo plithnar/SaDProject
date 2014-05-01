@@ -1,0 +1,891 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="f625ae95-3d43-4cde-9fb1-4c82e7b57397"
+  name="Strategies"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="60d3ab65-3cd4-4191-9231-92b58c660038"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DStrategies"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="9e142fe3-bd0d-4eda-9ce2-979a5720d877"
+        name="IStrategy"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="ba950a62-d74b-4824-a38d-a94f44a91561"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FStrategies%2Fbin%2FDebug%2FStrategies.dll&quot; Namespace%3DStrategies Type%3DIStrategy"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e96883a9-5e94-4539-a4de-03abc5f92843"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c31da54b-643f-42e7-ad6c-438405bfea7e">
+                <propertyInstance
+                  Id="b2f06aba-d77a-445a-9f5e-031df2bb8381"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e859dce5-1b51-48a3-a1bc-70e481991219">
+                <propertyInstance
+                  Id="8cf1acae-842b-4101-aee9-21b2f62721a6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bdb7002c-61b9-480f-ba9f-5c7cc3ed95cd">
+                <propertyInstance
+                  Id="eb8d5303-15e1-4ced-98b3-bcc6c5429255"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d766b85b-0dab-41ab-952b-0f9d43cf763e">
+                <propertyInstance
+                  Id="57267544-4617-46d0-a390-c50d8bd207a4"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="f2a669de-85c4-45a6-81eb-e971fefbf540"
+            name="GetHighestPriorityTarget"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f0bb1ff6-9ac7-4320-a3e8-0b6ca89dc062"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FStrategies%2Fbin%2FDebug%2FStrategies.dll&quot; Namespace%3DStrategies Type%3DIStrategy Member%3D(Name%3DGetHighestPriorityTarget OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FTargets%2Fbin%2FDebug%2FTargets.dll&quot; Namespace%3DTargets Type%3DTarget)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="68cb5ed3-d58b-4750-8844-790a0ef76b8f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b935233c-5aec-489e-b6db-96f975a3c9ab">
+                    <propertyInstance
+                      Id="0878b96b-8c76-44a1-a1e9-283af744d526"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07b04b9a-5910-4a99-bb2a-ce863f4f27d5">
+                    <propertyInstance
+                      Id="67afe364-9328-4229-a8fd-af4b6b890212"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ae32e95-f1a6-4f26-97ef-4ed928c4d045">
+                    <propertyInstance
+                      Id="1fdd9ba6-3444-4a0b-b178-aff51eda1cb4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="21442285-6ab0-48ab-b96e-64dd34845d2a">
+                    <propertyInstance
+                      Id="855aa58f-23cb-434b-963b-8528e64e4606"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="580458ee-0c6d-4f8b-9733-988638877986">
+                    <propertyInstance
+                      Id="069c0f83-1ece-427c-ab4a-f64774946160"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f367d3d3-c766-4468-addf-f21480baec7c">
+                    <propertyInstance
+                      Id="7bb41b37-62d5-414b-a39c-ffe7db71436f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="834e45bd-7432-446b-88ea-de81cbb9639b"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d0485407-b08c-479f-99ab-dcb4fa85a22f"
+                      LastKnownName="Target"
+                      LastKnownLocation="Package_1414.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f22e22e2-d3c9-4f6c-9b20-77483e2b96d9"
+                  name="targets"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="82cc690d-4aa0-4266-80cb-720ca77b9763"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FStrategies%2Fbin%2FDebug%2FStrategies.dll&quot; Namespace%3DStrategies Type%3DIStrategy Member%3D(Name%3DGetHighestPriorityTarget OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FTargets%2Fbin%2FDebug%2FTargets.dll&quot; Namespace%3DTargets Type%3DTarget)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dtargets"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="5ead864d-ae2f-4d53-a0a7-aa6961a6c0ca"
+                      LastKnownName="IList&lt;Target‎&gt;"
+                      LastKnownLocation="Package8_1402.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="56b1b2ad-effe-4cab-81eb-d2949bfff102"
+                  name="gameTime"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="0b653425-5d13-4e91-823b-547684ab3045"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FStrategies%2Fbin%2FDebug%2FStrategies.dll&quot; Namespace%3DStrategies Type%3DIStrategy Member%3D(Name%3DGetHighestPriorityTarget OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FTargets%2Fbin%2FDebug%2FTargets.dll&quot; Namespace%3DTargets Type%3DTarget)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DgameTime"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="SadGUI_UML_Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7c8730cc-a46a-4a01-ab51-336ef95dab84"
+        name="KillEmAllStrategy"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="9d2ec454-21a5-406e-80cf-616ffc50a491"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FStrategies%2Fbin%2FDebug%2FStrategies.dll&quot; Namespace%3DStrategies Type%3DKillEmAllStrategy"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e63486ee-d9c6-4780-b2a5-7b542eff1fcb"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="021da006-3232-493b-a193-1c06f110eb84">
+                <propertyInstance
+                  Id="9764c160-7916-4c3f-a095-c55789ffa5c8"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f5ce0000-4cbb-45d8-b2b1-dc8e8d446f15">
+                <propertyInstance
+                  Id="8d306554-7097-437e-b0c6-31dc85786c96"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3ad48d9a-84d6-4ba7-878f-af19026c1808">
+                <propertyInstance
+                  Id="3f6a7d45-1289-49b8-8bb5-b4affa98ceb3"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9ad20d87-9137-4456-8a38-fede65e6a531">
+                <propertyInstance
+                  Id="a78ca563-1b55-48ca-82e2-4cadbaef896c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f43c16aa-ef96-4a1e-9ad0-047ec8a999fd">
+                <propertyInstance
+                  Id="bf85ce0f-480d-4c67-8df9-3ffad0453ed2"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="f97b69b3-ee3d-42ce-9159-5d0f679a64de">
+            <interfaceMoniker
+              Id="9e142fe3-bd0d-4eda-9ce2-979a5720d877"
+              LastKnownName="IStrategy"
+              LastKnownLocation="Package_1446.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="d4d05494-3b5d-4730-b540-074080ef4fdb"
+            name="index"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="80526fd6-12ec-472e-b4c2-cd1868722021"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FStrategies%2Fbin%2FDebug%2FStrategies.dll&quot; Namespace%3DStrategies Type%3DKillEmAllStrategy Member%3Dindex"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="601ab209-d346-49b3-9223-ac1c5121bee7"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de542e4a-caa6-488f-9be1-c0828b3045f5">
+                    <propertyInstance
+                      Id="ba3feec3-ca46-449a-86da-cdeacc92657b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41703e1c-80eb-409c-8d14-193b65d08d32">
+                    <propertyInstance
+                      Id="99f6caf2-f4b3-4a9d-b213-ea6bee24b6c4"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9967fd63-4f35-4baa-90b2-be24e48c64fd">
+                    <propertyInstance
+                      Id="0821c3af-6db5-40c1-b385-9a1689375ec6"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="922e93df-1e97-4358-a9b2-713706c53cda">
+                    <propertyInstance
+                      Id="9202094c-4294-411f-bb6f-5c021c66d6ec"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="072751f8-414b-44a5-902d-b21eab248ff8">
+                    <propertyInstance
+                      Id="28d3f2e3-7820-404e-a590-8c0cdeda8d37"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="SadGUI_UML_Diagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="94bf888b-789b-47e6-ab89-40523c3f166a"
+            name="GetHighestPriorityTarget"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d074ad0c-50b1-4266-ad89-a8e7a0b6818f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FStrategies%2Fbin%2FDebug%2FStrategies.dll&quot; Namespace%3DStrategies Type%3DKillEmAllStrategy Member%3D(Name%3DGetHighestPriorityTarget OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FTargets%2Fbin%2FDebug%2FTargets.dll&quot; Namespace%3DTargets Type%3DTarget)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0cb5d229-9a24-4997-9b54-300149553179"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="56709c61-d129-4791-805b-0db085cdfcff">
+                    <propertyInstance
+                      Id="68703376-d4cd-4611-aea8-8f9bc713fdd5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="64247d0d-65fb-4db0-9015-30e4cbba0c0b">
+                    <propertyInstance
+                      Id="cb039b38-22c3-493f-8743-5620f32d80b3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ef23d0d-d714-4f95-9c2d-bb49e7872eca">
+                    <propertyInstance
+                      Id="9b7a4821-8912-472a-8185-64e6c06ab739"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4972ad39-9031-41a5-971c-1281b259c8b3">
+                    <propertyInstance
+                      Id="adf40507-31b6-4128-931a-27843006433f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a6adae64-ec90-4d58-a154-e4ee49ba3ff7">
+                    <propertyInstance
+                      Id="d45054be-f18f-4db5-a141-6bcacceef6d3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a25187d7-3aad-476b-9776-37ed8a176887">
+                    <propertyInstance
+                      Id="1a695dc0-09e7-4c73-a145-e31874575941"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0b12946b-525a-40f0-a8a7-859cb6469976"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d0485407-b08c-479f-99ab-dcb4fa85a22f"
+                      LastKnownName="Target"
+                      LastKnownLocation="Package_1414.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6983c884-a14d-4c83-ae37-27b640307038"
+                  name="targets"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="56c5feb7-1d22-4f76-a92f-441d9f005fb0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FStrategies%2Fbin%2FDebug%2FStrategies.dll&quot; Namespace%3DStrategies Type%3DKillEmAllStrategy Member%3D(Name%3DGetHighestPriorityTarget OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FTargets%2Fbin%2FDebug%2FTargets.dll&quot; Namespace%3DTargets Type%3DTarget)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dtargets"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="5ead864d-ae2f-4d53-a0a7-aa6961a6c0ca"
+                      LastKnownName="IList&lt;Target‎&gt;"
+                      LastKnownLocation="Package8_1402.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5281f4ac-82bd-4ae4-b1d9-3422e8997817"
+                  name="gameTime"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="58a630d4-e6bd-44de-86e3-7be8b5fd63b6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FStrategies%2Fbin%2FDebug%2FStrategies.dll&quot; Namespace%3DStrategies Type%3DKillEmAllStrategy Member%3D(Name%3DGetHighestPriorityTarget OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FTargets%2Fbin%2FDebug%2FTargets.dll&quot; Namespace%3DTargets Type%3DTarget)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DgameTime"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="SadGUI_UML_Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="dcfab0ea-7558-4343-bc88-dbda63e063db"
+            name="KillEmAllStrategy"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="dd227670-a793-4b1a-974d-a981afa513e2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FStrategies%2Fbin%2FDebug%2FStrategies.dll&quot; Namespace%3DStrategies Type%3DKillEmAllStrategy Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7626af97-9488-41e2-b0a3-a459c124954c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b23cd0fc-8605-4b98-ae90-e0ab5d4e208b">
+                    <propertyInstance
+                      Id="0e8a3156-2984-4fda-903d-2e39d6f5381c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5b0f492a-3293-4e5f-af0f-6423d3e9cf01">
+                    <propertyInstance
+                      Id="6cc540bd-df22-4fc7-a406-57bdf98cd09f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0949fb6a-630e-4c02-8b0a-d25a3ab462f9">
+                    <propertyInstance
+                      Id="e03ee85b-7b9a-4046-a4d6-ac8cfdf24d19"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4f38979-fe02-46e0-b144-7f5106b8365c">
+                    <propertyInstance
+                      Id="b55a01bc-e3e4-4504-87a5-19dee74200c5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3389dd76-70ca-48db-8523-21a94229b5ba">
+                    <propertyInstance
+                      Id="e09db97d-e619-4302-b706-54a89a431df3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf1afc14-d769-4340-a3ea-509282b0cdf5">
+                    <propertyInstance
+                      Id="ecbd74d5-dced-48de-8a2e-5778c9d59dea"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ac9e9ba4-d619-4f7f-bc17-f6b774f6ec51"
+        name="KillMostValuable"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="a892a0d3-9114-4122-9272-9da402b9e91f"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FStrategies%2Fbin%2FDebug%2FStrategies.dll&quot; Namespace%3DStrategies Type%3DKillMostValuable"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a56ed2cf-4416-4b06-bff2-11aa2f0ec146"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3e72cd2e-919e-49b2-ae6b-9d088f89a3d9">
+                <propertyInstance
+                  Id="7e72e4f5-f93d-4480-9531-3c1fa9dcafd4"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="417ec8bf-a491-45fb-828f-35790591f398">
+                <propertyInstance
+                  Id="0999445a-6d7d-4e51-aaec-6052aa2be1e8"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fe23e416-fa6e-4bcd-9695-edb99c22ee2a">
+                <propertyInstance
+                  Id="908fc576-632b-448b-a573-7345017e87ee"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1ad29446-4850-4f51-8713-74b23112d821">
+                <propertyInstance
+                  Id="56c7c8bc-c2eb-4676-a995-1914809c6005"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="003dccf9-82aa-4436-9c0e-a0bd7b899e31">
+                <propertyInstance
+                  Id="bc189123-77da-433b-872e-a709c35957c4"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="7dc2fe36-c43d-430b-b053-0d7ccd5db6ee">
+            <interfaceMoniker
+              Id="9e142fe3-bd0d-4eda-9ce2-979a5720d877"
+              LastKnownName="IStrategy"
+              LastKnownLocation="Package_1446.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="2991e49a-30a3-4f96-9bd4-3f3cd2cb27a9"
+            name="bestScore"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="610aa824-7e74-4b96-9bd7-6c4ec4af083b"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FStrategies%2Fbin%2FDebug%2FStrategies.dll&quot; Namespace%3DStrategies Type%3DKillMostValuable Member%3DbestScore"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="317c1558-64fe-4c87-812f-b7efcd31aeeb"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8150320-aee6-463f-899c-568b11b08338">
+                    <propertyInstance
+                      Id="1d54ffe8-6a71-47b9-b8a7-7062ca2a446e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08f74e70-5e33-4a61-8266-2d18319bf3c6">
+                    <propertyInstance
+                      Id="8614ea3b-2c2d-4bcf-a5de-1ba2c9d50cfe"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8dd6b7d9-074f-4364-94b5-809ed6f0be33">
+                    <propertyInstance
+                      Id="2b0962af-218d-4707-b4ac-c84d9d460f68"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7934669d-442c-4921-853f-fb43d89179ca">
+                    <propertyInstance
+                      Id="b9dc0cef-c51c-4130-8349-311c543e20c1"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="115b02d5-0140-4888-a097-c642deee886c">
+                    <propertyInstance
+                      Id="4bc21ae4-2e5d-4176-90e9-8980a3d8ca8c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="3ad55041-ca82-432a-9983-5f57e90ae01f"
+                LastKnownName="Double"
+                LastKnownLocation="Package2_1402.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="63b46520-5f7b-408d-92ef-3c9c8f8b8faf"
+            name="index"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="db2d5c10-e91f-49e2-841f-f51f3db9844a"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FStrategies%2Fbin%2FDebug%2FStrategies.dll&quot; Namespace%3DStrategies Type%3DKillMostValuable Member%3Dindex"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="72b2dd82-83bc-496a-853e-14d034646bd3"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d5052c9-a29f-46d4-9446-50155dcf2d1c">
+                    <propertyInstance
+                      Id="c24c7aa3-ac0e-488c-832a-6b40d316501a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d2bbe235-078a-4ff3-8594-c9d898e5f783">
+                    <propertyInstance
+                      Id="cf2e519f-4e85-4980-885f-6484833224b1"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e42a8da4-136f-42b3-b2f4-19661a4495d5">
+                    <propertyInstance
+                      Id="41af7b59-2028-4311-87b9-047c60ae4c08"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a924ea09-72e7-4ca9-ae6d-ff2eced71170">
+                    <propertyInstance
+                      Id="4b505f48-a297-4081-8b7f-35f41a025af7"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66d222eb-d33a-4a52-8bb7-eacc522dd34c">
+                    <propertyInstance
+                      Id="d0ee13dc-74f7-44f1-a97b-110dc5ef8883"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="SadGUI_UML_Diagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d69d5661-db53-4d63-8908-5b19adefde81"
+            name="GetHighestPriorityTarget"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7f316531-8581-459b-a8b1-982928b9f956"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FStrategies%2Fbin%2FDebug%2FStrategies.dll&quot; Namespace%3DStrategies Type%3DKillMostValuable Member%3D(Name%3DGetHighestPriorityTarget OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FTargets%2Fbin%2FDebug%2FTargets.dll&quot; Namespace%3DTargets Type%3DTarget)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="db270072-513d-4b1d-bb1d-2385d777a8cb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="707950d9-ad82-47c3-a849-e3a57cce9931">
+                    <propertyInstance
+                      Id="c9837672-ea14-4a0d-bf42-070ebdc849d7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0479cffa-ba7e-4142-b26d-b879e757c549">
+                    <propertyInstance
+                      Id="be8b1f20-1e16-4f27-8dc6-b722889e52f7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb6772a9-f7ad-4757-a2a1-160aaacc20c0">
+                    <propertyInstance
+                      Id="338735ec-3739-4ee2-ad3c-a241f2a18d84"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d13df7ad-b8ab-4b2d-9f2a-a36fdf43525c">
+                    <propertyInstance
+                      Id="01f09a95-ed14-4f86-a66b-45b6504ddaf0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="61cf76c7-9294-4578-9fce-87dcd6e17e4a">
+                    <propertyInstance
+                      Id="6d9cead9-a605-4f90-8715-d9400c1f80a1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad67c2b6-3e3a-412b-8b3a-828503c40ddd">
+                    <propertyInstance
+                      Id="13740813-839f-4797-8938-d93e4ea63d33"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c8571b5b-f0e2-40d4-9275-264f68a68462"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d0485407-b08c-479f-99ab-dcb4fa85a22f"
+                      LastKnownName="Target"
+                      LastKnownLocation="Package_1414.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1e4657ca-0b79-419d-ac3e-184411b9d5ec"
+                  name="targets"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4f690728-b3bf-4346-b9ba-e230b3807908"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FStrategies%2Fbin%2FDebug%2FStrategies.dll&quot; Namespace%3DStrategies Type%3DKillMostValuable Member%3D(Name%3DGetHighestPriorityTarget OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FTargets%2Fbin%2FDebug%2FTargets.dll&quot; Namespace%3DTargets Type%3DTarget)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dtargets"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="5ead864d-ae2f-4d53-a0a7-aa6961a6c0ca"
+                      LastKnownName="IList&lt;Target‎&gt;"
+                      LastKnownLocation="Package8_1402.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="adfde1cd-4081-488b-807f-a8986007f706"
+                  name="gameTime"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e051bca0-aa7e-4a0a-8e99-43d7797674bb"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FStrategies%2Fbin%2FDebug%2FStrategies.dll&quot; Namespace%3DStrategies Type%3DKillMostValuable Member%3D(Name%3DGetHighestPriorityTarget OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FSadCL%2FTargets%2Fbin%2FDebug%2FTargets.dll&quot; Namespace%3DTargets Type%3DTarget)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DgameTime"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="SadGUI_UML_Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f158e855-169f-467e-b1b9-01f95925b9cc"
+            name="KillMostValuable"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6b78370b-46e1-42d5-a9cc-9531b218413b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FSadGUI%2FStrategies%2Fbin%2FDebug%2FStrategies.dll&quot; Namespace%3DStrategies Type%3DKillMostValuable Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3504fdde-57fc-4232-975a-6d343bfa4286"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b86deddb-d700-4b0e-81c0-ee83d1c0276b">
+                    <propertyInstance
+                      Id="193d780f-15ee-44a0-84c8-5933c11961d4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4a8a9377-8635-4107-b464-034d6a2f72d6">
+                    <propertyInstance
+                      Id="37032a6d-89f5-48df-9865-5853b4165d95"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df9ca1bf-4c86-41aa-b3bf-eed2e2bb61f7">
+                    <propertyInstance
+                      Id="efd9c5fd-19f3-4931-89b8-a5d98571b1e4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="422749b1-5fe8-4349-8737-ad5afe5f5ad0">
+                    <propertyInstance
+                      Id="681e08a7-5cb5-4435-ad84-fbef332f70e0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9aa0ad3-81a5-4ad1-b4c1-709156531b99">
+                    <propertyInstance
+                      Id="ebdbb599-fb25-4eb4-9024-114c89f4e8f1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="203ec692-8387-4c2e-963f-7319fc52e934">
+                    <propertyInstance
+                      Id="1afd9d57-487b-4093-9784-0ce41756575e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
