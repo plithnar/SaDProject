@@ -856,6 +856,45 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="a1c8fbca-099f-4731-bce0-bea2975a677b"
+            isDerived="false"
+            sourceEndRoleName="GameServerFactory"
+            targetEndRoleName="WebClientGameServerInterface"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a066b64b-2dac-43b4-909a-13d42df8e761"
+              LastKnownName="WebClientGameServerInterface"
+              LastKnownLocation="Package_1432.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="227be886-374b-420d-93ba-7b67efd240cd"
+                  name="GameServerFactory"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d5e6e111-f4ca-4626-98ae-d5161692830e"
+                  name="WebClientGameServerInterface"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
         <ownedOperationsInternal>
           <operation

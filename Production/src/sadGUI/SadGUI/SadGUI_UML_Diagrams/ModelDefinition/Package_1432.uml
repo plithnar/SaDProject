@@ -1707,5 +1707,509 @@
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a066b64b-2dac-43b4-909a-13d42df8e761"
+        name="WebClientGameServerInterface"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="0b633a6f-3f52-4093-83d3-81232d14f1d7"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FTargetServer%2Fbin%2FDebug%2FTargetServerCommunicator.dll&quot; Namespace%3DTargetServerCommunicator Type%3DWebClientGameServerInterface"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="6f995897-d4df-4e3c-90e7-43d73fbe7961"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="caeeb4b1-7538-4824-801d-44c1b4f93a18">
+                <propertyInstance
+                  Id="f7c0dd28-60cf-4c9c-8b76-95695037ed39"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fdda0162-d554-416e-b943-68323a437717">
+                <propertyInstance
+                  Id="d04175f7-6f66-4512-b073-a788e55a00f5"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5a647aa7-5819-4644-94c7-add64f8a3697">
+                <propertyInstance
+                  Id="f6592128-d22a-43ae-89ef-69cd66507768"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d0358e76-d509-4b5f-ac4a-56cc03f6d896">
+                <propertyInstance
+                  Id="4f1cd942-8ab0-4672-bf10-012f6e1a890c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fa20b6bd-2fde-4f34-bcf6-62e3f09aa984">
+                <propertyInstance
+                  Id="5e29e153-2a3b-4a89-b7f9-8ffa8b1c724e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="0736d8b8-7b2b-44ed-9c92-611550c38e1a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="f06e4883-85d2-4b91-98cc-39c68e86f0a3"
+              LastKnownName="GameServerInterface"
+              LastKnownLocation="Package_1432.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a1ed523e-2081-4155-a747-dfc00ff4ae1a"
+            name="WebClientGameServerInterface"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8c463cce-9fb0-4a72-9583-b9b4260ff97a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FTargetServer%2Fbin%2FDebug%2FTargetServerCommunicator.dll&quot; Namespace%3DTargetServerCommunicator Type%3DWebClientGameServerInterface Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="82e25896-6713-4059-a2ab-d25f78b4bfb4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="79829f4f-e49f-4fa1-a8cd-d55de9332b31">
+                    <propertyInstance
+                      Id="bf88121d-2e10-4f4f-ae30-dbcb864f3caa"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac35dba8-cbde-458a-8f7c-e9b04e80590e">
+                    <propertyInstance
+                      Id="b7a076e7-0191-4b77-8a42-6d113dbf0a90"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7321ad17-d8aa-4e71-8e4d-19bcd80e5c92">
+                    <propertyInstance
+                      Id="3a1a84d4-338f-4e1d-90e8-10c95572315c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0d45919-d1c8-401d-a559-0bfa9759b243">
+                    <propertyInstance
+                      Id="bb1b450a-1654-4922-bf50-b7ff9a74aa14"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c48569b-6333-4953-a9b8-6c7e05de2961">
+                    <propertyInstance
+                      Id="e672407a-3839-4934-bf74-9016a73986cc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9fbf96c5-9444-4100-aee4-ebd063e59782">
+                    <propertyInstance
+                      Id="4acb8702-5163-48dd-ad6a-174dcc27bdfb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ab23a66e-7a3c-47c6-b673-14dc74157c73"
+                  name="teamName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="36d4b01f-a5ea-4f69-95cc-3ff25639b7b2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FTargetServer%2Fbin%2FDebug%2FTargetServerCommunicator.dll&quot; Namespace%3DTargetServerCommunicator Type%3DWebClientGameServerInterface Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DteamName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="SadGUI_UML_Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b6934ea8-5370-4500-a823-e44323f15f22"
+                  name="ipAddress"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="44562c20-63d6-4dd2-bba9-7e05ee852b55"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FTargetServer%2Fbin%2FDebug%2FTargetServerCommunicator.dll&quot; Namespace%3DTargetServerCommunicator Type%3DWebClientGameServerInterface Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DipAddress"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="SadGUI_UML_Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2dab48a8-6e7f-4a60-b1fc-21a1dbb14b54"
+                  name="port"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9467efb0-145d-4df8-a0d3-9d896bfde4a5"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FTargetServer%2Fbin%2FDebug%2FTargetServerCommunicator.dll&quot; Namespace%3DTargetServerCommunicator Type%3DWebClientGameServerInterface Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dport"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="SadGUI_UML_Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6cafb608-751a-489f-b036-d0c161d8fb08"
+            name="WebClientGameServerInterface"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9af98247-77c9-40cc-9499-add69026c1aa"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FTargetServer%2Fbin%2FDebug%2FTargetServerCommunicator.dll&quot; Namespace%3DTargetServerCommunicator Type%3DWebClientGameServerInterface Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="219ca283-2d13-4052-8223-802cd20d1cb6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="006285f1-49f7-4025-a908-0bfb17c06ab2">
+                    <propertyInstance
+                      Id="dc4d8477-c5be-47e9-b8e2-65deb535e67d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="27aafdc3-1a1a-4829-9d54-4fbe7b79db55">
+                    <propertyInstance
+                      Id="6ea73954-0f3e-4080-8508-524644ad6be4"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="906b9960-4817-4c8e-a6d4-67e35e9f6ac4">
+                    <propertyInstance
+                      Id="420644db-da81-4ed6-87d6-6a9ed7fae900"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="337ce3ef-b741-4e10-865a-b900bd1738b0">
+                    <propertyInstance
+                      Id="e1c87017-3744-4ff1-90de-77883992541d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="01f70ab9-da85-45f6-a3e6-19fd8f606b2b">
+                    <propertyInstance
+                      Id="85f15283-63df-4d92-8c43-f67532907a36"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c9edbad-47d1-41b2-b163-0e5e8a31dcd0">
+                    <propertyInstance
+                      Id="ef4a4d5a-9441-471e-a093-1f4504970c49"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="82f443b6-3a4c-41f4-a22c-5d55815f2276"
+                  name="teamName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3e9eff84-a121-4a66-a808-dc4a1624c6d5"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FTargetServer%2Fbin%2FDebug%2FTargetServerCommunicator.dll&quot; Namespace%3DTargetServerCommunicator Type%3DWebClientGameServerInterface Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DteamName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="SadGUI_UML_Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="92a2ff60-b8fb-4ffa-bcb9-83afec4f993d"
+            name="DownloadString"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7e077dcc-81af-4e16-8d75-8d05f5a0f0b2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FTargetServer%2Fbin%2FDebug%2FTargetServerCommunicator.dll&quot; Namespace%3DTargetServerCommunicator Type%3DWebClientGameServerInterface Member%3D(Name%3DDownloadString OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2b11299a-cc86-4fe0-98f4-17f6527a20ee"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52a659cf-7f66-4eb8-83ca-61cb8a7dfa01">
+                    <propertyInstance
+                      Id="c35e2dca-dee0-4ee2-a94c-2e098ff4c6e0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0137075c-a832-4fb5-94d3-c510ab62afea">
+                    <propertyInstance
+                      Id="10337f19-6e5e-4e1a-93b6-69462dc3a6d6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b048a4f-f465-4499-accb-800cbff85c03">
+                    <propertyInstance
+                      Id="aee63312-0b83-42ae-a654-40e208e3feaf"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="11fea703-d916-4acc-b04d-5d37ebc90e31">
+                    <propertyInstance
+                      Id="cf6a242e-8896-45b6-bf88-1e94a8d04d41"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ed19e3f1-6d82-449f-b283-878590ce1b85">
+                    <propertyInstance
+                      Id="163d6c1c-3d0e-49ff-95cd-f6b92a2fd3a6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f4df43b2-a851-4b6b-9d09-ec704c827931">
+                    <propertyInstance
+                      Id="541a83b6-5440-4896-b379-73758d2effc3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b48dab1e-0a33-4c8a-8888-a4f62ae3c9ad"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="SadGUI_UML_Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="715e4fef-28b4-47e9-8a1b-da9d5109413c"
+                  name="route"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4a5bce79-ffd3-4c0e-8828-07f606299eeb"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FTargetServer%2Fbin%2FDebug%2FTargetServerCommunicator.dll&quot; Namespace%3DTargetServerCommunicator Type%3DWebClientGameServerInterface Member%3D(Name%3DDownloadString OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Droute"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="SadGUI_UML_Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f2d48a12-41f9-46c8-a9e1-4d0b84ef4d29"
+                  name="request"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1b428a60-a14c-47cb-adba-2beba5c2bcf1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FTargetServer%2Fbin%2FDebug%2FTargetServerCommunicator.dll&quot; Namespace%3DTargetServerCommunicator Type%3DWebClientGameServerInterface Member%3D(Name%3DDownloadString OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Drequest"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="SadGUI_UML_Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e8616702-b484-421d-a0b4-b79112404612"
+            name="UploadValues"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="67f1a322-6de6-40c4-84aa-78bbe647015b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FTargetServer%2Fbin%2FDebug%2FTargetServerCommunicator.dll&quot; Namespace%3DTargetServerCommunicator Type%3DWebClientGameServerInterface Member%3D(Name%3DUploadValues OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.Collections.Specialized Type%3DNameValueCollection)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a3798695-1e51-4529-abbf-e0f1161a9940"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2dc2c4ea-6ad6-42e5-a919-b7fc75c4976c">
+                    <propertyInstance
+                      Id="616c6cdc-3225-4a31-8a59-d18f5ffa71be"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54a78b73-f933-49c1-b774-00aa0b176abd">
+                    <propertyInstance
+                      Id="8fdc1ea4-4c41-480f-9ba9-27f54f7561f6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c21f59e0-92dd-4c95-b02f-fef2abf71cba">
+                    <propertyInstance
+                      Id="6c3b65bf-5c60-4080-95d3-9be59ad2f8e0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="043c2e15-79a4-435b-898b-4f5295f5f2b0">
+                    <propertyInstance
+                      Id="4aefab4b-9422-4f39-adc0-1f8edc9a9b8f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ec59be3-1f22-4228-b4fa-d344eecc3f0b">
+                    <propertyInstance
+                      Id="f315884d-2708-4430-b386-47fd86c741d2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8b1b4ea-9fb4-43bc-b00a-0f43af585ee4">
+                    <propertyInstance
+                      Id="9945b3ed-6f6a-4624-a7cf-5d8b4ec84587"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3913d6b1-5c8f-40ce-97de-a1329e8f4db1"
+                  name="route"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="96ee5584-575c-438d-8c19-b9bdafb466ea"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FTargetServer%2Fbin%2FDebug%2FTargetServerCommunicator.dll&quot; Namespace%3DTargetServerCommunicator Type%3DWebClientGameServerInterface Member%3D(Name%3DUploadValues OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.Collections.Specialized Type%3DNameValueCollection)]) ParameterIdentifier%3Droute"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="SadGUI_UML_Diagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4abfa7c5-8ebe-456b-95a0-8d68989da05c"
+                  name="values"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b9b1dbb8-a341-431f-b63d-24fb14f1d1ae"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2Fvmware-host%2FShared Folders%2FDocuments%2FSaDProject%2FProduction%2Fsrc%2FsadGUI%2FTargetServer%2Fbin%2FDebug%2FTargetServerCommunicator.dll&quot; Namespace%3DTargetServerCommunicator Type%3DWebClientGameServerInterface Member%3D(Name%3DUploadValues OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.dll&quot; Namespace%3DSystem.Collections.Specialized Type%3DNameValueCollection)]) ParameterIdentifier%3Dvalues"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="07c5b537-27ed-48e5-91d5-a79438fba840"
+                      LastKnownName="NameValueCollection"
+                      LastKnownLocation="Package_1438.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
 </package>
