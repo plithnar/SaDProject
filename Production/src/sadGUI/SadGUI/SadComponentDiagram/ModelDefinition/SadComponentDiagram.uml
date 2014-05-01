@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
   dslVersion="1.0.0.0"
   Id="054cee0e-270b-488c-ae58-256daac7d63d"
   name="SadComponentDiagram" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -1013,6 +1013,60 @@
             isComposite="false"
             isService="false"
             isBehavior="false">
+            <targetNamedElementsInternal>
+              <connector
+                Id="b943d1b0-743e-4c4c-b07b-e04a8072cc70"
+                isLeaf="false"
+                isStatic="false">
+                <partMoniker
+                  Id="cb753494-5b28-43f4-81cd-7b7580572fab"
+                  LastKnownName="KillEmAll"
+                  LastKnownLocation="SadComponentDiagram.uml" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="dc87255a-762e-4d09-b305-bcb1670a10de" />
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="4336703b-ac3b-42ca-93bb-895aac6ceccf">
+                      <portWithPart>
+                        <providedInterfaceMoniker
+                          Id="99372421-e30d-496f-b237-9f5ac5b9a3c4"
+                          LastKnownName="Port1"
+                          LastKnownLocation="SadComponentDiagram.uml" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+              </connector>
+              <connector
+                Id="7865d95a-554c-4007-ac7b-311d578aba4b"
+                isLeaf="false"
+                isStatic="false">
+                <partMoniker
+                  Id="c3cb7202-ee48-434a-b975-8449df91a44e"
+                  LastKnownName="KillMostValuable"
+                  LastKnownLocation="SadComponentDiagram.uml" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="dfc2bb18-9b4f-4424-903e-02581252c472" />
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd
+                      Id="bcd5d9ac-5adb-4dd7-bd5d-80b83e241983">
+                      <portWithPart>
+                        <providedInterfaceMoniker
+                          Id="16bba187-95a0-4c55-9b54-855fb1e0d891"
+                          LastKnownName="Port1"
+                          LastKnownLocation="SadComponentDiagram.uml" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+              </connector>
+            </targetNamedElementsInternal>
             <type_NamedElement>
               <interfaceMoniker
                 Id="5691871a-8b16-437b-8815-6289ca3d6e0a"
@@ -1028,18 +1082,76 @@
         Id="b72417a8-342c-4265-91f3-e4c965c3ba9a"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="99372421-e30d-496f-b237-9f5ac5b9a3c4"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="ed850ea4-446e-47cd-8985-69e36bf2f88c"
+                LastKnownName="IStrategy"
+                LastKnownLocation="SadComponentDiagram.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <component
         Id="e8b8516c-dd32-447c-b9b5-715fb43dd41d"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="16bba187-95a0-4c55-9b54-855fb1e0d891"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="495356d6-4881-43c8-ac66-5cd2e08e41f4"
+                LastKnownName="IStrategy"
+                LastKnownLocation="SadComponentDiagram.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <Interface
         Id="5691871a-8b16-437b-8815-6289ca3d6e0a"
+        name="IStrategy"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="ed850ea4-446e-47cd-8985-69e36bf2f88c"
+        name="IStrategy"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="495356d6-4881-43c8-ac66-5cd2e08e41f4"
         name="IStrategy"
         isAbstract="false"
         isLeaf="false" />
