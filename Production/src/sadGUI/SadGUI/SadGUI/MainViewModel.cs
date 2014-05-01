@@ -18,6 +18,7 @@ namespace SadGUI
         private string m_port;
         private MissileLauncherViewModel m_launcherViewModel = MissileLauncherViewModel.Instance;
         private IStrategy m_strategy;
+        private static List<Target> targets;
         public MissileLauncherViewModel Launcher
         {
             get
@@ -80,7 +81,8 @@ namespace SadGUI
 
         public MainViewModel()
         {
-            m_strategy = new KillEmAllStrategy();
+            //m_strategy = new KillEmAllStrategy();
+            m_strategy = new KillMostValuable();
             ServerIP = "Mock";
             ServerPort = "0";
             MissileLauncherSelector = new MissileLauncherSelectorViewModel();
@@ -143,9 +145,11 @@ namespace SadGUI
 
         void GetNextTarget(object sender, EventArgs e)
         {
-            var targets = TargetList.GameListViewModel.GetTargetList();
-            var target = m_strategy.GetHighestPriorityTarget(targets, Launcher.Time);
-            Launcher.Kill(target);
+            if (m_strategy != null)
+            {
+                var target = m_strategy.GetHighestPriorityTarget(targets, Launcher.Time);
+                Launcher.Kill(target);
+            }
         }
 
         void Start()
@@ -156,16 +160,26 @@ namespace SadGUI
             Connect.Executable = false;
             TargetList.GameListViewModel.StartGame();
             StartGameEvent(this, null);
+            //m_strategy = new KillEmAllStrategy();
+            m_strategy = new KillMostValuable();
+            targets = TargetList.GetTargets();
             if (ModeSelector.SelectedMode == Modes.Automatic)
             {
-                var targets = TargetList.GetTargets();
-                Launcher.Kill(m_strategy.GetHighestPriorityTarget(targets, Launcher.Time));
+                var target = m_strategy.GetHighestPriorityTarget(targets, Launcher.Time);
+                foreach(var item in TargetList.Targets)
+                {
+                    if(target.Name == item.Name)
+                    {
+                        item.HitTime = target.HitTime;
+                    }
+                }
+                Launcher.Kill(target);
             }
             else
             {
                 Launcher.ManualControl = true;
                 TargetList.ManualControl = true;
-                StartGameEvent(this, null);
+               // StartGameEvent(this, null);
             }
         }
 
@@ -179,6 +193,7 @@ namespace SadGUI
             StartGame.Executable = true;
             Connect.Executable = true;
             StopGameEvent(this, null);
+            m_strategy = null;
         }
 
         void Abort()

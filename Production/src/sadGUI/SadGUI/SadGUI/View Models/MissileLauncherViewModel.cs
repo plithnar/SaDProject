@@ -1,4 +1,5 @@
 ﻿using MissileLauncher;
+using Strategies;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -207,7 +208,7 @@ namespace SadGUI.View_Models
                                 try
                                 {
                                     m_launcher.fire();
-                                    LauncherFired();
+                                    LauncherFired(null, null);
                                     Ammo = m_launcher.CurrentMissiles;
                                 }
                                 catch (InvalidOperationException)
@@ -239,7 +240,7 @@ namespace SadGUI.View_Models
                                     string tweetText = currentCommand.Message + " at " + GameTime + " into the game";
                                     m_twitter.Tweet(tweetText);
                                     m_launcher.fire();
-                                    LauncherFired();
+                                    LauncherFired(null, null); // Added null, null
                                     Ammo = m_launcher.CurrentMissiles;
                                 }
                                 catch (InvalidOperationException)

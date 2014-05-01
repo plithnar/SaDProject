@@ -89,6 +89,7 @@ namespace SadGUI.View_Models
             try
             {
                 list = m_gameServer.RetrieveGameList().ToList();
+                MessageBox.Show("Successful connection");
             }
             catch (System.Net.WebException)
             {
@@ -109,7 +110,6 @@ namespace SadGUI.View_Models
             try
             {
                 targetList = m_gameServer.RetrieveTargetList(SelectedGame).ToList();
-                MessageBox.Show("Successful connection");
             }
             catch (System.Net.WebException)
             {

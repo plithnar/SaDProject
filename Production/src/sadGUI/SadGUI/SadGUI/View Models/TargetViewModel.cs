@@ -21,6 +21,8 @@ namespace SadGUI.View_Models
         private bool m_alive;
         private int m_points;
         private int m_flashRate;
+
+        public int HitTime { get; set; }
         public string Name
         {
             get

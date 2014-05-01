@@ -17,6 +17,8 @@ namespace Targets
         public int Points { get; private set; }
         public int FlashRate { get; private set; }
         public bool Alive { get; private set; }
+        public double SpawnRate { get; private set; }
+        public int HitTime { get; set; }
 
         public void Kill()
         {
@@ -35,6 +37,7 @@ namespace Targets
             Points = points;
             FlashRate = flashrate;
             Alive = true;
+            HitTime = int.MaxValue;
         }
     }
 }
