@@ -209,6 +209,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="GameListViewModel_LoadGameList.sequencediagram.layout">
+      <DependentUpon>GameListViewModel_LoadGameList.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainViewModel_MainViewModel.sequencediagram.layout">
+      <DependentUpon>MainViewModel_MainViewModel.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainViewModel_Start.sequencediagram.layout">
+      <DependentUpon>MainViewModel_Start.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainViewModel_Stop.sequencediagram.layout">
+      <DependentUpon>MainViewModel_Stop.sequencediagram</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sequence Diagrams\MainViewModel_MainViewModel.sequencediagram.layout">
       <DependentUpon>MainViewModel_MainViewModel.sequencediagram</DependentUpon>
     </EmbeddedResource>
@@ -237,6 +249,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="GameListViewModel_LoadGameList.sequencediagram" />
+    <None Include="MainViewModel_MainViewModel.sequencediagram" />
+    <None Include="MainViewModel_Start.sequencediagram" />
+    <None Include="MainViewModel_Stop.sequencediagram" />
     <None Include="packages.config" />
     <None Include="Sequence Diagrams\MainViewModel_MainViewModel.sequencediagram" />
     <None Include="Sequence Diagrams\MainViewModel_MainViewModel_1.sequencediagram" />
