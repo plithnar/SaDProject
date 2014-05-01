@@ -19,6 +19,8 @@ namespace SadGUI
         private MissileLauncherViewModel m_launcherViewModel = MissileLauncherViewModel.Instance;
         private IStrategy m_strategy;
         private static List<Target> targets;
+
+        public bool GameRunning { get; private set; }
         public MissileLauncherViewModel Launcher
         {
             get
@@ -87,6 +89,7 @@ namespace SadGUI
             ServerPort = "0";
             MissileLauncherSelector = new MissileLauncherSelectorViewModel();
             Launcher.LauncherFired += GetNextTarget;
+            GameRunning = false;
 
             TargetList = new TargetListViewModel();
 
@@ -154,12 +157,13 @@ namespace SadGUI
 
         void Start()
         {
-            StartGame.Executable = false;
             StopGame.Executable = true;
             AbortGame.Executable = true;
             Connect.Executable = false;
-            TargetList.GameListViewModel.StartGame();
+            if (GameRunning == false)
+                TargetList.GameListViewModel.StartGame();
             StartGameEvent(this, null);
+            GameRunning = true;
             //m_strategy = new KillEmAllStrategy();
             m_strategy = new KillMostValuable();
             targets = TargetList.GetTargets();
@@ -177,6 +181,7 @@ namespace SadGUI
             }
             else
             {
+                StartGame.Executable = false;
                 Launcher.ManualControl = true;
                 TargetList.ManualControl = true;
                // StartGameEvent(this, null);
@@ -194,6 +199,7 @@ namespace SadGUI
             Connect.Executable = true;
             StopGameEvent(this, null);
             m_strategy = null;
+            GameRunning = false;
         }
 
         void Abort()
@@ -204,6 +210,7 @@ namespace SadGUI
             AbortGame.Executable = false;
             StartGame.Executable = true;
             AbortGameEvent(this, null);
+            GameRunning = false;
         }
     }
 }
