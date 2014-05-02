@@ -196,11 +196,12 @@ namespace SadGUI.View_Models
                 }
             }
             Action Clear = new Action(Targets.Clear);
-            Action<TargetViewModel> TarAdd;
+            Action<TargetViewModel> TarAdd = new Action<TargetViewModel>(Targets.Add);
                 thread.Invoke(Clear);
-                Action Add = new Action(TarAdd<TargetViewModel>);
-            
-            };
+                foreach (var target in targetVMList)
+                {
+                    thread.Invoke(TarAdd, target);
+                }
             
         }
     }
