@@ -181,7 +181,7 @@ namespace SadGUI.View_Models
             return targets;
         }
 
-        public void SetTargets(List<Target> targets, Dispatcher thread)
+        public void SetTargets(List<Target> targets, int gametime, Dispatcher thread)
         {
             var targetVMList = new List<TargetViewModel>();
             foreach(var target in targets)
@@ -192,6 +192,16 @@ namespace SadGUI.View_Models
                 if (targetVm != null)
                 {
                     target.HitTime = targetVm.HitTime;
+                    if (target.HitCount != targetVm.HitCount)
+                    {
+                        targetVm.Alive = false;
+                        target.Alive = false;
+                    }
+                    if (gametime - targetVm.HitTime < 0)
+                    {
+                        targetVm.Alive = true;
+                        target.Alive = true;
+                    }
                     targetVMList.Add(new TargetViewModel(target));
                 }
             }

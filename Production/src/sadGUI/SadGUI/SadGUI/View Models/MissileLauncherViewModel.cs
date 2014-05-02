@@ -182,7 +182,7 @@ namespace SadGUI.View_Models
                 DownCommand.Executable = m_manualControl;
                 LeftCommand.Executable = m_manualControl;
                 RightCommand.Executable = m_manualControl;
-                CenterCommand.Executable = m_manualControl;
+//                CenterCommand.Executable = m_manualControl;
             }
         }
 

@@ -16,9 +16,11 @@ namespace Targets
         public bool Friend { get; private set; }
         public int Points { get; private set; }
         public int FlashRate { get; private set; }
-        public bool Alive { get; private set; }
+        public bool Alive { get; set; }
         public double SpawnRate { get; private set; }
         public int HitTime { get; set; }
+
+        public int HitCount { get; set; }
 
         public void Kill()
         {
@@ -27,7 +29,7 @@ namespace Targets
 
         // Constructor
         public Target(string name, double x, double y, double z,
-                     bool friend, int points, int flashrate, int hitTime=int.MaxValue)
+                     bool friend, int points, int flashrate, int hitTime=int.MaxValue, int hitCount=0)
         {
             Name = name;
             X = x;
@@ -38,6 +40,7 @@ namespace Targets
             FlashRate = flashrate;
             Alive = true;
             HitTime = hitTime;
+            HitCount = hitCount;
         }
     }
 }

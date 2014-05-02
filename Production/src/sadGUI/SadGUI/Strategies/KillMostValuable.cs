@@ -46,7 +46,10 @@ namespace Strategies
                     index = i;
                 }
             }
-            targets[index].HitTime = gameTime;
+            if (targets.Count > 0)
+            {
+                targets[index].HitTime = gameTime;
+            }
             int shootIndex = index;
             index = 0;
             return targets[shootIndex];

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -89,11 +90,16 @@ namespace SadGUI.View_Models
             try
             {
                 list = m_gameServer.RetrieveGameList().ToList();
+                SelectedGame = list[0];
                 MessageBox.Show("Successful connection");
             }
             catch (System.Net.WebException)
             {
                 MessageBox.Show("Invalid webserver.");
+            }
+            catch (FileLoadException)
+            {
+                MessageBox.Show("Could not parse JSon.");
             }
             GameList.Clear();
             foreach (var game in list)
@@ -118,7 +124,7 @@ namespace SadGUI.View_Models
 
             foreach (var target in targetList)
             {
-                var tar = new Target(target.name, (double) target.x, (double) target.y, (double) target.z, Convert.ToBoolean(target.status), (int) target.points, (int)target.spawnRate);
+                var tar = new Target(target.name, (double) target.x, (double) target.y, (double) target.z, Convert.ToBoolean(target.status), (int) target.points, (int)target.spawnRate, target.hit);
                 targets.Add(tar);
             }
 

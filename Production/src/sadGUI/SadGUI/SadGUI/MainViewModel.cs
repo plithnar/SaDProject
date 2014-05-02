@@ -155,7 +155,7 @@ namespace SadGUI
             if (m_strategy != null)
             {
                 var targets = TargetList.GameListViewModel.GetTargetList();
-                TargetList.SetTargets(targets, Dispatch);
+                TargetList.SetTargets(targets, Launcher.Time, Dispatch);
                 var target = m_strategy.GetHighestPriorityTarget(TargetList.GetTargets(), Launcher.Time);
                 Launcher.Kill(target);
             }

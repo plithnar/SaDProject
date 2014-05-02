@@ -22,6 +22,7 @@ namespace SadGUI.View_Models
         private int m_points;
         private int m_flashRate;
         private int m_timestamp;
+        private int m_hitcount;
 
         public int HitTime { get; set; }
 
@@ -166,6 +167,19 @@ namespace SadGUI.View_Models
             }
         }
 
+        public int HitCount
+        {
+            get
+            {
+                return m_hitcount;
+            }
+            set
+            {
+                m_hitcount = value;
+                OnPropertyChanged("HitCount");
+            }
+        }
+
         public TargetViewModel(Target target)
         {
             TargetInfo = target;
@@ -178,6 +192,7 @@ namespace SadGUI.View_Models
             Points = target.Points;
             FlashRate = target.FlashRate;
             TimeStamp = target.HitTime;
+            HitCount = target.HitCount;
         }
     }
 }
