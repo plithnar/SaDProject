@@ -82,7 +82,8 @@ namespace SadGUI.View_Models
         void AddTargetsFromServer()
         {
             var targets = GameListViewModel.GetTargetList();
-            Targets.Clear();
+//            Targets.Clear();
+            var tarVMs = new List<TargetListViewModel>();
             foreach (var target in targets)
             {
                 Targets.Add(new TargetViewModel(target));
@@ -175,9 +176,30 @@ namespace SadGUI.View_Models
             var targets = new List<Target>();
             foreach (var target in Targets)
             {
-                targets.Add(new Target(target.Name, target.X, target.Y, target.Z, target.Friendly, target.Points, target.FlashRate));
+                targets.Add(new Target(target.Name, target.X, target.Y, target.Z, target.Friendly, target.Points, target.FlashRate, target.HitTime));
             }
             return targets;
+        }
+
+        public void SetTargets(List<Target> targets)
+        {
+            var targetVMList = new List<TargetViewModel>();
+            foreach(var target in targets)
+            {
+                var targetVm = (from i in Targets
+                                where i.Name == target.Name
+                                select i).FirstOrDefault();
+                if (targetVm != null)
+                {
+                    target.HitTime = targetVm.HitTime;
+                    targetVMList.Add(new TargetViewModel(target));
+                }
+            }
+            Targets.Clear();
+            foreach (var target in targetVMList)
+            {
+                Targets.Add(target);
+            }
         }
     }
 }

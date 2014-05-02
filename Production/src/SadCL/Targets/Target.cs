@@ -27,7 +27,7 @@ namespace Targets
 
         // Constructor
         public Target(string name, double x, double y, double z,
-                     bool friend, int points, int flashrate)
+                     bool friend, int points, int flashrate, int hitTime=int.MaxValue)
         {
             Name = name;
             X = x;
@@ -37,7 +37,7 @@ namespace Targets
             Points = points;
             FlashRate = flashrate;
             Alive = true;
-            HitTime = int.MaxValue;
+            HitTime = hitTime;
         }
     }
 }

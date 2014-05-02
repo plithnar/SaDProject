@@ -21,8 +21,22 @@ namespace SadGUI.View_Models
         private bool m_alive;
         private int m_points;
         private int m_flashRate;
+        private int m_timestamp;
 
         public int HitTime { get; set; }
+
+        public int TimeStamp
+        {
+            get
+            {
+                return m_timestamp;
+            }
+            set
+            {
+                m_timestamp = value;
+                OnPropertyChanged("TimeStamp");
+            }
+        }
         public string Name
         {
             get
@@ -163,6 +177,7 @@ namespace SadGUI.View_Models
             Alive = target.Alive;
             Points = target.Points;
             FlashRate = target.FlashRate;
+            TimeStamp = target.HitTime;
         }
     }
 }
