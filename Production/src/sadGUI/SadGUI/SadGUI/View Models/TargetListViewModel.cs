@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Threading;
 using Targets;
 
 namespace SadGUI.View_Models
@@ -29,7 +30,6 @@ namespace SadGUI.View_Models
                 OnPropertyChanged("SelectedTarget");
             }
         }
-
 
         public DelegateCommand ClearTargetsCommand { get; set; }
         public DelegateCommand AddTargetsCommand { get; set; }
@@ -181,7 +181,7 @@ namespace SadGUI.View_Models
             return targets;
         }
 
-        public void SetTargets(List<Target> targets)
+        public void SetTargets(List<Target> targets, Dispatcher thread)
         {
             var targetVMList = new List<TargetViewModel>();
             foreach(var target in targets)
@@ -195,11 +195,13 @@ namespace SadGUI.View_Models
                     targetVMList.Add(new TargetViewModel(target));
                 }
             }
-            Targets.Clear();
-            foreach (var target in targetVMList)
-            {
-                Targets.Add(target);
-            }
+            Action Clear = new Action(Targets.Clear);
+            Action<TargetViewModel> TarAdd;
+                thread.Invoke(Clear);
+                Action Add = new Action(TarAdd<TargetViewModel>);
+            
+            };
+            
         }
     }
 }

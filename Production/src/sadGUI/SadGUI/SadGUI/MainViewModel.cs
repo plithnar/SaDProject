@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Threading;
 using Targets;
 
 namespace SadGUI
@@ -33,6 +34,8 @@ namespace SadGUI
                 OnPropertyChanged("Launcher");
             }
         }
+
+        public Dispatcher Dispatch { get; set; }
 
         public TargetListViewModel TargetList { get; set; }
 
@@ -83,6 +86,7 @@ namespace SadGUI
 
         public MainViewModel()
         {
+            Dispatch = Application.Current.Dispatcher;
             //m_strategy = new KillEmAllStrategy();
             m_strategy = new KillMostValuable();
             ServerIP = "Mock";
@@ -151,7 +155,7 @@ namespace SadGUI
             if (m_strategy != null)
             {
                 var targets = TargetList.GameListViewModel.GetTargetList();
-                TargetList.SetTargets(targets);
+                TargetList.SetTargets(targets, Dispatch);
                 var target = m_strategy.GetHighestPriorityTarget(TargetList.GetTargets(), Launcher.Time);
                 Launcher.Kill(target);
             }
