@@ -161,8 +161,11 @@ namespace SadGUI
             AbortGame.Executable = true;
             Connect.Executable = false;
             if (GameRunning == false)
+            {
                 TargetList.GameListViewModel.StartGame();
-            StartGameEvent(this, null);
+                StartGameEvent(this, null);
+            }
+
             GameRunning = true;
             //m_strategy = new KillEmAllStrategy();
             m_strategy = new KillMostValuable();

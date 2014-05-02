@@ -215,11 +215,23 @@
     <EmbeddedResource Include="MainViewModel_MainViewModel.sequencediagram.layout">
       <DependentUpon>MainViewModel_MainViewModel.sequencediagram</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MainViewModel_MainViewModel_1.sequencediagram.layout">
+      <DependentUpon>MainViewModel_MainViewModel_1.sequencediagram</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainViewModel_Start.sequencediagram.layout">
       <DependentUpon>MainViewModel_Start.sequencediagram</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainViewModel_Stop.sequencediagram.layout">
       <DependentUpon>MainViewModel_Stop.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MissileLauncherSelectorViewModel_MissileLauncherSelectorViewModel.sequencediagram.layout">
+      <DependentUpon>MissileLauncherSelectorViewModel_MissileLauncherSelectorViewModel.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MissileLauncherSelectorViewModel_MissileLauncherSelectorViewModel_1.sequencediagram.layout">
+      <DependentUpon>MissileLauncherSelectorViewModel_MissileLauncherSelectorViewModel_1.sequencediagram</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MissileLauncherViewModel_set_LauncherType.sequencediagram.layout">
+      <DependentUpon>MissileLauncherViewModel_set_LauncherType.sequencediagram</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sequence Diagrams\MainViewModel_MainViewModel.sequencediagram.layout">
       <DependentUpon>MainViewModel_MainViewModel.sequencediagram</DependentUpon>
@@ -251,8 +263,12 @@
     </EmbeddedResource>
     <None Include="GameListViewModel_LoadGameList.sequencediagram" />
     <None Include="MainViewModel_MainViewModel.sequencediagram" />
+    <None Include="MainViewModel_MainViewModel_1.sequencediagram" />
     <None Include="MainViewModel_Start.sequencediagram" />
     <None Include="MainViewModel_Stop.sequencediagram" />
+    <None Include="MissileLauncherSelectorViewModel_MissileLauncherSelectorViewModel.sequencediagram" />
+    <None Include="MissileLauncherSelectorViewModel_MissileLauncherSelectorViewModel_1.sequencediagram" />
+    <None Include="MissileLauncherViewModel_set_LauncherType.sequencediagram" />
     <None Include="packages.config" />
     <None Include="Sequence Diagrams\MainViewModel_MainViewModel.sequencediagram" />
     <None Include="Sequence Diagrams\MainViewModel_MainViewModel_1.sequencediagram" />
