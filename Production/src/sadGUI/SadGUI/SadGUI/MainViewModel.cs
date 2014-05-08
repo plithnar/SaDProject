@@ -154,6 +154,8 @@ namespace SadGUI
         {
             if (m_strategy != null)
             {
+                // Added the wait for .5 seconds to allow for latency (hopefully)
+                System.Threading.Thread.Sleep(500);
                 var targets = TargetList.GameListViewModel.GetTargetList();
                 TargetList.SetTargets(targets, Launcher.Time, Dispatch);
                 var target = m_strategy.GetHighestPriorityTarget(TargetList.GetTargets(), Launcher.Time);

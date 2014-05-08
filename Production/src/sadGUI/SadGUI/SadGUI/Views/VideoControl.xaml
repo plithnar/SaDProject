@@ -11,10 +11,16 @@
             <RowDefinition Height="10*" />
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="45" FontWeight="Bold">Video Feed</TextBlock>
-        <Image Name="image" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill"/>
+        <Image Name="image" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="None" Width="400" Height="200"/>
         <StackPanel Orientation="Horizontal" Grid.Row="1">
-            <Button Width="200" FontSize="16" FontWeight="Bold" Click="StartButton_Click">Start Video Feed</Button>
-            <Button Width="200" FontSize="16" FontWeight="Bold" Click="StopButton_Click">Stop Video Feed</Button>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*"/>
+                    <ColumnDefinition Width="50*"/>                                      
+                </Grid.ColumnDefinitions>
+                <Button Width="300" FontSize="16" FontWeight="Bold" Click="StartButton_Click" Grid.Column="0" HorizontalAlignment="Stretch">Start Video Feed</Button>
+                <Button Width="300" FontSize="16" FontWeight="Bold" Click="StopButton_Click" Grid.Column="1" HorizontalAlignment="Stretch">Stop Video Feed</Button>
+            </Grid>
         </StackPanel>
     </Grid>
 </UserControl>

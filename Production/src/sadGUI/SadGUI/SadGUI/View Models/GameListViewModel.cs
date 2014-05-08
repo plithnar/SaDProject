@@ -124,7 +124,7 @@ namespace SadGUI.View_Models
 
             foreach (var target in targetList)
             {
-                var tar = new Target(target.name, (double) target.x, (double) target.y, (double) target.z, Convert.ToBoolean(target.status), (int) target.points, (int)target.spawnRate, target.hit);
+                var tar = new Target(target.name, (double) target.x, (double) target.y, (double) target.z, Convert.ToBoolean(target.status), (int) target.points, (int)target.spawnRate, 0, target.hit);
                 targets.Add(tar);
             }
 

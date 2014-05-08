@@ -21,17 +21,25 @@ namespace Strategies
 
         public Target GetHighestPriorityTarget(IList<Target> targets, int gameTime)
         {
-            for(int i = 0; i < targets.Count; i++)
+            bestScore = double.MinValue;
+            for( int i = 0; i < targets.Count; i++)
             {
                 var target = targets[i];
                 //CHECK FOR TIME STAMP
-                
-                if((target.HitTime - gameTime) < (target.FlashRate * 100) /* MULTIPLIER IS FOR TESTING ONLY!!!*/)
+                if (target.HitCount > 0)
                 {
-                    continue;
+                    if ((target.HitTime - gameTime) < (target.FlashRate * 10) /* MULTIPLIER IS FOR TESTING ONLY!!!*/)
+                    {
+                        continue;
+                    }
                 }
 
                 //if alive at time of query
+                int aliveFlag = 0;
+                if(target.Alive)
+                {
+                    aliveFlag = 1;
+                }
                 int friendMultiplier;
                 if(target.Friend)
                 {
@@ -41,8 +49,9 @@ namespace Strategies
                 {
                     friendMultiplier = 1;
                 }
-                if(target.Points * friendMultiplier > bestScore)
+                if((target.Points * friendMultiplier * aliveFlag) > bestScore)
                 {
+                    bestScore = (target.Points * friendMultiplier * aliveFlag);
                     index = i;
                 }
             }

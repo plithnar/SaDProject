@@ -103,7 +103,7 @@ namespace MissileLauncher
         //    controller.command_Left(4*timeTo90);
         //    controller.command_Right(2*timeTo90);
             controller.command_reset();
-            controller.command_Right(timeTo90 / 15);
+            controller.command_Right(timeTo90 / 35);
             controller.command_Down(timeTo90/15); // To correct for height over targets
             Phi = 0.0;
             Theta = 0.0;

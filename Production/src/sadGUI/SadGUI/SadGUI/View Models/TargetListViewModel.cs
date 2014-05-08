@@ -82,7 +82,7 @@ namespace SadGUI.View_Models
         void AddTargetsFromServer()
         {
             var targets = GameListViewModel.GetTargetList();
-//            Targets.Clear();
+            Targets.Clear();
             var tarVMs = new List<TargetListViewModel>();
             foreach (var target in targets)
             {
@@ -192,16 +192,27 @@ namespace SadGUI.View_Models
                 if (targetVm != null)
                 {
                     target.HitTime = targetVm.HitTime;
-                    if (target.HitCount != targetVm.HitCount)
-                    {
-                        targetVm.Alive = false;
-                        target.Alive = false;
-                    }
-                    if (gametime - targetVm.HitTime < 0)
+                    target.Alive = targetVm.Alive;
+                    if (((targetVm.FlashRate + targetVm.HitTime) - gametime) < 0)
                     {
                         targetVm.Alive = true;
                         target.Alive = true;
                     }
+                    if (target.HitCount != targetVm.HitCount)
+                    { 
+                        targetVm.Alive = false;
+                        target.Alive = false;
+                    }
+                    //if (gametime - targetVm.HitTime < 0)
+                    //{
+                    //    targetVm.Alive = true;
+                    //    target.Alive = true;
+                    //}
+                    //else
+                    //{
+                    //    target.Alive = false;
+                    //    targetVm.Alive = false;
+                    //}
                     targetVMList.Add(new TargetViewModel(target));
                 }
             }
