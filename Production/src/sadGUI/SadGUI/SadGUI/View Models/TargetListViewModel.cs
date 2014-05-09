@@ -176,7 +176,7 @@ namespace SadGUI.View_Models
             var targets = new List<Target>();
             foreach (var target in Targets)
             {
-                targets.Add(new Target(target.Name, target.X, target.Y, target.Z, target.Friendly, target.Points, target.FlashRate, target.HitTime));
+                targets.Add(new Target(target.Name, target.X, Math.Abs(target.Y), target.Z, target.Friendly, target.Points, target.FlashRate, target.HitTime));
             }
             return targets;
         }

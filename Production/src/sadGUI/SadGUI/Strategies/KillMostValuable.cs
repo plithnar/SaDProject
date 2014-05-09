@@ -28,7 +28,7 @@ namespace Strategies
                 //CHECK FOR TIME STAMP
                 if (target.HitCount > 0)
                 {
-                    if ((target.HitTime - gameTime) < (target.FlashRate * 10) /* MULTIPLIER IS FOR TESTING ONLY!!!*/)
+                    if ((gameTime - target.HitTime) < (target.FlashRate))
                     {
                         continue;
                     }
@@ -43,7 +43,7 @@ namespace Strategies
                 int friendMultiplier;
                 if(target.Friend)
                 {
-                    friendMultiplier = -1;
+                    friendMultiplier = 0;
                 }
                 else
                 {
@@ -60,6 +60,7 @@ namespace Strategies
                 targets[index].HitTime = gameTime;
             }
             int shootIndex = index;
+  
             index = 0;
             return targets[shootIndex];
         }
