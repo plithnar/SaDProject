@@ -77,47 +77,6 @@
               LastKnownLocation="Package1_1954.uml" />
           </generalization>
         </generalsInternal>
-        <targetEnds>
-          <association
-            Id="0aa3d9b0-8ec2-4089-a283-173aa18779fe"
-            isDerived="false"
-            sourceEndRoleName="InvalidHeader"
-            targetEndRoleName="INITargetFileReader"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="ac88605b-98a3-494e-8b7f-67469e1ac581"
-              LastKnownName="INITargetFileReader"
-              LastKnownLocation="Package_2012.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="d6a23f1b-ab31-49fa-be2d-a1de2e1d4799"
-                  name="InvalidHeader"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="c42e11ef-2f7e-48ca-93b7-4e369369f814"
-                  name="INITargetFileReader"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
         <ownedOperationsInternal>
           <operation
             Id="f5ffa4f1-ee49-43ee-98cc-828cbc94fedd"
@@ -253,47 +212,6 @@
               LastKnownLocation="Package1_1954.uml" />
           </generalization>
         </generalsInternal>
-        <targetEnds>
-          <association
-            Id="a4bcd709-7cbf-47c2-9d33-dc223e3c4e26"
-            isDerived="false"
-            sourceEndRoleName="InvalidName"
-            targetEndRoleName="INITargetFileReader"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="ac88605b-98a3-494e-8b7f-67469e1ac581"
-              LastKnownName="INITargetFileReader"
-              LastKnownLocation="Package_2012.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="e005368a-ca3f-4a85-ad0f-df633f46e825"
-                  name="InvalidName"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="ec5d4eb3-f3aa-42ff-ba4c-e474b8079038"
-                  name="INITargetFileReader"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
         <ownedOperationsInternal>
           <operation
             Id="93e88aba-7b6a-4186-9818-e6736928ab2d"
@@ -429,47 +347,6 @@
               LastKnownLocation="Package1_1954.uml" />
           </generalization>
         </generalsInternal>
-        <targetEnds>
-          <association
-            Id="2bc54234-c54d-4180-981d-2bbbc96b38a2"
-            isDerived="false"
-            sourceEndRoleName="InvalidTarget"
-            targetEndRoleName="INITargetFileReader"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="ac88605b-98a3-494e-8b7f-67469e1ac581"
-              LastKnownName="INITargetFileReader"
-              LastKnownLocation="Package_2012.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="05f74b10-69bb-47f4-b5da-afe693efc09b"
-                  name="InvalidTarget"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="83613bef-f8a6-4dc2-b892-ac11980e5a91"
-                  name="INITargetFileReader"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
         <ownedOperationsInternal>
           <operation
             Id="f36cbecc-5553-4475-9cee-6998a1e04fb4"
@@ -604,6 +481,125 @@
               LastKnownLocation="Package_2012.uml" />
           </interfaceRealization>
         </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="c7cb69ba-2ef8-4de9-86a7-6034b48ebba0"
+            isDerived="false"
+            sourceEndRoleName="INITargetFileReader"
+            targetEndRoleName="InvalidHeader"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="379018de-5036-4e35-9b03-5db76bbfd609"
+              LastKnownName="InvalidHeader"
+              LastKnownLocation="Package_2012.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cf45c6fc-1720-4257-8a53-39231aea8d38"
+                  name="INITargetFileReader"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a1d68a3b-59f5-4a05-910b-0c3f195c4668"
+                  name="InvalidHeader"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="eb4ca9c9-cc62-4ca4-a6ca-9c39f98a4ade"
+            isDerived="false"
+            sourceEndRoleName="INITargetFileReader"
+            targetEndRoleName="InvalidTarget"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c60db8ca-b190-44a0-8ea0-8450b055980b"
+              LastKnownName="InvalidTarget"
+              LastKnownLocation="Package_2012.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2f3ccb01-bc90-41b5-b982-b5ef1c46cfdf"
+                  name="INITargetFileReader"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2d0b8ce5-ffe0-4d99-af1a-b9f91c865032"
+                  name="InvalidTarget"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="79364c1e-6ae5-413c-9da2-d1caef9ee92a"
+            isDerived="false"
+            sourceEndRoleName="INITargetFileReader"
+            targetEndRoleName="InvalidName"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a9e8bd53-ebd4-42eb-bb85-357c3f3502c2"
+              LastKnownName="InvalidName"
+              LastKnownLocation="Package_2012.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9c1628c4-8b2e-438d-9be4-8a1088841de6"
+                  name="INITargetFileReader"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="55ee6811-d304-4e80-be4e-b9cfc2b21034"
+                  name="InvalidName"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="275cb4a5-4cfd-401a-8267-f01195c96de7"
