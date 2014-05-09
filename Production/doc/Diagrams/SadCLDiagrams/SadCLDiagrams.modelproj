@@ -46,6 +46,9 @@
     <Content Include="ModelDefinition\Package_2019.uml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="ModelDefinition\Package_2225.uml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="SadCL.classdiagram">
       <SubType>Content</SubType>
     </Content>

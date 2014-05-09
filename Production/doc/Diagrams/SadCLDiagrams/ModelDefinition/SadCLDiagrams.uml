@@ -60,6 +60,12 @@
         LastKnownName="SadCL"
         LastKnownLocation="Package_2019.uml" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="99fa3e81-7b7d-42b8-9699-4f60b2ebff92"
+        LastKnownName="Targets"
+        LastKnownLocation="Package_2225.uml" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
